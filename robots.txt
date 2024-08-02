@@ -1,1 +1,1 @@
-Sitemap: https://trongan93.github.io/AeroSat-Vision-Lab/sitemap.xml
+Sitemap: https://trongan93.github.io/asv.github.io/sitemap.xml
