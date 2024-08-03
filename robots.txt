@@ -1,1 +1,1 @@
-Sitemap: https://trongan93.github.io/asv.github.io/sitemap.xml
+Sitemap: http://asvlab.com/sitemap.xml
