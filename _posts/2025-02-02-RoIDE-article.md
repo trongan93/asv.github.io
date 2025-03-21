@@ -1,6 +1,6 @@
 ---
 title: RoIDE article is publised in IEEE Transactions on Geoscience and Remote Sensing
-image: images/photo.jpg
+image: images/RoIDE.jpeg
 author: Andrew Bui
 tags: publication, remote sensing, satellite image, AI, Deep Learning
 ---
@@ -55,6 +55,6 @@ If you find this work useful, please star ⭐ the repository, try it out, and sh
 
 **#DeepLearning** **#SatelliteImaging** **#RemoteSensing** **#AI** **#GeospatialAnalysis** **#OpenSource**
 
-
+![RoIDE Region of Interest-Focused Dynamic Enhancement](images/RoIDE.jpeg)
 
 
