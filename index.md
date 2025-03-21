@@ -69,7 +69,8 @@ Our lab is currently developing OrbitAI—an embedded AI system designed for rea
 
 {% capture text %}
 
-At the AeroSat Vision Lab, our team is comprised of dedicated professionals and talented students who are passionate about advancing the fields of artificial intelligence and aerospace technology. 
+實驗室由來自國立臺北科技大學太空系統工程研究所與電子所的碩士生組成，並與越南胡志明師範大學（HCMUE）的研究生共同參與。我們現正與美國德州農工大學（Texas A&M University）航太工程系展開學術合作，並與多家國內外產業夥伴攜手合作，致力於推動太空人工智慧與衛星系統技術的創新應用。
+Our lab is composed of graduate students from the Graduate Institute of Space Systems Engineering and the Department of Electronic Engineering at National Taipei University of Technology (Taipei Tech), with active collaboration from graduate researchers at Ho Chi Minh City University of Education (HCMUE), Vietnam. We are currently engaged in academic collaboration with the Department of Aerospace Engineering at Texas A&M University, and work closely with several industry partners in Taiwan and internationally to advance innovation in space AI and satellite technologies.
 
 {%
   include button.html
