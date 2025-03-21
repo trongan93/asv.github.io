@@ -1,21 +1,11 @@
 ---
-title: "Now Hiring: Research Assistants (Master’s and Ph.D. Level)"
+title: "誠徵研究助理（碩士班與博士班"
 image: images/blogs/now-hiring.jpg
 author: AeroSat Vision Lab
 tags: AI, Space, Research, Hiring
 date: 2025-03-21
 layout: post
 ---
-## Now Hiring: Research Assistants (Master’s and Ph.D. Level)
-
-Our lab is currently seeking highly motivated research assistants (Master’s and Ph.D. level) to join our team in developing advanced AI models for space applications. The research will focus on **Orbit-AI**, a system designed for onboard spacecraft payloads with capabilities including **data compression, object tracking, and multi-sensor data fusion**.
-
-This work supports and extends our current projects related to **satellite payload design**, offering a unique opportunity to contribute to the next generation of intelligent space systems. The goal is to create AI solutions that can operate efficiently and autonomously in orbit, directly supporting spacecraft operations.
-
-**Interested candidates are welcome to apply by email**. Please include your CV, relevant experience, and a brief statement of interest.
-
-We look forward to hearing from you!
-
 
 ## 誠徵研究助理（碩士班與博士班）
 
