@@ -89,3 +89,29 @@ At the AeroSat Vision Lab, our team is comprised of dedicated professionals and 
   title="Our Team"
   text=text
 %}
+
+{% capture text %}
+{% for post in site.posts limit:3 %}
+- **[{{ post.title }}]({{ post.url }})**  
+  _{{ post.date | date: "%B %d, %Y" }}_  
+  {{ post.description | default: post.excerpt | strip_html | truncatewords: 20 }}
+{% endfor %}
+
+{%
+  include button.html
+  link="blog"
+  text="View all blogs"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/noti.png"
+  link="blog"
+  title="Latest Blog Posts"
+  text=text
+  flip=true
+%}

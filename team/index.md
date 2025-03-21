@@ -1,7 +1,7 @@
 ---
 title: Team
 nav:
-  order: 3git log
+  order: 3
 ---
 
 # {% include icon.html icon="fa-solid fa-users" %} Team
