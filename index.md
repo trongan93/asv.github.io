@@ -42,7 +42,8 @@ AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, c
 %}
 
 {% capture text %}
-
+本實驗室致力於發展智慧化與自動化的太空科技，專注於次世代衛星與航太系統之研發。核心技術「OrbitAI」為一套嵌入式人工智慧系統，專為太空載具設計，具備即時資料壓縮、目標追蹤與多感測器資料融合能力。系統以FPGA、MCU、DPU等架構為基礎，提供高效能、低功耗的解決方案，支援衛星酬載自主運作。從載具設計到軌道上的AI應用，我們的研究計畫正積極開創智慧太空系統的未來藍圖。
+Our lab is focused on developing intelligent, autonomous technologies for modern spacecraft. At the heart of our research is OrbitAI—an onboard AI system designed for spacecraft payloads, enabling real-time data compression, object tracking, and multi-sensor data fusion. These innovations support next-generation satellite missions through efficient, embedded AI solutions powered by FPGA, MCU, and DPU architectures. From payload design to autonomous operations, our projects reflect a deep commitment to pushing the boundaries of space-based AI systems.
 {%
   include button.html
   link="projects"
@@ -58,7 +59,7 @@ AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, c
   include feature.html
   image="images/background.jpg"
   link="projects"
-  title="Our Projects"
+  title="本實驗室研究計畫 Our Projects"
   flip=true
   style="bare"
   text=text
