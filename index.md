@@ -20,7 +20,8 @@ Join us on our journey as we harness the power of AI and aerospace technology to
 
 {% capture text %}
 
-AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, computer vision, and remote sensing to drive breakthroughs in aerospace and satellite applications.
+AeroSat Vision Lab 致力於神經網路、電腦視覺與遙測技術在航太與衛星應用領域的前瞻研究。我們專注於太空載具之人工智慧自主系統開發，特別是以 OrbitAI 為核心的嵌入式 AI 平台。透過深度學習、低功耗運算與感測器融合，我們正引領軌道上智慧系統的創新。
+AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, computer vision, and remote sensing in aerospace and satellite domains. We focus on AI-driven autonomy for spacecraft systems, particularly through the development of onboard platforms like OrbitAI. By combining deep learning, embedded computing, and space-grade sensor integration, our research aims to redefine how intelligent systems operate in orbit.
 
 {%
   include button.html
@@ -37,13 +38,14 @@ AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, c
   include feature.html
   image="images/lab-research.webp"
   link="research"
-  title="Our Research"
+  title="研究方向 Our Research"
   text=text
 %}
 
 {% capture text %}
-本實驗室致力於發展智慧化與自動化的太空科技，專注於次世代衛星與航太系統之研發。核心技術「OrbitAI」為一套嵌入式人工智慧系統，專為太空載具設計，具備即時資料壓縮、目標追蹤與多感測器資料融合能力。系統以FPGA、MCU、DPU等架構為基礎，提供高效能、低功耗的解決方案，支援衛星酬載自主運作。從載具設計到軌道上的AI應用，我們的研究計畫正積極開創智慧太空系統的未來藍圖。
-Our lab is focused on developing intelligent, autonomous technologies for modern spacecraft. At the heart of our research is OrbitAI—an onboard AI system designed for spacecraft payloads, enabling real-time data compression, object tracking, and multi-sensor data fusion. These innovations support next-generation satellite missions through efficient, embedded AI solutions powered by FPGA, MCU, and DPU architectures. From payload design to autonomous operations, our projects reflect a deep commitment to pushing the boundaries of space-based AI systems.
+本實驗室目前推動的主要項目為 OrbitAI 系統，這是一套專為太空酬載設計的即時嵌入式 AI 平台，支援資料壓縮、目標追蹤與多感測器資料融合等功能。系統以 FPGA、MCU、DPU 為基礎架構，實現低功耗高效率之太空智慧應用，助力次世代衛星與自主載具任務的落實。
+Our lab is currently developing OrbitAI—an embedded AI system designed for real-time spacecraft operations. Integrated with satellite payloads, OrbitAI enables capabilities such as data compression, object tracking, and multi-sensor fusion using FPGA, MCU, and DPU architectures. These projects bridge theory and application, supporting intelligent satellite missions and next-generation space systems.
+
 {%
   include button.html
   link="projects"
@@ -59,7 +61,7 @@ Our lab is focused on developing intelligent, autonomous technologies for modern
   include feature.html
   image="images/background.jpg"
   link="projects"
-  title="本實驗室研究計畫 Our Projects"
+  title="研究計畫 Our Projects"
   flip=true
   style="bare"
   text=text
