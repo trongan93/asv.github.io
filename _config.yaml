@@ -40,6 +40,11 @@ defaults:
       type: "projects"
     values:
       layout: project
+  # markdown files in /_courses
+  - scope:
+      type: "courses"
+    values:
+      layout: course
 
 collections:
   # generate page for each member
@@ -48,9 +53,15 @@ collections:
   # generate page for each post
   posts:
     output: true
+  # generate page for each post project
   projects:
     output: true
     permalink: /projects/:name/
+  # generate page for each course
+  courses:
+    output: true
+    permalink: /courses/:name/
+
 
 # jekyll plugins
 plugins:
