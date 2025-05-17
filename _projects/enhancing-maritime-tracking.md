@@ -13,6 +13,12 @@ date: 2025-03-21
 layout: project
 ---
 
+## 📌 Introduction
+
+This project is supported by the **Ministry of Education, Taiwan**, under the **2024 University Academic Alliance in Taiwan (UAAT) – The Texas A&M University System (TAMUS) Integrated Program: Interdisciplinary Capacity Building for the New Space Generation**. It represents a collaborative initiative between **Taipei Tech (Taiwan Tech)** and **Texas A&M University** to strengthen academic and technological capabilities in aerospace and remote sensing through real-world research applications.
+
+---
+
 This project focuses on **real-time maritime object tracking** using Edge AI and **Deep Reinforcement Learning**. While the overarching vision involves satellite-based processing, the **current development and testing are centered on UAV platforms**. Specifically, the project involves:
 
 - **Processing remote sensing data with AI models on UAVs** to simulate future satellite integration.
@@ -64,11 +70,10 @@ Although satellites are a long-term integration target, this project cycle uses 
 
 ### 8. Research Output
 
-As part of this project, the following peer-reviewed publication has been submitted and accepted for presentation:
+As part of this **UAAT–TAMUS project**, the following peer-reviewed publication has been submitted and accepted for presentation:
 
 **Ho, T., Bui, T.-A., Lee, P.-J., Lin, H.-P., Selva, D., Le, T.-T., & Tran, H.**  
 “**Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking**”  
 *Proceedings of the 2025 IEEE International Conference on Consumer Electronics – Taiwan (ICCE-Taiwan)*, Kaohsiung, Taiwan, July 15, 2025.
 
 > 📝 *This paper addresses key challenges in UAV-based object tracking, including occlusion handling and identity preservation. It reflects foundational work developed under the scope of this project.*
-
