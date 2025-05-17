@@ -10,6 +10,18 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/ICCE63647.2025.10929940
+  title: Low Parameters UNet for Energy-Efficient Cloud Detection
+  authors:
+  - Chun-Fu Chen
+  - Pei-Jun Lee
+  - Trong-An Bui
+  publisher: 2025 IEEE International Conference on Consumer Electronics (ICCE)
+  date: '2025-01-11'
+  link: https://doi.org/g9kdrx
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/TGRS.2024.3525411
   title: Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images
   authors:
