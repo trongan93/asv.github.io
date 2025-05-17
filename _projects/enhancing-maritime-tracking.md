@@ -58,6 +58,45 @@ The following diagram shows the integrated architecture for the UAV and ground s
 
 ![UAV and Ground Station System Architecture](/images/projects/uav-ground-station-architecture.png)
 
+### 5.1 UAV Platform Setup
+
+This image shows the hardware setup of the UAV, integrating the FPGA module, camera, and S-band communication payload:
+
+![UAV Hardware Platform Setup](/images/projects/uav-hardware-setup.png)
+
+**Key Components:**
+
+- **FPGA (Xilinx)** for onboard AI inference
+- **Air Unit Camera** for visual input
+- **S-band Payload** for real-time transmission
+
+### 5.2 Tracking Performance Comparison
+
+To evaluate object tracking robustness, a comparative analysis was conducted between the baseline YOLO tracker and the proposed architecture. The sequence below shows object ID consistency across frames under occlusion conditions.
+
+**Tracking by YOLO:**
+
+![YOLO Tracking Sequence](/images/projects/yolo-tracking.png)
+
+**Tracking by Proposed Model:**
+
+![Proposed Tracking Sequence](/images/projects/proposed-tracking.png)
+
+The results demonstrate that the proposed system improves tracking consistency by:
+
+- **Reducing ID switches**  
+- **Improving occlusion handling**
+
+> The object retains a consistent ID even through temporary visual occlusion, showing the benefit of integrating motion prediction into the model.
+
+### 5.3 Real-Time Tracking Demo (GIF)
+
+The following animation demonstrates performance gains of the proposed tracking system compared to YOLO:
+
+![Tracking Comparison Animation](/images/projects/tracking-comparison.gif)
+
+> 📌 *The GIF highlights smoother tracking transitions and better ID retention through occlusion, critical for UAV-based missions.*
+
 ### 6. Next Steps
 
 - Conduct **multi-UAV flight tests** to validate full AI + communication system pipeline.
