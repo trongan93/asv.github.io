@@ -46,12 +46,18 @@ While the project title references satellite-based tracking, all **development, 
 - 🔄 **UAV Communication Prototyping**: UAV-to-UAV and UAV-to-ground communication protocols prototyped and tested under various network topologies.
 - 🔄 **Reinforcement Learning Development**: Initial RL policies under training to manage UAV routing and communication optimization.
 
-### 5. Next Steps
+### 5. System Integration Diagram
+
+The following diagram shows the integrated architecture for the UAV and ground station systems, including AI-based image recognition, RF front-end design, and broadband communication via the S-band:
+
+![UAV and Ground Station System Architecture](/images/projects/uav-ground-station-architecture.png)
+
+### 6. Next Steps
 
 - Conduct **multi-UAV flight tests** to validate full AI + communication system pipeline.
 - Optimize **model efficiency** for edge hardware (compute, power, bandwidth).
 - Expand and evaluate reinforcement learning performance under more complex environmental dynamics.
 
-### 6. Summary
+### 7. Summary
 
 Although satellites are a long-term integration target, this project cycle uses UAVs as a practical test platform to build, test, and refine AI and communication technologies needed for real-time maritime monitoring in the Taiwan Strait. The outcomes will directly support scalable transition to LEO satellite-based systems in future phases.
