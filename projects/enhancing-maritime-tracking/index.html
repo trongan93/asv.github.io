@@ -477,6 +477,56 @@
 
 <p><img src="/images/projects/uav-ground-station-architecture.png" alt="UAV and Ground Station System Architecture"></p>
 
+<h3 id="51-uav-platform-setup">5.1 UAV Platform Setup</h3>
+
+<p>This image shows the hardware setup of the UAV, integrating the FPGA module, camera, and S-band communication payload:</p>
+
+<p><img src="/images/projects/uav-hardware-setup.png" alt="UAV Hardware Platform Setup"></p>
+
+<p><strong>Key Components:</strong></p>
+
+<ul>
+  <li>
+<strong>FPGA (Xilinx)</strong> for onboard AI inference</li>
+  <li>
+<strong>Air Unit Camera</strong> for visual input</li>
+  <li>
+<strong>S-band Payload</strong> for real-time transmission</li>
+</ul>
+
+<h3 id="52-tracking-performance-comparison">5.2 Tracking Performance Comparison</h3>
+
+<p>To evaluate object tracking robustness, a comparative analysis was conducted between the baseline YOLO tracker and the proposed architecture. The sequence below shows object ID consistency across frames under occlusion conditions.</p>
+
+<p><strong>Tracking by YOLO:</strong></p>
+
+<p><img src="/images/projects/yolo-tracking.png" alt="YOLO Tracking Sequence"></p>
+
+<p><strong>Tracking by Proposed Model:</strong></p>
+
+<p><img src="/images/projects/proposed-tracking.png" alt="Proposed Tracking Sequence"></p>
+
+<p>The results demonstrate that the proposed system improves tracking consistency by:</p>
+
+<ul>
+  <li><strong>Reducing ID switches</strong></li>
+  <li><strong>Improving occlusion handling</strong></li>
+</ul>
+
+<blockquote>
+  <p>The object retains a consistent ID even through temporary visual occlusion, showing the benefit of integrating motion prediction into the model.</p>
+</blockquote>
+
+<h3 id="53-real-time-tracking-demo-gif">5.3 Real-Time Tracking Demo (GIF)</h3>
+
+<p>The following animation demonstrates performance gains of the proposed tracking system compared to YOLO:</p>
+
+<p><img src="/images/projects/tracking-comparison.gif" alt="Tracking Comparison Animation"></p>
+
+<blockquote>
+  <p>📌 <em>The GIF highlights smoother tracking transitions and better ID retention through occlusion, critical for UAV-based missions.</em></p>
+</blockquote>
+
 <h3 id="6-next-steps">6. Next Steps</h3>
 
 <ul>
