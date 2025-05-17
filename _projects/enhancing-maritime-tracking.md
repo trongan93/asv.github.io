@@ -61,3 +61,14 @@ The following diagram shows the integrated architecture for the UAV and ground s
 ### 7. Summary
 
 Although satellites are a long-term integration target, this project cycle uses UAVs as a practical test platform to build, test, and refine AI and communication technologies needed for real-time maritime monitoring in the Taiwan Strait. The outcomes will directly support scalable transition to LEO satellite-based systems in future phases.
+
+### 8. Research Output
+
+As part of this project, the following peer-reviewed publication has been submitted and accepted for presentation:
+
+**Ho, T., Bui, T.-A., Lee, P.-J., Lin, H.-P., Selva, D., Le, T.-T., & Tran, H.**  
+“**Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking**”  
+*Proceedings of the 2025 IEEE International Conference on Consumer Electronics – Taiwan (ICCE-Taiwan)*, Kaohsiung, Taiwan, July 15, 2025.
+
+> 📝 *This paper addresses key challenges in UAV-based object tracking, including occlusion handling and identity preservation. It reflects foundational work developed under the scope of this project.*
+
