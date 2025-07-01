@@ -1,5 +1,18 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1109/ICCT-Pacific63901.2025.11012856
+  title: Lightweight Feature-Enhanced U-Net for Landslide Change Detection in Remote
+    Sensing Imagery
+  authors:
+  - Ching-He Hsu
+  - Pei-Jun Lee
+  - Trong-An Bui
+  publisher: 2025 1st International Conference on Consumer Technology (ICCT-Pacific)
+  date: '2025-03-29'
+  link: https://doi.org/g9rvmw
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.5281/zenodo.14792939
   title: Standard Dynamic Range (SDR) satellite images
   authors:
@@ -77,6 +90,18 @@
   publisher: 2024 IEEE International Conference on Consumer Electronics (ICCE)
   date: '2024-01-06'
   link: https://doi.org/gt5xhq
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICCE-TAIWAN62264.2024.10674224
+  title: Saturation-Enhanced Dynamic Range Network for HDR-like Image Enhancement
+  authors:
+  - ' Po-Sheng-Huang'
+  - Pei-Jun Lee
+  - Trong-An Bui
+  publisher: 2024 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)
+  date: '2024-07-09'
+  link: https://doi.org/g9rvmx
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
