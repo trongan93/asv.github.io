@@ -9,7 +9,7 @@ layout: post
 
 ## Enhancing EMI Teaching with Support from Penn State Advisors
 
-![EMI Coaching Session at NTUT](images/blogs/DSC07080_compressed.jpg)
+<img src="/images/blogs/DSC07080_compressed.jpg" alt="EMI Coaching Session at NTUT" style="max-width:100%; height:auto;">
 
 We are deeply grateful to the two EMI (English as a Medium of Instruction) advisors from The Pennsylvania State University, USA—**Dr. Jacob Rieker** and **Dr. Meredith Doran**—for their dedicated one-on-one coaching sessions throughout the semester. Their expert support significantly enhanced the quality and delivery of our graduate-level course:
 
