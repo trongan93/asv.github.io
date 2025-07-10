@@ -1,5 +1,5 @@
 ---
-title: "誠徵研究助理（碩士班與博士班"
+title: "誠徵研究助理（碩博士班)"
 image: images/blogs/now-hiring.jpg
 author: AeroSat Vision Lab
 tags: AI, Space, Research, Hiring
