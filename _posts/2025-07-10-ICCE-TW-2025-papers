@@ -1,0 +1,28 @@
+---
+title: "賀！本實驗室有兩篇論文被 ICCE-TW 2025 錄取"
+image: images/blogs/icce-tw-2025.jpg
+author: AeroSat Vision Lab
+tags: AI, Satellite, Research, ICCE-TW, Deep Learning
+date: 2025-07-10
+layout: post
+---
+
+本實驗室有兩篇最新研究成果榮獲 **2025 IEEE International Conference on Consumer Electronics – Taiwan (ICCE-TW)** 錄取，我們將於 2025 年 7 月前往高雄參與本次盛會！
+
+我們將出席 **Session A2: Deep Learning-based Multimedia Processing**，誠摯邀請對我們研究有興趣的學者與業界夥伴蒞臨交流，共同拓展合作與網絡機會。
+
+### 接受論文一覽：
+
+**1. Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking**  
+*Authors: Tai Ho, Trong-An Bui, Pei-Jun Lee, Hsin-Piao Lin, Daniel Selva, Thanh-Thoai Le, Hai Tran*  
+
+本研究探討無人機（UAV）物件追蹤任務中常見的遮蔽與再識別問題。我們提出一套創新的處理流程與模型設計，以強化目標物體在遭遇短暫遮擋或重複出現時的辨識與追蹤穩定性。該方法特別針對動態場景與視角快速變化的空拍畫面進行優化，有助於提升無人機監控與目標識別的整體效能。
+
+**2. Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite Imagery**  
+*Authors: Thanh-Thoai Le, Trong-An Bui, Hai Tran, Yang-Lang Chang, Pei-Jun Lee*  
+
+本論文提出一種基於 Transformer 架構的融合式雲層去除模型，能有效移除光學衛星影像中的雲層遮蔽區域。該方法結合合成孔徑雷達（SAR）數據與光學影像資訊，並使用 Swin Transformer 自注意力機制來捕捉空間特徵，同時透過 Attention Difference Mechanism 強化兩種模態的整合效果。實驗結果顯示，本方法在部分雲遮影像中達成 PSNR 31.32 dB 與 SSIM 0.93，在全雲遮影像中達成 PSNR 29.83 dB 與 SSIM 0.86，展現出優異的重建品質與細節還原能力。
+
+---
+
+歡迎有興趣的朋友於 ICCE-TW 2025 與我們面對面交流，我們期待與您在高雄見面，一同推動遙測與人工智慧的創新應用！
