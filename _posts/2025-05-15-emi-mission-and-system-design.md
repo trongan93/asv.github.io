@@ -3,7 +3,7 @@ title: "Enhancing EMI Teaching with Support from Penn State Advisors"
 image: images/blogs/DSC07080_compressed.jpg
 author: AeroSat Vision Lab
 tags: [teaching, EMI, aerospace engineering, higher education]
-date: 2025-03-21
+date: 2025-05-15
 layout: post
 ---
 
