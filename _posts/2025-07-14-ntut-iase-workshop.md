@@ -10,9 +10,9 @@ layout: post
 # 🌍 一日工作坊｜One-Day Workshop  
 ## **Novel Architectures for Earth Observing Systems**
 
-📅 **日期 Date**：2025 年 8 月 13 日（星期三 | Wednesday）  
-📍 **地點 Venue**：臺北科技大學 合科館第三演講廳  
-🎤 **主講人 Speaker**：Dr. Daniel Selva  
+**日期 Date** 📅 ：2025 年 8 月 13 日（星期三 | Wednesday）  
+**地點 Venue** 📍 ：臺北科技大學 合科館第三演講廳  
+**主講人 Speaker** 🎤：Dr. Daniel Selva  
 副教授，美國德州農工大學航太工程系  
 Associate Professor, Dept. of Aerospace Engineering, Texas A&M University  
 
