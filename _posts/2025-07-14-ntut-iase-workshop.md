@@ -39,30 +39,18 @@ Dr. Selva brings both academic and industry experience, having worked on the Ari
 
 ## 🗓 活動流程 | Schedule
 
-| 時間 Time       | 活動內容 Program                                |
-|----------------|------------------------------------------------|
-| 09:30 – 12:00  | 課程｜Course Lecture (two blocks with break)     |
-| 12:00 – 13:00  | 午餐休息｜Lunch Break                          |
-| 13:00 – 16:00  | 研究構想交流會｜Research Ideas Exchange Session |
+| 時間 Time       | 演講主題 Topic / Title                            | 主講人 Speaker(s)                               |
+|----------------|--------------------------------------------------|-------------------------------------------------|
+| 09:30 – 12:00  | Novel Architectures for Earth Observing Systems  | Dr. Daniel Selva, Texas A&M University          |
+| 12:00 – 13:00  | 午餐休息｜Lunch Break                             | —                                               |
+| 13:00 – 13:30  | Remote Sensing System Optimization                | Prof. A（NTUT）                                 |
+| 13:30 – 14:00  | Onboard AI for Earth Observation Satellites       | Prof. B（Partner University）                   |
+| 14:00 – 14:30  | Small Satellite Mission Planning & Payload Design | Prof. C（NTUT）                                 |
+| 14:30 – 15:00  | TBD (Pending Confirmation)                        | Prof. D（邀請中 | Pending）                     |
+| 15:00 – 16:00  | Open Discussion & Cross-Institutional Exchange    | All speakers & attendees                        |
 
----
-
-## 🧠 研究構想交流會講者 | Research Ideas Exchange Speakers
-
-本次下午場次將邀請多位來自北科大與合作大學的教授，分享其近期的研究方向與跨校合作機會。  
-The afternoon session will feature faculty speakers from NTUT and partner universities sharing current research initiatives and collaborative prospects.
-
-### ✅ 已確認講者 Confirmed Speakers
-
-- **Prof. A (NTUT)**｜Remote sensing system optimization  
-- **Prof. B (Partner University)**｜Onboard AI for Earth observation  
-- **Prof. C (NTUT)**｜Small satellite mission planning and payload integration
-
-### ⏳ 尚待確認 Pending
-
-- **Prof. D**（邀請中 | Invitation in progress）
-
-> 完整名單將於活動前公告。Final lineup will be announced prior to the event.
+> 下午研究構想交流會邀請來自臺灣大學與合作夥伴的教授，介紹研究議題並尋求合作機會。  
+> The afternoon session includes professors from Taiwan and partner universities sharing ideas and seeking collaboration.
 
 ---
 
@@ -75,6 +63,7 @@ The afternoon session will feature faculty speakers from NTUT and partner univer
 **Dr. Daniel Selva** is an academic and researcher working at the intersection of space systems, AI, and systems engineering. He earned his Ph.D. in Space Systems from **MIT**, with research contributions to NASA, ESA, and CubeSat missions. Prior to joining Texas A&M, he served at **Cornell University** and was part of the **Ariane 5 Launch Team** at Europe’s Spaceport.
 
 ---
+
 ## 📩 報名與聯絡 | Registration & Contact
 
 **北科大太空所**誠摯歡迎對航太研究有興趣的產學研夥伴，以及所有學生踴躍參與本次一日講座。  
@@ -84,6 +73,15 @@ The afternoon session will feature faculty speakers from NTUT and partner univer
 Email: [trongan93@ntut.edu.tw](mailto:trongan93@ntut.edu.tw)
 
 ---
+
+## 🖼 圖片來源 | Image Credits
+
+- 海報圖像取自 NASA 公開資源  
+- Poster graphics sourced from public NASA archives  
+- Design created using [Canva](https://www.canva.com)
+
+---
+
 > 主辦與協辦單位｜Organizers & Partners  
 >  
 > **國立臺北科技大學 太空所（Graduate Institute of Space Technology, NTUT）**  
