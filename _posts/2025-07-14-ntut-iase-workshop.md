@@ -1,9 +1,9 @@
 ---
-title: "工作坊公告｜一日工作坊：Novel Architectures for Earth Observing Systems"
+title: "北科大 × 德州農工 ｜Workshop: Novel Architectures for Earth Observing Systems"
 image: images/events/workshop-poster-2025.png
-author: AeroSat Vision Lab
+author: NTUT, IASE
 tags: Earth Observation, CubeSat, AI, NTUT, Space Systems
-date: 2025-7-14
+date: 2025-07-14
 layout: post
 ---
 
@@ -14,7 +14,16 @@ layout: post
 📍 **地點 Venue**：臺北科技大學 合科館第三演講廳  
 🎤 **主講人 Speaker**：Dr. Daniel Selva  
 副教授，美國德州農工大學航太工程系  
-Associate Professor, Dept. of Aerospace Engineering, Texas A&M University
+Associate Professor, Dept. of Aerospace Engineering, Texas A&M University  
+
+> 主辦與協辦單位｜Organizers & Partners  
+>  
+> **國立臺北科技大學 太空所（Graduate Institute of Space Technology, NTUT）**  
+> **B5G 低軌衛星關鍵通訊模組產業人才與技術培育計畫**  
+> **國立臺灣科技大學（National Taiwan University of Science and Technology）**  
+> **美國德州農工大學（Texas A&M University）**  
+> **美國德州農工大學系統（The Texas A&M University System, TAMUS）**  
+> **國家重點領域國際合作聯盟（UAAT, University Academic Alliance in Taiwan）**
 
 ---
 
@@ -85,5 +94,11 @@ Email: [trongan93@ntut.edu.tw](mailto:trongan93@ntut.edu.tw)
 
 ---
 
-> 本活動由 **國立臺北科技大學 太空所** 主辦  
-> Organized by **Graduate Institute of Space Technology, NTUT**
+> 主辦與協辦單位｜Organizers & Partners  
+>  
+> **國立臺北科技大學 太空所（Graduate Institute of Space Technology, NTUT）**  
+> **B5G 低軌衛星關鍵通訊模組產業人才與技術培育計畫**  
+> **國立臺灣科技大學（National Taiwan University of Science and Technology）**  
+> **美國德州農工大學（Texas A&M University）**  
+> **美國德州農工大學系統（The Texas A&M University System, TAMUS）**  
+> **國家重點領域國際合作聯盟（UAAT, University Academic Alliance in Taiwan）**
