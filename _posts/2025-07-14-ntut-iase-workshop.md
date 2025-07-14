@@ -17,13 +17,15 @@ layout: post
 Associate Professor, Dept. of Aerospace Engineering, Texas A&M University  
 
 > 主辦與協辦單位｜Organizers & Partners  
->  
-> **國立臺北科技大學 太空所（Graduate Institute of Space Technology, NTUT）**  
-> **B5G 低軌衛星關鍵通訊模組產業人才與技術培育計畫**  
-> **國立臺灣科技大學（National Taiwan University of Science and Technology）**  
-> **美國德州農工大學（Texas A&M University）**  
-> **美國德州農工大學系統（The Texas A&M University System, TAMUS）**  
-> **國家重點領域國際合作聯盟（UAAT, University Academic Alliance in Taiwan）**
+
+<p align="center">
+  <img src="/images/logos/ntut.png" alt="NTUT" width="120" style="margin: 10px;">
+  <img src="/images/logos/b5g.png" alt="B5G Talent Program" width="120" style="margin: 10px;">
+  <img src="/images/logos/ntust.png" alt="NTUST" width="120" style="margin: 10px;">
+  <img src="/images/logos/tamu.png" alt="Texas A&M University" width="120" style="margin: 10px;">
+  <img src="/images/logos/tamus.png" alt="TAMUS" width="120" style="margin: 10px;">
+  <img src="/images/logos/uaat.png" alt="UAAT" width="120" style="margin: 10px;">
+</p>
 
 ---
 <p align="center">
