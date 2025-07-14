@@ -72,7 +72,15 @@ Dr. Selva brings both academic and industry experience, having worked on the Ari
 **北科大太空所**誠摯歡迎對航太研究有興趣的產學研夥伴，以及所有學生踴躍參與本次一日講座。  
 **We warmly welcome students and partners from academia and industry to join this special one-day event.**
 
-📧 聯絡人 Contact: **裴重恩助理教授**  
+🔗 **報名連結 Registration Link**：  
+[https://forms.gle/akMK966oAEFdedwV7](https://forms.gle/akMK966oAEFdedwV7)  
+👉 **本活動免費參加，敬請事先線上報名。**  
+👉 **This event is free to attend, but online registration is required.**
+
+📢 **有意參與下午研究交流場發表的教授與研究人員，歡迎來信洽詢。**  
+📢 **Professors and researchers interested in giving a short talk during the afternoon networking session are encouraged to contact us.**
+
+📧 聯絡人 Contact: **裴重恩助理教授 (Assistant Professor Trong-An Bui)**  
 Email: [trongan93@ntut.edu.tw](mailto:trongan93@ntut.edu.tw)
 
 ---
