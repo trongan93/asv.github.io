@@ -81,7 +81,7 @@ Email: [trongan93@ntut.edu.tw](mailto:trongan93@ntut.edu.tw)
 <p align="center">
   <img src="/images/blogs/taipeitech-logo.jpg" alt="NTUT" height="60" style="margin: 10px;">
   <img src="/images/blogs/b5g-logo.png" alt="B5G Talent Program" height="60" style="margin: 10px;">
-  <img src="/images/blogs/taiwantech-logo.png" alt="NTUST" height="60" style="margin: 10px;">
+  <img src="/images/blogs/taiwantech-logo.png" alt="NTUST" height="55" style="margin: 10px;">
   <img src="/images/blogs/tam-logo.jpg" alt="Texas A&M University" height="60" style="margin: 10px;">
   <img src="/images/blogs/tamus-logo.png" alt="TAMUS" height="60" style="margin: 10px;">
   <img src="/images/blogs/uaat-logo.png" alt="UAAT" height="60" style="margin: 10px;">
