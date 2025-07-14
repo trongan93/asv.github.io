@@ -19,7 +19,7 @@ Associate Professor, Dept. of Aerospace Engineering, Texas A&M University
 > 主辦與協辦單位｜Organizers & Partners  
 
 <p align="center">
-  <img src="/images/logos/ntut.png" alt="NTUT" width="120" style="margin: 10px;">
+  <img src="images/blogs/taipeitech-logo.jpg" alt="NTUT" width="120" style="margin: 10px;">
   <img src="/images/logos/b5g.png" alt="B5G Talent Program" width="120" style="margin: 10px;">
   <img src="/images/logos/ntust.png" alt="NTUST" width="120" style="margin: 10px;">
   <img src="/images/logos/tamu.png" alt="Texas A&M University" width="120" style="margin: 10px;">
