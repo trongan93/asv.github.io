@@ -26,6 +26,9 @@ Associate Professor, Dept. of Aerospace Engineering, Texas A&M University
 > **國家重點領域國際合作聯盟（UAAT, University Academic Alliance in Taiwan）**
 
 ---
+<p align="center">
+  <img src="/images/blogs/poster-openworkshop-ntut.jpg" alt="一日工作坊海報 Workshop Poster" style="max-width: 100%; height: auto;">
+</p>
 
 ## 🛰 活動簡介 | About the Workshop
 
