@@ -75,7 +75,6 @@ The afternoon session will feature faculty speakers from NTUT and partner univer
 **Dr. Daniel Selva** is an academic and researcher working at the intersection of space systems, AI, and systems engineering. He earned his Ph.D. in Space Systems from **MIT**, with research contributions to NASA, ESA, and CubeSat missions. Prior to joining Texas A&M, he served at **Cornell University** and was part of the **Ariane 5 Launch Team** at Europe’s Spaceport.
 
 ---
-
 ## 📩 報名與聯絡 | Registration & Contact
 
 **北科大太空所**誠摯歡迎對航太研究有興趣的產學研夥伴，以及所有學生踴躍參與本次一日講座。  
@@ -85,15 +84,6 @@ The afternoon session will feature faculty speakers from NTUT and partner univer
 Email: [trongan93@ntut.edu.tw](mailto:trongan93@ntut.edu.tw)
 
 ---
-
-## 🖼 圖片來源 | Image Credits
-
-- 海報圖像取自 NASA 公開資源  
-- Poster graphics sourced from public NASA archives  
-- Design created using [Canva](https://www.canva.com)
-
----
-
 > 主辦與協辦單位｜Organizers & Partners  
 >  
 > **國立臺北科技大學 太空所（Graduate Institute of Space Technology, NTUT）**  
