@@ -77,14 +77,6 @@ Email: [trongan93@ntut.edu.tw](mailto:trongan93@ntut.edu.tw)
 
 ---
 
-## 🖼 圖片來源 | Image Credits
-
-- 海報圖像取自 NASA 公開資源  
-- Poster graphics sourced from public NASA archives  
-- Design created using [Canva](https://www.canva.com)
-
----
-
 > 主辦與協辦單位｜Organizers & Partners  
 >  
 > **國立臺北科技大學 太空所（Graduate Institute of Space Technology, NTUT）**  
