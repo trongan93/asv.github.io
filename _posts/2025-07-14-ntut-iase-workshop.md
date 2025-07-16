@@ -44,16 +44,19 @@ Dr. Selva brings both academic and industry experience, having worked on the Ari
 ---
 
 ## 🗓 活動流程 | Schedule
+## 🧠 Research Ideas Exchange Session｜研究構想交流會  
 
-| 時間 Time       | 演講主題 Topic / Title                            | 主講人 Speaker(s)                               |
-|----------------|--------------------------------------------------|-------------------------------------------------|
-| 09:30 – 12:00  | Novel Architectures for Earth Observing Systems  | Dr. Daniel Selva, Texas A&M University          |
-| 12:00 – 13:00  | 午餐休息｜Lunch Break                             | —                                               |
-| 13:00 – 13:30  | Remote Sensing System Optimization                | Prof. A（NTUT）                                 |
-| 13:30 – 14:00  | Onboard AI for Earth Observation Satellites       | Prof. B（Partner University）                   |
-| 14:00 – 14:30  | Small Satellite Mission Planning & Payload Design | Prof. C（NTUT）                                 |
-| 14:30 – 15:00  | TBD (Pending Confirmation)                        | Prof. D（邀請中 | Pending）                     |
-| 15:00 – 16:00  | Open Discussion & Cross-Institutional Exchange    | All speakers & attendees                        |
+| Time         | Speaker           | Affiliation                                                                 | Topic                                                                                     |
+|--------------|-------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| 13:00–13:10  | **Yang-Lang Chang** | Dean, College of Electrical Engineering and Computer Science, NTUT         | Opening Remarks: Space Technology at NTUT                                                |
+| 13:10–13:20  | **Hsin-Piao Lin**  | Director and Professor, Institute of Aerospace and Systems Engineering, NTUT | Overview of IASE Research and Development                                                |
+| 13:20–13:50  | **TBD**            | TBD                                                                          | Applications of Remote Sensing Technologies                                              |
+| 13:50–14:20  | **Kuan-Ting Lai**  | Associate Professor, Department of Electrical Engineering, NTUT             | TBD                                                                                       |
+| 14:20–14:30  | —                 | —                                                                            | **Break**                                                                                 |
+| 14:30–15:00  | **Chiung-Shen Ku** | Assistant Professor, Institute of Aerospace and Systems Engineering, NTUT   | Advancements in Near-Field Imaging for Space Applications                                |
+| 15:00–15:30  | **Cheng-Yen Chiang** | Program in Artificial Intelligence Technology, iFirst, NTUT                 | Development of a SAR Signal Simulation Engine and Its Applications                       |
+| 15:30–16:00  | **Trong-An Bui**   | Assistant Professor, Institute of Aerospace and Systems Engineering, NTUT   | UAAT–TAMUS Project Report: Enhancing Real-Time Maritime Object Tracking with Edge AI     |
+
 
 > 下午研究構想交流會邀請來自臺灣大學與合作夥伴的教授，介紹研究議題並尋求合作機會。  
 > The afternoon session includes professors from Taiwan and partner universities sharing ideas and seeking collaboration.
