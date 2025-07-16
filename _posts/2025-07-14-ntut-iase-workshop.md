@@ -1,6 +1,6 @@
 ---
 title: "北科大 × 德州農工 ｜Workshop: Novel Architectures for Earth Observing Systems"
-image: images/events/workshop-poster-2025.png
+image: /images/blogs/poster-openworkshop-ntut.jpg
 author: NTUT, IASE
 tags: Earth Observation, CubeSat, AI, NTUT, Space Systems
 date: 2025-07-14
