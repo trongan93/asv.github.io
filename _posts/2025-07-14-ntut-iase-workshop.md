@@ -29,6 +29,9 @@ Associate Professor, Dept. of Aerospace Engineering, Texas A&M University
 <p align="center">
   <img src="/images/blogs/poster-openworkshop-ntut.jpg" alt="一日工作坊海報 Workshop Poster" style="max-width: 100%; height: auto;">
 </p>
+<p align="center">
+  <img src="/images/blogs/poster-openworkshop-ntut-2.jpg" alt="一日工作坊海報 Workshop Poster" style="max-width: 100%; height: auto;">
+</p>
 
 ## 🛰 活動簡介 | About the Workshop
 
