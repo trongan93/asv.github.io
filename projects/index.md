@@ -15,9 +15,7 @@ nav:
 | 114 (In Processing)   | 航太系統與應用                 | Orbit-AI: 區域感知與情境自適應壓縮系統                                                       | 計畫主持人 | 2,159,000              |
 | 114 (In Processing)   | 立方衛星關鍵技術研發計畫       | 用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(1/4)                                            | 共同主持人 | 5,000,000              |
 | 114 (In Processing)   | 地球科學應用                   | SAR衛星成像整合軟體應用加值資料應用關鍵技術研究--SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(1/3) | 共同主持人 | 650,000                |
-| 113 (In Processing)   | 航太系統與應用                 | 基於罐頭衛星 (CanSAT) 平台以邊緣運算的半監督學習模型(Semi Supervised Learning Model)為重建部分雲層遮蔽災害物件區域之開發 Development of a Semi-Supervised Learning Model for Disaster
-Object Reconstruction in Partially Cloud-Covered Areas Using Edge
-Computing on a CanSAT Platform | 計畫主持人(PI) | 850,000                |
+| 113 (In Processing)   | 航太系統與應用                 | 基於罐頭衛星 (CanSAT) 平台以邊緣運算的半監督學習模型(Semi Supervised Learning Model)為重建部分雲層遮蔽災害物件區域之開發 Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform | 計畫主持人(PI) | 850,000                |
 
 {% include search-box.html %}
 
