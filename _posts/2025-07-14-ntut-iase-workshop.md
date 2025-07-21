@@ -51,7 +51,7 @@ Dr. Selva brings both academic and industry experience, having worked on the Ari
 | 13:00–13:10  | **Yang-Lang Chang** | Dean, College of Electrical Engineering and Computer Science, NTUT         | Opening Remarks: Space Technology at NTUT                                                |
 | 13:10–13:20  | **Hsin-Piao Lin**  | Director and Professor, Institute of Aerospace and Systems Engineering, NTUT | Overview of IASE Research and Development                                                |
 | 13:20–13:50  | **TBD**            | TBD                                                                          | Applications of Remote Sensing Technologies                                              |
-| 13:50–14:20  | **Kuan-Ting Lai**  | Associate Professor, Department of Electrical Engineering, NTUT             | TBD                                                                                       |
+| 13:50–14:20  | **Kuan-Ting Lai**  | Associate Professor, Department of Electrical Engineering, NTUT             | X-Wings: Xilinx FPGA-based AIoT                                                                                       |
 | 14:20–14:30  | —                 | —                                                                            | **Break**                                                                                 |
 | 14:30–15:00  | **Chiung-Shen Ku** | Assistant Professor, Institute of Aerospace and Systems Engineering, NTUT   | Advancements in Near-Field Imaging for Space Applications                                |
 | 15:00–15:30  | **Cheng-Yen Chiang** | Program in Artificial Intelligence Technology, iFirst, NTUT                 | Development of a SAR Signal Simulation Engine and Its Applications                       |
