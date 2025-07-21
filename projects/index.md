@@ -10,7 +10,7 @@ nav:
 ## 「國家科學及技術委員會全球資訊網」補助計畫一覽表  
 ### NSTC Subsidy Program List
 
-| Fiscal Year           | Discipline Expertise           | Plan Name                                                                                     | Title       | Applied Subsidy (NT$) |
+| Academic Year           | Discipline Expertise           | Plan Name                                                                                     | Title       | Applied Subsidy (NT$) |
 |-----------------------|--------------------------------|-----------------------------------------------------------------------------------------------|-------------|------------------------|
 | 114 (In Processing)   | 航太系統與應用                 | Orbit-AI: 區域感知與情境自適應壓縮系統 <br> Orbit-AI: Region-Aware and Context-Adaptive Compression          | 計畫主持人 <br> (PI) | 2,159,000              |
 | 114 (In Processing)   | 立方衛星關鍵技術研發計畫       | 用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(1/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking  | 共同主持人 <br> (Co-PI) | 5,000,000              |
