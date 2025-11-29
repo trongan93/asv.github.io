@@ -258,11 +258,13 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1109/ICSSE52999.2021.9538439
-  title: Edge Detection Cascaded with Simplified WDSR of IR Super Resolution | IEEE
-    Conference Publication | IEEE Xplore
-  authors: []
-  publisher: ''
-  date: ''
+  title: Edge Detection Cascaded with Simplified WDSR of IR Super Resolution
+  authors:
+  - Kuan-Min Lee
+  - Pei-Jun Lee
+  - Trong-An Bui
+  publisher: 2021 International Conference on System Science and Engineering (ICSSE)
+  date: '2021-08-26'
   link: https://doi.org/gt5xh4
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
