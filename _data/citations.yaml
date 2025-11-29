@@ -110,15 +110,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:123952395
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:123952395
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/TGRS.2024.3525411
   title: Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images
   authors:
@@ -461,18 +452,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/ICCE.2019.8662038
-  title: IMPROVE THE HEVC ALGORITHM COMPLEXITY BASED ON THE VISUAL PERCEPTION
-  authors:
-  - Pei-Jun Lee
-  - Trong-An Bui
-  - Sham-Ru Yao
-  publisher: 2019 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2019-01-01'
-  link: https://doi.org/ggpdkb
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/ICSSE.2019.8823128
   title: Using BEMD in CNN to Identify Landslide in Satellite Image
   authors:
@@ -484,17 +463,6 @@
   publisher: 2019 International Conference on System Science and Engineering (ICSSE)
   date: '2019-07-01'
   link: https://doi.org/gt5xjf
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ISCE.2018.8408909
-  title: Adaptive edge detection algorithm for multi-focus application
-  authors:
-  - Trong-An Bui
-  - Pei-Jun Lee
-  publisher: 2018 International Symposium on Consumer Technologies (ISCT)
-  date: '2018-05-01'
-  link: https://doi.org/gt5xjg
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
