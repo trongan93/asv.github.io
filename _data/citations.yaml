@@ -1,5 +1,80 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1109/radarconf2559087.2025.11205145
+  title: Cloud-Aware SAR Fusion for Enhanced Optical Sensing in Space Missions
+  authors:
+  - Trong-An Bui
+  - Thanh-Thoai Le
+  publisher: 2025 IEEE Radar Conference (RadarConf25)
+  date: '2025-10-04'
+  link: https://doi.org/hbcz5q
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/apwcs67981.2025.11151952
+  title: Performance Analysis of Aerial Base Station Deployment in Satellite Wireless
+    Communication
+  authors:
+  - Wendenda Nathanael Kabore
+  - Rong-Terng Juang
+  - Hsin-Piao Lin
+  - Belayneh Abebe Tesfaw
+  - Shiann-Shiun Jeng
+  - Trong-An Bui
+  publisher: 2025 IEEE VTS Asia Pacific Wireless Communications Symposium (APWCS)
+  date: '2025-08-20'
+  link: https://doi.org/hbcz5r
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/apwcs67981.2025.11151918
+  title: UAV 3D Trajectory Design in Space-Air-Sea Integrated Networks for Marine
+    IoT Systems Using Deep Reinforcement Learning
+  authors:
+  - Belyneh Abebe Tesfaw
+  - Rong-Terng Juang
+  - Hsin-Piao Lin
+  - Getaneh Berie Tarekegn
+  - Wendenda Nathanael Kabore
+  - Shiann-Shiun Jeng
+  - Trong-An Bui
+  publisher: 2025 IEEE VTS Asia Pacific Wireless Communications Symposium (APWCS)
+  date: '2025-08-20'
+  link: https://doi.org/hbcz5s
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/icce-taiwan66881.2025.11207837
+  title: Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking
+  authors:
+  - Tai Ho
+  - Trong-An Bui
+  - Pei-Jun Lee
+  - Hsin-Piao Lin
+  - Thanh-Thoai Le
+  - Daniel Selva
+  - Hai Tran
+  publisher: 2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)
+  date: '2025-07-16'
+  link: https://doi.org/hbcz5t
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/icce-taiwan66881.2025.11207770
+  title: Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite
+    Imagery
+  authors:
+  - Thanh-Thoai Le
+  - Trong-An Bui
+  - Hai Tran
+  - Yang-Lang Chang
+  - Pei-Jun Lee
+  publisher: 2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)
+  date: '2025-07-16'
+  link: https://doi.org/hbcz5v
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICCT-Pacific63901.2025.11012856
   title: Lightweight Feature-Enhanced U-Net for Landslide Change Detection in Remote
     Sensing Imagery
@@ -49,20 +124,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/aerospace11050336
-  title: On-Board Image Enhancement on Remote Sensing Payload
-  authors:
-  - Guo-Cheng Xu
-  - Pei-Jun Lee
-  - Trong-An Bui
-  - Pei-Hsiang Hsu
-  - Shiuan-Hal Shiu
-  publisher: Aerospace
-  date: '2024-04-24'
-  link: https://doi.org/gt5xhp
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/JSTARS.2024.3357093
   title: Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image
     Enhancement
@@ -90,6 +151,20 @@
   publisher: 2024 IEEE International Conference on Consumer Electronics (ICCE)
   date: '2024-01-06'
   link: https://doi.org/gt5xhq
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/AEROSPACE11050336
+  title: On-Board Image Enhancement on Remote Sensing Payload
+  authors:
+  - Guo-Cheng Xu
+  - Pei-Jun Lee
+  - Trong-An Bui
+  - Pei-Hsiang Hsu
+  - Shiuan-Hal Shiu
+  publisher: Aerospace
+  date: '2024-04-24'
+  link: https://doi.org/gt5xhp
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
@@ -151,33 +226,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/ICCE56470.2023.10043483
-  title: Moving Object Detection for Remote Sensing Video with Satellite Jitter
-  authors:
-  - Chi-An Tsai
-  - Pei-Jun Lee
-  - Trong-An Bui
-  - Guo-Cheng Xu
-  - Meng-Lieh Sheu
-  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2023-01-06'
-  link: https://doi.org/gt5xht
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICCE56470.2023.10043495
-  title: Multi-scales feature extraction model for water segmentation in satellite
-    image
-  authors:
-  - Yu-Hsuan Chen
-  - Pei-Jun Lee
-  - Trong-An Buil
-  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2023-01-06'
-  link: https://doi.org/gt5xhv
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/GCCE59613.2023.10315430
   title: Edge Computing Convolution Operator Hardware Design for Satellite Payload
   authors:
@@ -213,6 +261,33 @@
   publisher: 2023 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)
   date: '2023-07-17'
   link: https://doi.org/gt5xhz
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICCE56470.2023.10043483
+  title: Moving Object Detection for Remote Sensing Video with Satellite Jitter
+  authors:
+  - Chi-An Tsai
+  - Pei-Jun Lee
+  - Trong-An Bui
+  - Guo-Cheng Xu
+  - Meng-Lieh Sheu
+  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
+  date: '2023-01-06'
+  link: https://doi.org/gt5xht
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICCE56470.2023.10043495
+  title: Multi-scales feature extraction model for water segmentation in satellite
+    image
+  authors:
+  - Yu-Hsuan Chen
+  - Pei-Jun Lee
+  - Trong-An Buil
+  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
+  date: '2023-01-06'
+  link: https://doi.org/gt5xhv
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
@@ -258,11 +333,13 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1109/ICSSE52999.2021.9538439
-  title: Edge Detection Cascaded with Simplified WDSR of IR Super Resolution | IEEE
-    Conference Publication | IEEE Xplore
-  authors: []
-  publisher: ''
-  date: ''
+  title: Edge Detection Cascaded with Simplified WDSR of IR Super Resolution
+  authors:
+  - Kuan-Min Lee
+  - Pei-Jun Lee
+  - Trong-An Bui
+  publisher: 2021 International Conference on System Science and Engineering (ICSSE)
+  date: '2021-08-26'
   link: https://doi.org/gt5xh4
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
@@ -366,15 +443,12 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/ICCE.2019.8662038
-  title: IMPROVE THE HEVC ALGORITHM COMPLEXITY BASED ON THE VISUAL PERCEPTION
-  authors:
-  - Pei-Jun Lee
-  - Trong-An Bui
-  - Sham-Ru Yao
-  publisher: 2019 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2019-01-01'
-  link: https://doi.org/ggpdkb
+- id: wosuid:WOS:000462912600143
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000462912600143
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
@@ -392,14 +466,12 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/ISCE.2018.8408909
-  title: Adaptive edge detection algorithm for multi-focus application
-  authors:
-  - Trong-An Bui
-  - Pei-Jun Lee
-  publisher: 2018 International Symposium on Consumer Technologies (ISCT)
-  date: '2018-05-01'
-  link: https://doi.org/gt5xjg
+- id: wosuid:WOS:000467091300008
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000467091300008
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
