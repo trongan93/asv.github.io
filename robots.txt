@@ -1,1 +1,1 @@
-Sitemap: https://asvlab.com/sitemap.xml
+Sitemap: http://asvlab.com/sitemap.xml
