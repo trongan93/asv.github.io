@@ -110,6 +110,15 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+- id: wosuid:PPRN:123952395
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:123952395
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/TGRS.2024.3525411
   title: Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images
   authors:
@@ -121,20 +130,6 @@
   publisher: IEEE Transactions on Geoscience and Remote Sensing
   date: '2025-01-01'
   link: https://doi.org/g83v8q
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/aerospace11050336
-  title: On-Board Image Enhancement on Remote Sensing Payload
-  authors:
-  - Guo-Cheng Xu
-  - Pei-Jun Lee
-  - Trong-An Bui
-  - Pei-Hsiang Hsu
-  - Shiuan-Hal Shiu
-  publisher: Aerospace
-  date: '2024-04-24'
-  link: https://doi.org/gt5xhp
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
@@ -165,6 +160,20 @@
   publisher: 2024 IEEE International Conference on Consumer Electronics (ICCE)
   date: '2024-01-06'
   link: https://doi.org/gt5xhq
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/AEROSPACE11050336
+  title: On-Board Image Enhancement on Remote Sensing Payload
+  authors:
+  - Guo-Cheng Xu
+  - Pei-Jun Lee
+  - Trong-An Bui
+  - Pei-Hsiang Hsu
+  - Shiuan-Hal Shiu
+  publisher: Aerospace
+  date: '2024-04-24'
+  link: https://doi.org/gt5xhp
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
@@ -226,33 +235,6 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/ICCE56470.2023.10043483
-  title: Moving Object Detection for Remote Sensing Video with Satellite Jitter
-  authors:
-  - Chi-An Tsai
-  - Pei-Jun Lee
-  - Trong-An Bui
-  - Guo-Cheng Xu
-  - Meng-Lieh Sheu
-  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2023-01-06'
-  link: https://doi.org/gt5xht
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICCE56470.2023.10043495
-  title: Multi-scales feature extraction model for water segmentation in satellite
-    image
-  authors:
-  - Yu-Hsuan Chen
-  - Pei-Jun Lee
-  - Trong-An Buil
-  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2023-01-06'
-  link: https://doi.org/gt5xhv
-  orcid: 0000-0001-7660-4060
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/GCCE59613.2023.10315430
   title: Edge Computing Convolution Operator Hardware Design for Satellite Payload
   authors:
@@ -288,6 +270,33 @@
   publisher: 2023 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)
   date: '2023-07-17'
   link: https://doi.org/gt5xhz
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICCE56470.2023.10043483
+  title: Moving Object Detection for Remote Sensing Video with Satellite Jitter
+  authors:
+  - Chi-An Tsai
+  - Pei-Jun Lee
+  - Trong-An Bui
+  - Guo-Cheng Xu
+  - Meng-Lieh Sheu
+  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
+  date: '2023-01-06'
+  link: https://doi.org/gt5xht
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICCE56470.2023.10043495
+  title: Multi-scales feature extraction model for water segmentation in satellite
+    image
+  authors:
+  - Yu-Hsuan Chen
+  - Pei-Jun Lee
+  - Trong-An Buil
+  publisher: 2023 IEEE International Conference on Consumer Electronics (ICCE)
+  date: '2023-01-06'
+  link: https://doi.org/gt5xhv
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
@@ -443,6 +452,15 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+- id: wosuid:WOS:000462912600143
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000462912600143
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICCE.2019.8662038
   title: IMPROVE THE HEVC ALGORITHM COMPLEXITY BASED ON THE VISUAL PERCEPTION
   authors:
@@ -477,6 +495,15 @@
   publisher: 2018 International Symposium on Consumer Technologies (ISCT)
   date: '2018-05-01'
   link: https://doi.org/gt5xjg
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:WOS:000467091300008
+  title: Web of Science
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000467091300008
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
