@@ -66,7 +66,7 @@ Given a cloudy optical observation $`I_{\text{opt}}^{\text{cloud}}`$ and a paire
 where $`f(\cdot)`$ denotes the implemented restoration pipeline. As summarized in Fig. <a href="#fig:method-workflow" data-reference-type="ref" data-reference="fig:method-workflow">2</a>, the pipeline extracts features from each modality, fuses complementary information, and reconstructs a multispectral output while maintaining radiometric consistency in clear-sky regions.
 
 <figure id="fig:method-workflow" data-latex-placement="H">
-<img src="papers/conf2-radar2025_conf_asv_sar_guided_fusion_conference_main/images/1-main-flowchart.png" style="width:80.0%" />
+<img src="/images/projects/1-main-flowchart.png" style="width:80.0%" />
 <figcaption>Workflow of the proposed <strong>Cloud-Attentive Reconstruction Framework</strong> for cloud-free optical imaging via SAR fusion.</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ where $`f(\cdot)`$ denotes the implemented restoration pipeline. As summarized i
 Because SAR and optical acquisitions may differ in footprint and viewing geometry, fusion is restricted to their spatial overlap. The overlap region bounds the area where pixel-level correspondence can be established after co-registration. Fig. <a href="#fig:s12_footprints_full" data-reference-type="ref" data-reference="fig:s12_footprints_full">3</a> illustrates the overlap geometry used to determine valid fusion regions. When full-overlap processing is unnecessary or exceeds resource budgets, the workflow operates tile-wise by selecting bounded tiles (or AOI crops) within the overlap, while retaining the same co-registration and restoration steps.
 
 <figure id="fig:s12_footprints_full" data-latex-placement="H">
-<img src="papers/journal-CRNet__A_Mask_Aware_Cloud_Refinement_Network_for_SAR_Guided_Optical_Image_Enhancement/figs/s12-footprints.png" style="width:50.0%" />
+<img src="/images/projects/s12-footprints.png" style="width:50.0%" />
 <figcaption>Illustration of SAR–optical overlap geometry for fusion. The overlap region defines the maximum spatial extent that can be jointly processed after co-registration.</figcaption>
 </figure>
 
@@ -161,7 +161,7 @@ A two-stream network combines SAR structural cues with optical spectral informat
 Attention-guided fusion integrates SAR structure into optical features by combining dense residual feature propagation with attention-based refinement. Window-based self-attention is used to model spatial context with manageable complexity . The fusion mechanism is summarized in Fig. <a href="#fig:affm_flowchart" data-reference-type="ref" data-reference="fig:affm_flowchart">5</a>.
 
 <figure id="fig:affm_flowchart" data-latex-placement="H">
-<img src="2-AFFM-flowchart.png" style="width:70.0%" />
+<img src="/images/projects/2-AFFM-flowchart.png" style="width:70.0%" />
 <figcaption>Attention-driven SAR–optical feature fusion mechanism used in the restoration network.</figcaption>
 </figure>
 
@@ -172,7 +172,7 @@ Reconstruction aggregates multi-stage refined optical representations using a Gl
 The reconstruction stage is illustrated in Fig. <a href="#fig:recon_flowchart" data-reference-type="ref" data-reference="fig:recon_flowchart">6</a>.
 
 <figure id="fig:recon_flowchart" data-latex-placement="H">
-<img src="6-reconstruction-flowchart.png" style="width:80.0%" />
+<img src="/images/projects/6-reconstruction-flowchart.png" style="width:80.0%" />
 <figcaption>Cloud-free reconstruction using multi-stage feature aggregation (GFF) and the image reconstruction network (IRN).</figcaption>
 </figure>
 
@@ -181,7 +181,7 @@ The reconstruction stage is illustrated in Fig. <a href="#fig:recon_flowchart" 
 Cloud occlusion introduces strong spatial imbalance: only a subset of pixels is corrupted, while clear-sky regions should remain radiometrically consistent. A cloud-aware training strategy is therefore applied during optimization to increase emphasis on cloud-occluded regions, while keeping inference independent of cloud-mask preprocessing. The strategy consists of refined cloud mask generation (training-only) and adaptive loss weighting.
 
 <figure id="fig:cloud-mask" data-latex-placement="H">
-<img src="papers/conf2-radar2025_conf_asv_sar_guided_fusion_conference_main/images/2.png" style="width:45.0%" />
+<img src="/images/projects/data-cloud-mask.png" style="width:45.0%" />
 <figcaption>Example of a refined cloud mask <span class="math inline"><em>M</em><sup>′</sup>(<em>x</em>, <em>y</em>)</span> used to guide training-time loss reweighting. The refinement reduces false positives (e.g., snow-like regions) and improves spatial coherence of cloud delineation.</figcaption>
 </figure>
 
@@ -236,7 +236,7 @@ The refined mask is used only to reweight the training objective and is not requ
 Rapid-response Earth observation (EO) is often constrained by limited downlink capacity and end-to-end latency, especially when cloud cover reduces the usability of optical imagery. To improve timeliness and reduce dependence on ground-side processing, the proposed SAR–optical cloud removal pipeline is designed for edge/onboard execution. An edge-computing prototype is used to validate the deployment path by combining **FPGA-accelerated inference** with a host-side control and monitoring stack. This setup enables end-to-end evaluation under practical constraints, including bounded memory, deterministic execution, and reduced power consumption. The hardware configuration and the deployment workflow are summarized in Fig. <a href="#fig:edge-platform" data-reference-type="ref" data-reference="fig:edge-platform">9</a> and Fig. <a href="#fig:edge-perform" data-reference-type="ref" data-reference="fig:edge-perform">10</a>, respectively.
 
 <figure id="fig:edge-platform" data-latex-placement="!htbp">
-<img src="edge-computing-platform.jpg" style="width:80.0%" />
+<img src="/images/projects/edge-computing-platform.jpg" style="width:80.0%" />
 <figcaption>Edge-computing validation platform integrating a Xilinx FPGA inference accelerator and a host computer for real-time SAR–optical fusion and reconstruction.</figcaption>
 </figure>
 
@@ -245,7 +245,7 @@ Rapid-response Earth observation (EO) is often constrained by limited downlink c
 Deployment follows a quantization-oriented workflow to satisfy hardware resource limits while preserving reconstruction quality. A trained floating-point checkpoint is exported and calibrated using data processed with the same normalization and tiling policy intended for deployment. Calibration statistics are used to determine stable low-precision scales, and the model is compiled into an accelerator-ready artifact for board-side execution . During inference, processing is performed **tile-wise** to bound the working set within on-chip memory and maintain predictable runtime. Platform I/O requirements are handled through interface-aligned formatting (e.g., channel padding to hardware-friendly dimensions) without altering the semantic content of the original spectral bands . The output is bounded to $`[0,1]`$ using a hardware-friendly piecewise-linear function (PWS) implemented as a clipped affine transform, which avoids expensive nonlinear operators and improves numerical stability under embedded execution .
 
 <figure id="fig:edge-perform" data-latex-placement="H">
-<img src="edge-perform.png" style="width:82.0%" />
+<img src="/images/projects/edge-perform.png" style="width:82.0%" />
 <figcaption>Quantization-oriented deployment workflow for FPGA execution and the corresponding on-board inference performance metrics reported in the poster.</figcaption>
 </figure>
 
