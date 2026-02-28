@@ -2,7 +2,7 @@
 title: Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform
 subtitle: 基於罐頭衛星 (CanSAT) 平台以邊緣運算的半監督學習模型
 group: featured
-image: /images/projects/nstc-2024.png
+image: /images/projects/Result-water.png
 link: https://github.com/
 description: >
 本計畫針對光學地球觀測影像易受雲層遮蔽影響、導致災害應變與 環境監測等任務缺乏即時可用資料之問題，提出以合成孔徑雷達（SAR）引導之光學影像雲去除與雲遮蔽區域重建流程。由於SAR具全天候成像能力，可在雲雨條件下提供穩定的結構與紋理線索，本研究以SAR結構資訊輔助光學多光譜影像之雲遮蔽修補，提升雲覆蓋情境下光學產品的可用性。
@@ -100,19 +100,19 @@ Accurate SAR–optical co-registration is required for pixel-level fusion; resid
 #### Coarse stage (common-grid mapping):
 
 A projected reference grid is defined over the overlap region. SAR geolocation metadata provides correspondences between slant-geometry sampling coordinates $`(p,\ell)`$ and map coordinates, forming $`\mathcal{G}=\{(p_i,\ell_i)\leftrightarrow(x_i,y_i)\}_{i=1}^{N}`$. An inverse map is constructed by scattered interpolation,
-``` math
+$$
 \begin{equation}
 (p(\mathbf{u}),\ell(\mathbf{u})) = G^{-1}(\mathbf{u};\mathcal{G}),
 \label{eq:inverse_map}
 \end{equation}
-```
+$$
 and the SAR tile is resampled on the common grid using bilinear interpolation in the *linear* domain,
-``` math
+$$
 \begin{equation}
 \tilde{I}_{S}(\mathbf{u}) = \mathrm{Bilinear}\big(I_S^{\mathrm{lin}},\, p(\mathbf{u}),\, \ell(\mathbf{u})\big),
 \label{eq:sar_resample}
 \end{equation}
-```
+$$
 forming the coarse-aligned pair $`\{\tilde{I}_S,\,\tilde{I}_O\}`$.
 
 <figure id="fig:coreg_flowchart" data-latex-placement="H">
