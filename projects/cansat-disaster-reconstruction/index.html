@@ -39,25 +39,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform | AeroSat Vision Lab</title>
+<title>AeroSat Vision Lab</title>
 
 <link rel="icon" href="/images/icon-lab.png">
 
-<meta name="title" content="Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform">
-<meta name="description" content="Pioneering AI and Satellite Innovation. This research aims to develop a semi-supervised learning model that reconstructs disaster-affected areas obscured by cloud cover.   By integrating this model into edge computing devices onboard satellites, the project seeks to enhance real-time disaster detection and prediction capabilities.
-">
+<meta name="title" content="">
+<meta name="description" content="Pioneering AI and Satellite Innovation. ">
 
-<meta property="og:title" content="Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform">
+<meta property="og:title" content="">
 <meta property="og:site_title" content="AeroSat Vision Lab">
-<meta property="og:description" content="Pioneering AI and Satellite Innovation. This research aims to develop a semi-supervised learning model that reconstructs disaster-affected areas obscured by cloud cover.   By integrating this model into edge computing devices onboard satellites, the project seeks to enhance real-time disaster detection and prediction capabilities.
-">
+<meta property="og:description" content="Pioneering AI and Satellite Innovation. ">
 <meta property="og:url" content="http://asvlab.com">
 <meta property="og:image" content="/images/logo.png">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform">
-<meta property="twitter:description" content="Pioneering AI and Satellite Innovation. This research aims to develop a semi-supervised learning model that reconstructs disaster-affected areas obscured by cloud cover.   By integrating this model into edge computing devices onboard satellites, the project seeks to enhance real-time disaster detection and prediction capabilities.
-">
+<meta property="twitter:title" content="">
+<meta property="twitter:description" content="Pioneering AI and Satellite Innovation. ">
 <meta property="twitter:url" content="http://asvlab.com">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/logo.png">
@@ -72,10 +69,9 @@
     
       "@type": "WebSite",
     
-    "name": "Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform",
-    "description": "Pioneering AI and Satellite Innovation. This research aims to develop a semi-supervised learning model that reconstructs disaster-affected areas obscured by cloud cover.   By integrating this model into edge computing devices onboard satellites, the project seeks to enhance real-time disaster detection and prediction capabilities.
-",
-    "headline": "Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform",
+    "name": "",
+    "description": "Pioneering AI and Satellite Innovation. ",
+    "headline": "",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon-lab.png" }
@@ -405,18 +401,15 @@
 
   <section class="background" data-size="page">
     <article>
-  <h1>Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform</h1>
+  <h1></h1>
 
-  <p><strong>Date:</strong> March 21, 2025</p>
+  <p><strong>Date:</strong> February 28, 2026</p>
 
   
-    <img src="/images/projects/nstc-2024.png" alt="Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform" style="max-width: 100%; height: auto;">
-  
 
-  <p><strong>Tags:</strong> NSTC, 國科會計劃</p>
+  <p><strong>Tags:</strong> </p>
 
-  <p>This research aims to develop a semi-supervised learning model that reconstructs disaster-affected areas obscured by cloud cover.   By integrating this model into edge computing devices onboard satellites, the project seeks to enhance real-time disaster detection and prediction capabilities.
-</p>
+  <p></p>
 
   <div>
     <h1 id="前言--introduction">前言 / Introduction</h1>
@@ -497,19 +490,21 @@
 
 <h4 id="coarse-stage-common-grid-mapping">Coarse stage (common-grid mapping):</h4>
 
-<p>A projected reference grid is defined over the overlap region. SAR geolocation metadata provides correspondences between slant-geometry sampling coordinates $<code class="language-plaintext highlighter-rouge">(p,\ell)</code>$ and map coordinates, forming $<code class="language-plaintext highlighter-rouge">\mathcal{G}=\{(p_i,\ell_i)\leftrightarrow(x_i,y_i)\}_{i=1}^{N}</code>$. An inverse map is constructed by scattered interpolation,</p>
-<pre><code class="language-math">\begin{equation}
+<p>A projected reference grid is defined over the overlap region. SAR geolocation metadata provides correspondences between slant-geometry sampling coordinates $<code class="language-plaintext highlighter-rouge">(p,\ell)</code>$ and map coordinates, forming $<code class="language-plaintext highlighter-rouge">\mathcal{G}=\{(p_i,\ell_i)\leftrightarrow(x_i,y_i)\}_{i=1}^{N}</code>$. An inverse map is constructed by scattered interpolation,
+$$
+\begin{equation}
 (p(\mathbf{u}),\ell(\mathbf{u})) = G^{-1}(\mathbf{u};\mathcal{G}),
 \label{eq:inverse_map}
 \end{equation}
-</code></pre>
-<p>and the SAR tile is resampled on the common grid using bilinear interpolation in the <em>linear</em> domain,</p>
-<pre><code class="language-math">\begin{equation}
+$$
+and the SAR tile is resampled on the common grid using bilinear interpolation in the <em>linear</em> domain,
+$$
+\begin{equation}
 \tilde{I}_{S}(\mathbf{u}) = \mathrm{Bilinear}\big(I_S^{\mathrm{lin}},\, p(\mathbf{u}),\, \ell(\mathbf{u})\big),
 \label{eq:sar_resample}
 \end{equation}
-</code></pre>
-<p>forming the coarse-aligned pair $<code class="language-plaintext highlighter-rouge">\{\tilde{I}_S,\,\tilde{I}_O\}</code>$.</p>
+$$
+forming the coarse-aligned pair $<code class="language-plaintext highlighter-rouge">\{\tilde{I}_S,\,\tilde{I}_O\}</code>$.</p>
 
 <figure id="fig:coreg_flowchart" data-latex-placement="H">
 
