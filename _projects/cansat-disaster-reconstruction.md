@@ -262,17 +262,17 @@ This section summarizes reconstruction performance and deployment feasibility ev
 Figure <a href="#fig:water-result" data-reference-type="ref" data-reference="fig:water-result">11</a> shows an end-to-end example from the poster. A cloud-obscured optical image paired with SAR structural cues is reconstructed into a cloud-refined optical product. The restored output preserves shoreline continuity and local boundary details while maintaining spectral consistency in non-occluded areas. As illustrated by the water recognition overlay (red contour), the reconstructed product enables reliable water-body delineation, supporting rapid mapping workflows where timely products are required. Visual comparisons under approximately 50% (Fig. <a href="#fig:compare-50" data-reference-type="ref" data-reference="fig:compare-50">12</a>) and 100% cloud coverage (Fig. <a href="#fig:compare-100" data-reference-type="ref" data-reference="fig:compare-100">13</a>) further indicate improved structural completeness under severe occlusion, where optical-only restoration is typically underconstrained.
 
 <figure id="fig:water-result" data-latex-placement="H">
-<img src="papers/NSTC_Report_Poster_cloud_remove/images/Result-water.png" style="width:90.0%" />
+<img src="/images/projects/Result-water.png" style="width:90.0%" />
 <figcaption>End-to-end outcome: <strong>cloudy optical</strong> + <strong>SAR</strong> <span class="math inline">⇒</span> <strong>cloud-free reconstruction</strong> <span class="math inline">⇒</span> <strong>water recognition</strong> (red contour).</figcaption>
 </figure>
 
 <figure id="fig:compare-50" data-latex-placement="H">
-<img src="papers/NSTC_Report_Poster_cloud_remove/images/Results-50.png" />
+<img src="/images/projects/Results-50.png" />
 <figcaption>Visual comparison under approximately ~50% cloud coverage. Labels (a)–(e) correspond to: Cloudy input, SAR, GLF-CR, Proposed method, and Ground truth.</figcaption>
 </figure>
 
 <figure id="fig:compare-100" data-latex-placement="H">
-<img src="papers/NSTC_Report_Poster_cloud_remove/images/Results-100.png" />
+<img src="/images/projects/Results-100.png" />
 <figcaption>Visual comparison under approximately ~100% cloud coverage. Labels (a)–(e) correspond to: Cloudy input, SAR, GLF-CR, Proposed method, and Ground truth.</figcaption>
 </figure>
 
