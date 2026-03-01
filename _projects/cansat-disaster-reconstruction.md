@@ -110,19 +110,15 @@ forming the coarse-aligned pair $\{\tilde{I}_S,\,\tilde{I}_O\}$.
 
 After metadata-driven alignment, residual misregistration may remain due to ephemeris/attitude uncertainty, timing offsets, and interpolation residuals. Under tile-wise processing, this residual is approximated as a small in-plane translation on the common grid. Fine refinement therefore estimates a sub-pixel translation via phase correlation computed on edge maps:
 
-\[
-\begin{aligned}
+$$
 E_S &= \mathrm{Canny}\!\left(G_{\sigma_s} * \tilde{I}_S,\ \tau_l^s,\, \tau_h^s \right), \\
 E_O &= \mathrm{Canny}\!\left(G_{\sigma_o} * \tilde{I}_O,\ \tau_l^o,\, \tau_h^o \right),
-\end{aligned}
-\]
+$$
 
-\[
-\begin{aligned}
+$$
 R(u,v)&=\frac{\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}}{\left|\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}\right|}, \\
 r(x,y)&=\mathcal{F}^{-1}\{R(u,v)\},
-\end{aligned}
-\]
+$$
 
 $$
 (\Delta x,\Delta y) = \arg\max_{x,y} |r(x,y)|.
