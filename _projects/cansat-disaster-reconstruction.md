@@ -62,7 +62,9 @@ This project develops a SAR-guided optical restoration workflow to generate clou
 
 Given a cloudy optical observation $I_{\text{opt}}^{\text{cloud}}$ and a paired SAR observation $I_{\text{sar}}$, the objective is to estimate a cloud-refined optical product $\hat{I}_{\text{opt}}$:
 
-$\hat{I}_{\text{opt}} = f\!\left(I_{\text{opt}}^{\text{cloud}}, I_{\text{sar}}\right),$
+$$
+\hat{I}_{\text{opt}} = f\!\left(I_{\text{opt}}^{\text{cloud}}, I_{\text{sar}}\right),
+$$
 
 where $f(\cdot)$ denotes the implemented restoration pipeline. As summarized in Fig. <a href="#fig:method-workflow" data-reference-type="ref" data-reference="fig:method-workflow">2</a>, the pipeline extracts features from each modality, fuses complementary information, and reconstructs a multispectral output while maintaining radiometric consistency in clear-sky regions.
 
@@ -108,19 +110,19 @@ forming the coarse-aligned pair $\{\tilde{I}_S,\,\tilde{I}_O\}$.
 
 After metadata-driven alignment, residual misregistration may remain due to ephemeris/attitude uncertainty, timing offsets, and interpolation residuals. Under tile-wise processing, this residual is approximated as a small in-plane translation on the common grid. Fine refinement therefore estimates a sub-pixel translation via phase correlation computed on edge maps:
 
-$$
+\[
 \begin{aligned}
 E_S &= \mathrm{Canny}\!\left(G_{\sigma_s} * \tilde{I}_S,\ \tau_l^s,\, \tau_h^s \right), \\
 E_O &= \mathrm{Canny}\!\left(G_{\sigma_o} * \tilde{I}_O,\ \tau_l^o,\, \tau_h^o \right),
 \end{aligned}
-$$
+\]
 
-$$
+\[
 \begin{aligned}
 R(u,v)&=\frac{\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}}{\left|\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}\right|}, \\
 r(x,y)&=\mathcal{F}^{-1}\{R(u,v)\},
 \end{aligned}
-$$
+\]
 
 $$
 (\Delta x,\Delta y) = \arg\max_{x,y} |r(x,y)|.
