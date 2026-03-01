@@ -62,9 +62,7 @@ This project develops a SAR-guided optical restoration workflow to generate clou
 
 Given a cloudy optical observation $I_{\text{opt}}^{\text{cloud}}$ and a paired SAR observation $I_{\text{sar}}$, the objective is to estimate a cloud-refined optical product $\hat{I}_{\text{opt}}$:
 
-$$
-\hat{I}_{\text{opt}} = f\!\left(I_{\text{opt}}^{\text{cloud}}, I_{\text{sar}}\right),
-$$
+$\hat{I}_{\text{opt}} = f\!\left(I_{\text{opt}}^{\text{cloud}}, I_{\text{sar}}\right),$
 
 where $f(\cdot)$ denotes the implemented restoration pipeline. As summarized in Fig. <a href="#fig:method-workflow" data-reference-type="ref" data-reference="fig:method-workflow">2</a>, the pipeline extracts features from each modality, fuses complementary information, and reconstructs a multispectral output while maintaining radiometric consistency in clear-sky regions.
 
