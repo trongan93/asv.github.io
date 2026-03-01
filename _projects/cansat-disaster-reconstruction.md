@@ -91,18 +91,19 @@ Accurate SAR–optical co-registration is required for pixel-level fusion; resid
 A projected reference grid is defined over the overlap region. SAR geolocation metadata provides correspondences between slant-geometry sampling coordinates $(p,\ell)$ and map coordinates, forming $\mathcal{G}=\{(p_i,\ell_i)\leftrightarrow(x_i,y_i)\}_{i=1}^{N}$. An inverse map is constructed by scattered interpolation,
 
 $$
-(p(\mathbf{u}),\ell(\mathbf{u})) = G^{-1}(\mathbf{u};\mathcal{G}),
+(p(\mathbf{u}),\ell(\mathbf{u})) = G^{-1}(\mathbf{u};\mathcal{G})
 $$
 
 and the SAR tile is resampled on the common grid using bilinear interpolation in the *linear* domain,
 
 $$
-\tilde{I}_{S}(\mathbf{u}) = \mathrm{Bilinear}\big(I_S^{\mathrm{lin}},\, p(\mathbf{u}),\, \ell(\mathbf{u})\big),
+\tilde{I}_{S}(\mathbf{u}) = \mathrm{Bilinear}\big(I_S^{\mathrm{lin}},\, p(\mathbf{u}),\, \ell(\mathbf{u})\big)
 $$
 
 forming the coarse-aligned pair $\{\tilde{I}_S,\,\tilde{I}_O\}$.
 
 <figure id="fig:coreg_flowchart" data-latex-placement="H">
+<img src="/images/projects/coreg_flowchart.png" style="width:50.0%" />
 <figcaption>Coarse-to-fine SAR–optical co-registration pipeline. Metadata-driven mapping establishes a common grid, phase correlation refines residual translation using edge representations, and an acceptance gate screens unreliable pairs prior to fusion.</figcaption>
 </figure>
 
@@ -111,12 +112,18 @@ forming the coarse-aligned pair $\{\tilde{I}_S,\,\tilde{I}_O\}$.
 After metadata-driven alignment, residual misregistration may remain due to ephemeris/attitude uncertainty, timing offsets, and interpolation residuals. Under tile-wise processing, this residual is approximated as a small in-plane translation on the common grid. Fine refinement therefore estimates a sub-pixel translation via phase correlation computed on edge maps:
 
 $$
-E_S &= \mathrm{Canny}\!\left(G_{\sigma_s} * \tilde{I}_S,\ \tau_l^s,\, \tau_h^s \right), \\
-E_O &= \mathrm{Canny}\!\left(G_{\sigma_o} * \tilde{I}_O,\ \tau_l^o,\, \tau_h^o \right),
+E_S &= \mathrm{Canny}\!\left(G_{\sigma_s} * \tilde{I}_S,\ \tau_l^s,\, \tau_h^s \right)
 $$
 
 $$
-R(u,v)&=\frac{\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}}{\left|\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}\right|}, \\
+E_O &= \mathrm{Canny}\!\left(G_{\sigma_o} * \tilde{I}_O,\ \tau_l^o,\, \tau_h^o \right)
+$$
+
+$$
+R(u,v)&=\frac{\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}}{\left|\mathcal{F}\{E_O\}\cdot\mathcal{F}\{E_S\}^{*}\right|}
+$$
+
+$$
 r(x,y)&=\mathcal{F}^{-1}\{R(u,v)\},
 $$
 
