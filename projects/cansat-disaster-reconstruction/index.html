@@ -537,19 +537,15 @@ $$</p>
 
 <p>After metadata-driven alignment, residual misregistration may remain due to ephemeris/attitude uncertainty, timing offsets, and interpolation residuals. Under tile-wise processing, this residual is approximated as a small in-plane translation on the common grid. Fine refinement therefore estimates a sub-pixel translation via phase correlation computed on edge maps:</p>
 
-<p>[
-\begin{aligned}
+<p>$$
 E_S &amp;= \mathrm{Canny}!\left(G_{\sigma_s} * \tilde{I}<em>S,\ \tau_l^s,\, \tau_h^s \right), <br>
 E_O &amp;= \mathrm{Canny}!\left(G</em>{\sigma_o} * \tilde{I}_O,\ \tau_l^o,\, \tau_h^o \right),
-\end{aligned}
-]</p>
+$$</p>
 
-<p>[
-\begin{aligned}
+<p>$$
 R(u,v)&amp;=\frac{\mathcal{F}{E_O}\cdot\mathcal{F}{E_S}^{*}}{\left|\mathcal{F}{E_O}\cdot\mathcal{F}{E_S}^{*}\right|}, <br>
 r(x,y)&amp;=\mathcal{F}^{-1}{R(u,v)},
-\end{aligned}
-]</p>
+$$</p>
 
 <p>$$
 (\Delta x,\Delta y) = \arg\max_{x,y} |r(x,y)|.
