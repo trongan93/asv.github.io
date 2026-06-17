@@ -3,7 +3,7 @@ title: "北科大 × 德州農工｜Seminar: Towards Autonomous Design and Opera
 image: /images/blogs/2026-07-29-iase-selva-autonomous-satellites.jpg
 author: NTUT, IASE
 tags: Earth Observation, Satellite, Constellation, AI, NTUT, Space Systems
-date: 2026-07-29
+date: 2026-06-17
 layout: post
 ---
 
