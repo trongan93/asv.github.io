@@ -10,7 +10,7 @@ layout: post
 # 🛰 專題演講｜Seminar
 ## **Towards Autonomous Design and Operations of Satellites and Constellations**
 
-**日期 Date** 📅 ：2026 年 7 月 29 日（星期二 | Tuesday）  
+<strong>日期 Date</strong> 📅 ：2026 年 7 月 29 日（星期二 | Tuesday）  
 **時間 Time** 🕜 ：1:30 PM  
 **地點 Venue** 📍 ：GIS Taipei Tech Convention Center 集思北科大會議中心  
 2F, Everlight Building, National Taipei University of Technology  
