@@ -50,7 +50,7 @@ Dr. Selva will present recent progress toward autonomous spacecraft design and o
 
 | Time         | Speaker           | Affiliation                                                                 | Topic                                                                                     |
 |--------------|-------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 13:30        | **Daniel Selva**  | Associate Professor of Aerospace Engineering, Texas A&M University           | Towards Autonomous Design and Operations of Satellites and Constellations                 |
+| 13:30–16:00  | **Daniel Selva**  | Associate Professor of Aerospace Engineering, Texas A&M University           | Towards Autonomous Design and Operations of Satellites and Constellations                 |
 
 > 本次演講聚焦於複雜太空系統的自主化設計與操作，並討論其在地球觀測任務中的應用潛力。  
 > This seminar focuses on autonomous design and operations for complex space systems and their potential applications in Earth observation missions.
