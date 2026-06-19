@@ -32,7 +32,7 @@ Associate Professor of Aerospace Engineering, Texas A&M University
 
 ---
 <p align="center">
-  <img src="/images/blogs/2026-07-29-iase-selva-autonomous-satellites.jpg" alt="專題演講海報 Seminar Poster" style="max-width: 100%; height: auto;">
+  <img src="/images/blogs/2026-07-29-iase-selva-autonomous-satellites-2.jpg" alt="專題演講海報 Seminar Poster" style="max-width: 100%; height: auto;">
 </p>
 
 ## 🛰 活動簡介 | About the Seminar
