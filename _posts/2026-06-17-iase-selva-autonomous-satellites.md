@@ -110,12 +110,10 @@ Dr. Selva has co-authored over 100 peer-reviewed publications and received multi
 We warmly welcome students, faculty members, and professionals interested in aerospace technology, space systems, artificial intelligence, autonomous systems, and Earth observation missions to join this engaging and informative event.
 
 🔗 **報名連結 Registration Link**：  
-請掃描海報上的 QR code 取得更多資訊並完成免費報名。  
-Please scan the QR code on the poster for more information and free registration.
+[https://forms.gle/6RwEvhxJxgewCP7W6](https://forms.gle/6RwEvhxJxgewCP7W6)
 
 📅 **加入 Google Calendar｜Add to Google Calendar**：  
-請於報名完成後，透過表單確認頁面中的連結將活動加入您的 Google Calendar。  
-After completing registration, please use the link on the Google Form confirmation page to add the event to your Google Calendar.
+[https://tinyurl.com/3dja5uek](https://tinyurl.com/3dja5uek)
 
 👉 **本活動免費參加，名額有限；若座位額滿，將提前截止報名。**  
 👉 **This event is free of charge, with limited seats available. Registration will close early once all seats are fully booked.**
@@ -132,8 +130,11 @@ Email: [trongan93@ntut.edu.tw](mailto:trongan93@ntut.edu.tw)
 <p align="center">
   <img src="/images/blogs/taipeitech-logo.jpg" alt="National Taipei University of Technology" height="60" style="margin: 10px;">
   <img src="/images/blogs/ntut-iase-logo.png" alt="Graduate Institute of Space Systems Engineering, NTUT" height="60" style="margin: 10px;">
-  <img src="/images/blogs/taiwantech-logo.png" alt="National Taiwan University of Science and Technology" height="55" style="margin: 10px;">
   <img src="/images/blogs/tam-logo.jpg" alt="Texas A&M University" height="60" style="margin: 10px;">
+  <img src="/images/blogs/tacc-logo.jpg" alt="Taiwan Academic Cybersecurity Center" height="60" style="margin: 10px;">
   <img src="/images/blogs/tamus-logo.png" alt="The Texas A&M University System" height="60" style="margin: 10px;">
+  <img src="/images/blogs/taiwantech-logo.png" alt="National Taiwan University of Science and Technology" height="55" style="margin: 10px;">
   <img src="/images/blogs/uaat-logo.png" alt="University Academic Alliance in Taiwan" height="60" style="margin: 10px;">
+  <img src="/images/blogs/nstc-short-logo.png" alt="National Science and Technology Council" height="60" style="margin: 10px;">
+  <img src="/images/blogs/moe-logo.png" alt="Ministry of Education, Taiwan" height="60" style="margin: 10px;">
 </p>
