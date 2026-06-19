@@ -436,7 +436,10 @@
 - id: doi:10.6688/JISE.201901_35(1).0002
   title: Artifact Reduction based Multi-view Generation Algorithm for Sparse Camera
     Configuration
-  authors: []
+  authors:
+  - Pei-Jun Lee
+  - Trong-An Bui
+  - Chiao Su
   publisher: Journal of Information Science and Engineering
   date: '2019-01-01'
   link: https://doi.org/gt5xjd
