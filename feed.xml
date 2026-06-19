@@ -1,112 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://asvlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://asvlab.com/" rel="alternate" type="text/html" /><updated>2026-06-19T03:23:56+00:00</updated><id>http://asvlab.com/feed.xml</id><title type="html">AeroSat Vision Lab</title><entry><title type="html">北科大 × 德州農工｜Seminar: Towards Autonomous Design and Operations of Satellites and Constellations</title><link href="http://asvlab.com/2026/06/17/iase-selva-autonomous-satellites.html" rel="alternate" type="text/html" title="北科大 × 德州農工｜Seminar: Towards Autonomous Design and Operations of Satellites and Constellations" /><published>2026-06-17T00:00:00+00:00</published><updated>2026-06-19T03:20:29+00:00</updated><id>http://asvlab.com/2026/06/17/iase-selva-autonomous-satellites</id><content type="html" xml:base="http://asvlab.com/2026/06/17/iase-selva-autonomous-satellites.html"><![CDATA[<h1 id="-專題演講seminar">🛰 專題演講｜Seminar</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://asvlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://asvlab.com/" rel="alternate" type="text/html" /><updated>2026-06-19T03:50:26+00:00</updated><id>http://asvlab.com/feed.xml</id><title type="html">AeroSat Vision Lab</title><entry><title type="html">北科大 × 德州農工｜Seminar: Towards Autonomous Design and Operations of Satellites and Constellations</title><link href="http://asvlab.com/2026/06/17/iase-selva-autonomous-satellites.html" rel="alternate" type="text/html" title="北科大 × 德州農工｜Seminar: Towards Autonomous Design and Operations of Satellites and Constellations" /><published>2026-06-17T00:00:00+00:00</published><updated>2026-06-19T03:42:11+00:00</updated><id>http://asvlab.com/2026/06/17/iase-selva-autonomous-satellites</id><content type="html" xml:base="http://asvlab.com/2026/06/17/iase-selva-autonomous-satellites.html"><![CDATA[<h1 id="-專題演講seminar">🛰 專題演講｜Seminar</h1>
+
 <h2 id="towards-autonomous-design-and-operations-of-satellites-and-constellations"><strong>Towards Autonomous Design and Operations of Satellites and Constellations</strong></h2>
 
-<p><strong>日期 Date</strong> 📅 ：2026 年 7 月 29 日（星期二 | Tuesday）<br />
-<strong>時間 Time</strong> 🕜 ：1:30 PM<br />
-<strong>地點 Venue</strong> 📍 ：GIS Taipei Tech Convention Center 集思北科大會議中心<br />
+<p><strong>主講人 Speaker</strong> 🎤：<strong>Dr. Daniel Selva</strong><br />
+Associate Professor of Aerospace Engineering, Texas A&amp;M University<br />
+Director, Systems Engineering, Autonomy, and Knowledge representation（SEAK）Lab</p>
+
+<p><strong>日期 Date</strong> 📅：2026 年 7 月 29 日（星期三｜Wednesday）<br />
+<strong>時間 Time</strong> 🕜：13:30–16:00<br />
+<strong>地點 Venue</strong> 📍：GIS TAIPEI TECH Convention Center 集思北科大會議中心<br />
 2F, Everlight Building, National Taipei University of Technology<br />
-<strong>主講人 Speaker</strong> 🎤：Dr. Daniel Selva<br />
-副教授，美國德州農工大學航太工程系<br />
-Associate Professor of Aerospace Engineering, Texas A&amp;M University</p>
+106 台北市大安區忠孝東路三段 1 號 2F</p>
 
 <blockquote>
-  <p>主辦與協辦單位｜Organizers &amp; Partners</p>
+  <p><strong>主辦單位｜Organizers</strong><br />
+國立臺北科技大學 太空系統工程研究所（Graduate Institute of Space Systems Engineering, National Taipei University of Technology）<br />
+美國德州農工大學 航太工程學系（Department of Aerospace Engineering, Texas A&amp;M University）<br />
+臺灣學術資安中心（Taiwan Academic Cybersecurity Center, TACC）<br />
+國立臺灣科技大學（National Taiwan University of Science and Technology, NTUST）</p>
 
-  <p><strong>國立臺北科技大學（Taipei Tech）</strong><br />
-<strong>國立臺北科技大學 太空所（Institute of Aerospace and Systems Engineering, NTUT）</strong><br />
-<strong>TACC</strong><br />
-<strong>國立臺灣科技大學（Taiwan Tech）</strong><br />
-<strong>美國德州農工大學（Texas A&amp;M University）</strong><br />
-<strong>美國德州農工大學系統（The Texas A&amp;M University System, TAMUS）</strong><br />
-<strong>國家重點領域國際合作聯盟（UAAT, University Academic Alliance in Taiwan）</strong><br />
-<strong>國立屏東科技大學（National Pingtung University of Science and Technology）</strong><br />
-<strong>國家科學及技術委員會（NSTC）</strong></p>
+  <p><strong>協辦單位｜Partners</strong><br />
+美國德州農工大學系統（The Texas A&amp;M University System, TAMUS）<br />
+國家重點領域國際合作聯盟（University Academic Alliance in Taiwan, UAAT）</p>
+
+  <p><strong>贊助單位｜Sponsors</strong><br />
+國家科學及技術委員會（National Science and Technology Council, NSTC）<br />
+教育部（Ministry of Education, Taiwan, MOE）</p>
 </blockquote>
 
 <hr />
+
 <p align="center">
-  <img src="/images/blogs/2026-07-29-iase-selva-autonomous-satellites-2.jpg" alt="專題演講海報 Seminar Poster" style="max-width: 100%; height: auto;" />
+  <img src="/images/blogs/2026-07-29-iase-selva-autonomous-satellites-2.jpg" alt="Dr. Daniel Selva 專題演講海報 Seminar Poster" style="max-width: 100%; height: auto;" />
 </p>
-
-<h2 id="-活動簡介--about-the-seminar">🛰 活動簡介 | About the Seminar</h2>
-
-<p>本次專題演講將探討地球觀測太空系統在資料量、品質與即時性需求提高後，衛星與星座任務在設計與操作上面臨的複雜度挑戰。<br />
-This seminar will discuss how Earth observing space systems have become increasingly complex as requirements for dataset quantity, quality, and timeliness continue to grow.</p>
-
-<p>Dr. Selva 將介紹其團隊在衛星與星座自主化設計與操作上的最新研究進展，包含強化學習、多目標最佳化、自主感測網路，以及分散式任務分配方法。<br />
-Dr. Selva will present recent progress toward autonomous spacecraft design and operations, including reinforcement learning, multi-objective optimization, autonomous sensor webs, and decentralized task allocation.</p>
 
 <hr />
 
-<h2 id="-活動流程--schedule">🗓 活動流程 | Schedule</h2>
-<h2 id="-seminar-session專題演講">🧠 Seminar Session｜專題演講</h2>
+<h2 id="-活動簡介about-the-seminar">🛰 活動簡介｜About the Seminar</h2>
+
+<p>本次專題演講將探討地球觀測太空系統在資料數量、品質與時效性需求提高後，衛星與衛星星系任務在設計與運行上所面臨的複雜度挑戰。</p>
+
+<p>Dr. Daniel Selva 將介紹其團隊在提升太空載具設計與運行自主性方面的最新研究進展，內容包含強化學習、多目標優化、自主感測網路，以及去中心化市場機制任務分配演算法等主題，並討論這些技術如何提升地球觀測任務的回應能力與效能。</p>
+
+<p>This seminar will discuss how Earth observation space systems have become increasingly complex as requirements for data quantity, quality, and timeliness continue to grow.</p>
+
+<p>Dr. Daniel Selva will present recent progress toward increasing autonomy in spacecraft design and operations, including reinforcement learning, multi-objective optimization, autonomous sensor webs, and decentralized market-based task allocation algorithms for Earth observation task scheduling.</p>
+
+<hr />
+
+<h2 id="-專題演講摘要abstract">🧠 專題演講摘要｜Abstract</h2>
+
+<p>隨著地球觀測任務對資料數量、品質與時效性的要求日益嚴格，太空系統的複雜度已快速增加。單一太空載具的複雜度持續提升，而現行與規劃中的系統也愈發依賴大型衛星星系系統及其他分散式架構。這在兩個層面上帶來挑戰：一是如何設計此類複雜系統，二是如何有效運行與管理這些系統。</p>
+
+<p>同時，生成式 AI 與基礎模型的快速發展正在改變工程領域，並自動化大量任務，也讓一些人認為，衛星與衛星星系系統等複雜系統的端到端自動化設計與運行時代即將到來。</p>
+
+<p>在本次研討會中，Dr. Daniel Selva 將概述其團隊近期在提升太空載具設計與運行自主性方面的研究進展。首先，他將展示強化學習代理（reinforcement learning agents）如何學習設計合成策略，並在太空載具設計任務中超越多目標優化演算法。接著，他將介紹其團隊為自主感測網路（autonomous sensor webs）所建立的自主性技術堆疊，並展示新開發的去中心化市場機制任務分配演算法，如何在地球觀測任務排程問題上優於現有最先進的集中式與去中心化方法。</p>
+
+<p>這些能力最終有望改變太空任務的構思與運行方式，大幅縮短開發週期，並提升地球觀測系統的回應能力與效能。</p>
+
+<p>The complexity of space systems for Earth observation has rapidly increased due to ever more stringent requirements on the quantity, quality, and timeliness of the datasets required. Individual spacecraft complexity has grown, and current and planned systems rely on large constellations and other distributed architectures. This poses challenges at two levels: designing such complex systems and operating them.</p>
+
+<p>At the same time, extremely rapid advances in generative AI and foundation models have revolutionized engineering, automating many tasks and leading some to believe that the days of end-to-end automated design and operations of complex systems such as satellites and constellations are near.</p>
+
+<p>In this seminar, Dr. Daniel Selva will provide an overview of his team’s recent progress toward pushing the level of autonomy in both spacecraft design and operations. First, he will show that reinforcement learning agents can learn design synthesis policies that can outperform multi-objective optimization algorithms in spacecraft design tasks. Then, he will discuss their autonomy stack for autonomous sensor webs and show how their new decentralized market-based task allocation algorithms outperform state-of-the-art centralized and decentralized methods in Earth observation task scheduling problems.</p>
+
+<p>Ultimately, these capabilities could transform how space missions are conceived and operated, dramatically reducing development timelines while increasing the responsiveness and effectiveness of Earth observation systems.</p>
+
+<hr />
+
+<h2 id="-活動流程schedule">🗓 活動流程｜Schedule</h2>
 
 <table>
   <thead>
     <tr>
       <th>Time</th>
+      <th>Activity</th>
       <th>Speaker</th>
       <th>Affiliation</th>
-      <th>Topic</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>13:30–16:00</td>
-      <td>**Daniel Selva**</td>
+      <td>13:30–15:30</td>
+      <td>Seminar Talk｜專題演講</td>
+      <td>**Dr. Daniel Selva**</td>
       <td>Associate Professor of Aerospace Engineering, Texas A&amp;M University</td>
-      <td>Towards Autonomous Design and Operations of Satellites and Constellations</td>
+    </tr>
+    <tr>
+      <td>15:30–16:00</td>
+      <td>Discussion &amp; Networking｜交流討論</td>
+      <td>Participants &amp; Speaker</td>
+      <td>Open discussion and networking session</td>
     </tr>
   </tbody>
 </table>
 
 <blockquote>
-  <p>本次演講聚焦於複雜太空系統的自主化設計與操作，並討論其在地球觀測任務中的應用潛力。<br />
-This seminar focuses on autonomous design and operations for complex space systems and their potential applications in Earth observation missions.</p>
+  <p>本次活動包含兩小時專題演講，以及三十分鐘的交流討論時間，歡迎與講者進行互動並拓展學術合作機會。<br />
+The event includes a two-hour seminar followed by a 30-minute discussion and networking session, providing opportunities for interaction with the speaker and academic exchange.</p>
 </blockquote>
 
 <hr />
 
-<h2 id="-講者簡介--about-the-speaker">👨‍🏫 講者簡介 | About the Speaker</h2>
+<h2 id="-講者簡介speaker-bio">👨‍🏫 講者簡介｜Speaker Bio</h2>
 
-<p><strong>Dr. Daniel Selva</strong> 是一位專注於太空系統、人工智慧與系統工程交叉領域的學者與研究者。他專長於自主、決策支援系統，以及太空系統設計與操作。</p>
+<p><strong>Dr. Daniel Selva</strong> 現任美國德州農工大學（Texas A&amp;M University）航太工程系副教授，並主持 Systems Engineering, Autonomy, and Knowledge representation（SEAK）Lab。他的研究聚焦於複雜系統設計與運行中的演算法決策制定與決策支援系統，並特別著重於太空系統相關應用。</p>
 
-<p>他於 <strong>麻省理工學院（Massachusetts Institute of Technology, MIT）</strong> 獲得太空系統博士學位，曾任教於 <strong>康乃爾大學（Cornell University）</strong>，並曾擔任 Ariane 5 航電專家，參與 21 次成功發射任務。他也是 <strong>AIAA</strong> Associate Fellow，並發表超過 100 篇同儕審查論文。</p>
+<p>Dr. Selva 於 2004 年取得巴塞隆納加泰隆尼亞理工大學（Universitat Politècnica de Catalunya）與法國 ISAE-SUPAERO 的電機工程與航太工程雙學位 BS+MEng，並於 2012 年取得麻省理工學院（MIT）太空系統博士學位。2004 至 2008 年間，他曾於法屬圭亞那庫魯（Kourou）擔任 Ariane 5 發射團隊的航電專家，參與並貢獻於 21 次成功發射任務。加入 Texas A&amp;M University 之前，他於 2014 至 2018 年任教於 Cornell University，擔任助理教授。</p>
 
-<p><strong>Dr. Daniel Selva</strong> is an academic and researcher working at the intersection of space systems, AI, and systems engineering. He is an Associate Professor of Aerospace Engineering at <strong>Texas A&amp;M University</strong> and Director of the <strong>SEAK Lab</strong>.</p>
+<p>Dr. Selva 已共同發表超過 100 篇同儕審查論文，並獲得多項榮譽，包括 2023 Texas A&amp;M Engineering Young Faculty Fellow Award 與 2025 College of Engineering Teaching Impact Award。他也是 AIAA Associate Fellow、<em>Journal of Aerospace Information Systems</em> 副編輯，以及 AIAA Intelligent Systems Technical Committee 的候任主席。</p>
 
-<p>He earned his Ph.D. in Space Systems from <strong>MIT</strong>, previously served as an Assistant Professor at <strong>Cornell University</strong>, and worked as an Ariane 5 avionics specialist contributing to 21 successful launches. He has authored more than 100 peer-reviewed publications and is an <strong>AIAA Associate Fellow</strong>.</p>
+<p><strong>Dr. Daniel Selva</strong> is an Associate Professor of Aerospace Engineering at Texas A&amp;M University, where he directs the Systems Engineering, Autonomy, and Knowledge representation（SEAK）Lab. His research focuses on algorithmic decision making and decision support systems for the design and operation of complex systems, with a strong emphasis on space systems.</p>
+
+<p>Dr. Selva received dual BS+MEng degrees in electrical and aerospace engineering from Universitat Politècnica de Catalunya in Barcelona and ISAE-SUPAERO in Toulouse in 2004, and a PhD in Space Systems from MIT in 2012. Between 2004 and 2008, he worked as an avionics specialist on the Ariane 5 launch team in Kourou, French Guiana, contributing to 21 successful launches. Before joining Texas A&amp;M University, he was an Assistant Professor at Cornell University from 2014 to 2018.</p>
+
+<p>Dr. Selva has co-authored over 100 peer-reviewed publications and received multiple honors, including the 2023 Texas A&amp;M Engineering Young Faculty Fellow Award and the 2025 College of Engineering Teaching Impact Award. He is an AIAA Associate Fellow, an Associate Editor for the <em>Journal of Aerospace Information Systems</em>, and the Chair Elect for the AIAA Intelligent Systems Technical Committee.</p>
 
 <hr />
 
-<h2 id="-報名與聯絡--registration--contact">📩 報名與聯絡 | Registration &amp; Contact</h2>
+<h2 id="-報名與聯絡registration--contact">📩 報名與聯絡｜Registration &amp; Contact</h2>
 
-<p><strong>北科大太空所</strong>誠摯歡迎對航太研究有興趣的產學研夥伴，以及所有學生踴躍參與本次專題演講。<br />
-<strong>We warmly welcome students and partners from academia and industry to join this special seminar.</strong></p>
+<p>國立臺北科技大學太空系統工程研究所誠摯歡迎對航太科技、太空系統、人工智慧、自主系統與地球觀測任務有興趣的師生及產業界夥伴踴躍參加，共同學習與交流。</p>
+
+<p>We warmly welcome students, faculty members, and professionals interested in aerospace technology, space systems, artificial intelligence, autonomous systems, and Earth observation missions to join this engaging and informative event.</p>
 
 <p>🔗 <strong>報名連結 Registration Link</strong>：<br />
-請掃描海報上的 QR code 取得更多資訊與免費報名。<br />
+請掃描海報上的 QR code 取得更多資訊並完成免費報名。<br />
 Please scan the QR code on the poster for more information and free registration.</p>
 
-<p>👉 <strong>本活動免費參加，名額有限，敬請事先線上報名。</strong><br />
-👉 <strong>This event is free to attend, but seats are limited and online registration is required.</strong></p>
+<p>📅 <strong>加入 Google Calendar｜Add to Google Calendar</strong>：<br />
+請於報名完成後，透過表單確認頁面中的連結將活動加入您的 Google Calendar。<br />
+After completing registration, please use the link on the Google Form confirmation page to add the event to your Google Calendar.</p>
 
-<p>📧 聯絡人 Contact: <strong>裴重恩助理教授 (Assistant Professor Trong-An Bui)</strong><br />
+<p>👉 <strong>本活動免費參加，名額有限；若座位額滿，將提前截止報名。</strong><br />
+👉 <strong>This event is free of charge, with limited seats available. Registration will close early once all seats are fully booked.</strong></p>
+
+<p>⏰ <strong>報名截止 Registration Deadline</strong>：2026 年 7 月 27 日 23:59</p>
+
+<p>📧 <strong>聯絡人 Contact</strong>：裴重恩助理教授 Assistant Professor Trong-An Bui<br />
 Email: <a href="mailto:trongan93@ntut.edu.tw">trongan93@ntut.edu.tw</a></p>
 
 <hr />
+
 <blockquote>
-  <p>主辦與協辦單位｜Organizers &amp; Partners</p>
+  <p><strong>主辦、協辦與贊助單位｜Organizers, Partners &amp; Sponsors</strong></p>
 </blockquote>
 
 <p align="center">
-  <img src="/images/blogs/taipeitech-logo.jpg" alt="NTUT" height="60" style="margin: 10px;" />
-  <img src="/images/blogs/ntut-iase-logo.png" alt="IASE" height="60" style="margin: 10px;" />
-  <img src="/images/blogs/taiwantech-logo.png" alt="NTUST" height="55" style="margin: 10px;" />
+  <img src="/images/blogs/taipeitech-logo.jpg" alt="National Taipei University of Technology" height="60" style="margin: 10px;" />
+  <img src="/images/blogs/ntut-iase-logo.png" alt="Graduate Institute of Space Systems Engineering, NTUT" height="60" style="margin: 10px;" />
+  <img src="/images/blogs/taiwantech-logo.png" alt="National Taiwan University of Science and Technology" height="55" style="margin: 10px;" />
   <img src="/images/blogs/tam-logo.jpg" alt="Texas A&amp;M University" height="60" style="margin: 10px;" />
-  <img src="/images/blogs/tamus-logo.png" alt="TAMUS" height="60" style="margin: 10px;" />
-  <img src="/images/blogs/uaat-logo.png" alt="UAAT" height="60" style="margin: 10px;" />
-</p>]]></content><author><name>NTUT, IASE</name></author><category term="Earth" /><category term="Observation," /><category term="Satellite," /><category term="Constellation," /><category term="AI," /><category term="NTUT," /><category term="Space" /><category term="Systems" /><summary type="html"><![CDATA[🛰 專題演講｜Seminar Towards Autonomous Design and Operations of Satellites and Constellations]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/2026-07-29-iase-selva-autonomous-satellites.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/2026-07-29-iase-selva-autonomous-satellites.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">北科大 × 德州農工 ｜Workshop: Novel Architectures for Earth Observing Systems</title><link href="http://asvlab.com/2025/07/14/ntut-iase-workshop.html" rel="alternate" type="text/html" title="北科大 × 德州農工 ｜Workshop: Novel Architectures for Earth Observing Systems" /><published>2025-07-14T00:00:00+00:00</published><updated>2026-06-19T03:20:29+00:00</updated><id>http://asvlab.com/2025/07/14/ntut-iase-workshop</id><content type="html" xml:base="http://asvlab.com/2025/07/14/ntut-iase-workshop.html"><![CDATA[<h1 id="-一日工作坊one-day-workshop">🌍 一日工作坊｜One-Day Workshop</h1>
+  <img src="/images/blogs/tamus-logo.png" alt="The Texas A&amp;M University System" height="60" style="margin: 10px;" />
+  <img src="/images/blogs/uaat-logo.png" alt="University Academic Alliance in Taiwan" height="60" style="margin: 10px;" />
+</p>]]></content><author><name>Graduate Institute of Space Systems Engineering, NTUT</name></author><category term="Earth Observation" /><category term="Satellite" /><category term="Constellation" /><category term="AI" /><category term="Autonomy" /><category term="NTUT" /><category term="Texas A&amp;M" /><category term="Space Systems" /><summary type="html"><![CDATA[🛰 專題演講｜Seminar]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/2026-07-29-iase-selva-autonomous-satellites.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/2026-07-29-iase-selva-autonomous-satellites.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">北科大 × 德州農工 ｜Workshop: Novel Architectures for Earth Observing Systems</title><link href="http://asvlab.com/2025/07/14/ntut-iase-workshop.html" rel="alternate" type="text/html" title="北科大 × 德州農工 ｜Workshop: Novel Architectures for Earth Observing Systems" /><published>2025-07-14T00:00:00+00:00</published><updated>2026-06-19T03:42:11+00:00</updated><id>http://asvlab.com/2025/07/14/ntut-iase-workshop</id><content type="html" xml:base="http://asvlab.com/2025/07/14/ntut-iase-workshop.html"><![CDATA[<h1 id="-一日工作坊one-day-workshop">🌍 一日工作坊｜One-Day Workshop</h1>
 <h2 id="novel-architectures-for-earth-observing-systems"><strong>Novel Architectures for Earth Observing Systems</strong></h2>
 
 <p><strong>日期 Date</strong> 📅 ：2025 年 8 月 13 日（星期三 | Wednesday）<br />
@@ -254,7 +301,7 @@ Email: <a href="mailto:trongan93@ntut.edu.tw">trongan93@ntut.edu.tw</a></p>
   <img src="/images/blogs/tam-logo.jpg" alt="Texas A&amp;M University" height="60" style="margin: 10px;" />
   <img src="/images/blogs/tamus-logo.png" alt="TAMUS" height="60" style="margin: 10px;" />
   <img src="/images/blogs/uaat-logo.png" alt="UAAT" height="60" style="margin: 10px;" />
-</p>]]></content><author><name>NTUT, IASE</name></author><category term="Earth" /><category term="Observation," /><category term="CubeSat," /><category term="AI," /><category term="NTUT," /><category term="Space" /><category term="Systems" /><summary type="html"><![CDATA[🌍 一日工作坊｜One-Day Workshop Novel Architectures for Earth Observing Systems]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/poster-openworkshop-ntut.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/poster-openworkshop-ntut.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">賀！本實驗室有兩篇論文被 ICCE-TW 2025 錄取</title><link href="http://asvlab.com/2025/07/10/ICCE-TW-2025-papers.html" rel="alternate" type="text/html" title="賀！本實驗室有兩篇論文被 ICCE-TW 2025 錄取" /><published>2025-07-10T00:00:00+00:00</published><updated>2026-06-19T03:20:29+00:00</updated><id>http://asvlab.com/2025/07/10/ICCE-TW-2025-papers</id><content type="html" xml:base="http://asvlab.com/2025/07/10/ICCE-TW-2025-papers.html"><![CDATA[<p>本實驗室有兩篇最新研究成果榮獲 <strong>2025 IEEE International Conference on Consumer Electronics – Taiwan (ICCE-TW)</strong> 錄取，我們將於 <strong>2025 年 7 月 16 日至 18 日</strong> 前往高雄參與本次盛會！</p>
+</p>]]></content><author><name>NTUT, IASE</name></author><category term="Earth" /><category term="Observation," /><category term="CubeSat," /><category term="AI," /><category term="NTUT," /><category term="Space" /><category term="Systems" /><summary type="html"><![CDATA[🌍 一日工作坊｜One-Day Workshop Novel Architectures for Earth Observing Systems]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/poster-openworkshop-ntut.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/poster-openworkshop-ntut.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">賀！本實驗室有兩篇論文被 ICCE-TW 2025 錄取</title><link href="http://asvlab.com/2025/07/10/ICCE-TW-2025-papers.html" rel="alternate" type="text/html" title="賀！本實驗室有兩篇論文被 ICCE-TW 2025 錄取" /><published>2025-07-10T00:00:00+00:00</published><updated>2026-06-19T03:42:11+00:00</updated><id>http://asvlab.com/2025/07/10/ICCE-TW-2025-papers</id><content type="html" xml:base="http://asvlab.com/2025/07/10/ICCE-TW-2025-papers.html"><![CDATA[<p>本實驗室有兩篇最新研究成果榮獲 <strong>2025 IEEE International Conference on Consumer Electronics – Taiwan (ICCE-TW)</strong> 錄取，我們將於 <strong>2025 年 7 月 16 日至 18 日</strong> 前往高雄參與本次盛會！</p>
 
 <p>我們將出席 <strong>Session A2: Deep Learning-based Multimedia Processing</strong>，誠摯邀請對我們研究有興趣的學者與業界夥伴蒞臨交流，共同拓展合作與網絡機會。</p>
 
@@ -286,7 +333,7 @@ Email: <a href="mailto:trongan93@ntut.edu.tw">trongan93@ntut.edu.tw</a></p>
 
 <p>
 🔗 <a href="/images/papers/icce-tw-2.pdf" target="_blank">閱讀完整論文（PDF）</a>
-</p>]]></content><author><name>AeroSat Vision Lab</name></author><category term="AI," /><category term="Satellite," /><category term="Research," /><category term="ICCE-TW," /><category term="Deep" /><category term="Learning" /><summary type="html"><![CDATA[本實驗室有兩篇最新研究成果榮獲 2025 IEEE International Conference on Consumer Electronics – Taiwan (ICCE-TW) 錄取，我們將於 2025 年 7 月 16 日至 18 日 前往高雄參與本次盛會！]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/papers/icce-tw-2025-1.png" /><media:content medium="image" url="http://asvlab.com/images/papers/icce-tw-2025-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Enhancing EMI Teaching with Support from Penn State Advisors</title><link href="http://asvlab.com/2025/05/15/emi-mission-and-system-design.html" rel="alternate" type="text/html" title="Enhancing EMI Teaching with Support from Penn State Advisors" /><published>2025-05-15T00:00:00+00:00</published><updated>2026-06-19T03:20:29+00:00</updated><id>http://asvlab.com/2025/05/15/emi-mission-and-system-design</id><content type="html" xml:base="http://asvlab.com/2025/05/15/emi-mission-and-system-design.html"><![CDATA[<h2 id="enhancing-emi-teaching-with-support-from-penn-state-advisors">Enhancing EMI Teaching with Support from Penn State Advisors</h2>
+</p>]]></content><author><name>AeroSat Vision Lab</name></author><category term="AI," /><category term="Satellite," /><category term="Research," /><category term="ICCE-TW," /><category term="Deep" /><category term="Learning" /><summary type="html"><![CDATA[本實驗室有兩篇最新研究成果榮獲 2025 IEEE International Conference on Consumer Electronics – Taiwan (ICCE-TW) 錄取，我們將於 2025 年 7 月 16 日至 18 日 前往高雄參與本次盛會！]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/papers/icce-tw-2025-1.png" /><media:content medium="image" url="http://asvlab.com/images/papers/icce-tw-2025-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Enhancing EMI Teaching with Support from Penn State Advisors</title><link href="http://asvlab.com/2025/05/15/emi-mission-and-system-design.html" rel="alternate" type="text/html" title="Enhancing EMI Teaching with Support from Penn State Advisors" /><published>2025-05-15T00:00:00+00:00</published><updated>2026-06-19T03:42:11+00:00</updated><id>http://asvlab.com/2025/05/15/emi-mission-and-system-design</id><content type="html" xml:base="http://asvlab.com/2025/05/15/emi-mission-and-system-design.html"><![CDATA[<h2 id="enhancing-emi-teaching-with-support-from-penn-state-advisors">Enhancing EMI Teaching with Support from Penn State Advisors</h2>
 
 <p><img src="/images/blogs/DSC07080_compressed.jpg" alt="EMI Coaching Session at NTUT" style="max-width:100%; height:auto;" /></p>
 
@@ -305,14 +352,14 @@ Email: <a href="mailto:trongan93@ntut.edu.tw">trongan93@ntut.edu.tw</a></p>
 
 <hr />
 
-<p><strong>#EMI #TeachingExcellence #NTUT #PennState #Gratitude #HigherEducation #AerospaceEngineering #StudentEngagement #InstructionalInnovation</strong></p>]]></content><author><name>AeroSat Vision Lab</name></author><category term="teaching" /><category term="EMI" /><category term="aerospace engineering" /><category term="higher education" /><summary type="html"><![CDATA[Enhancing EMI Teaching with Support from Penn State Advisors]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/DSC07080_compressed.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/DSC07080_compressed.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">誠徵研究助理（碩博士班)</title><link href="http://asvlab.com/2025/03/21/now-hiring-research-assistants.html" rel="alternate" type="text/html" title="誠徵研究助理（碩博士班)" /><published>2025-03-21T00:00:00+00:00</published><updated>2026-06-19T03:20:29+00:00</updated><id>http://asvlab.com/2025/03/21/now-hiring-research-assistants</id><content type="html" xml:base="http://asvlab.com/2025/03/21/now-hiring-research-assistants.html"><![CDATA[<h2 id="誠徵研究助理碩博士班">誠徵研究助理（碩博士班）</h2>
+<p><strong>#EMI #TeachingExcellence #NTUT #PennState #Gratitude #HigherEducation #AerospaceEngineering #StudentEngagement #InstructionalInnovation</strong></p>]]></content><author><name>AeroSat Vision Lab</name></author><category term="teaching" /><category term="EMI" /><category term="aerospace engineering" /><category term="higher education" /><summary type="html"><![CDATA[Enhancing EMI Teaching with Support from Penn State Advisors]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/DSC07080_compressed.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/DSC07080_compressed.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">誠徵研究助理（碩博士班)</title><link href="http://asvlab.com/2025/03/21/now-hiring-research-assistants.html" rel="alternate" type="text/html" title="誠徵研究助理（碩博士班)" /><published>2025-03-21T00:00:00+00:00</published><updated>2026-06-19T03:42:11+00:00</updated><id>http://asvlab.com/2025/03/21/now-hiring-research-assistants</id><content type="html" xml:base="http://asvlab.com/2025/03/21/now-hiring-research-assistants.html"><![CDATA[<h2 id="誠徵研究助理碩博士班">誠徵研究助理（碩博士班）</h2>
 
 <p>本實驗室誠摯邀請對太空應用領域充滿熱情的<strong>碩士班與博士班研究助理</strong>加入我們的團隊，參與開發先進的人工智慧模型。研究主題聚焦於<strong>Orbit-AI</strong> 系統，專為搭載於太空船酬載端（相關技術包含 FPGA、MCU、DPU）所設計，具備<strong>資料壓縮、目標追蹤與多感測器資料融合</strong>等核心功能。</p>
 
 <p>本計畫延續並強化我們在<strong>衛星酬載設計</strong>方面的既有成果，是一次難得的機會，能夠實際參與智慧化太空系統的開發，並推動 AI 在軌道環境中高效且自主運作的應用實現，直接支援太空任務執行。</p>
 
 <p><strong>歡迎有興趣的同學來信申請。</strong> 請附上個人履歷、相關經歷與簡短的自我介紹。
-期待您的加入與合作！</p>]]></content><author><name>AeroSat Vision Lab</name></author><category term="AI," /><category term="Space," /><category term="Research," /><category term="Hiring" /><summary type="html"><![CDATA[誠徵研究助理（碩博士班）]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/now-hiring.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/now-hiring.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">RoIDE article is publised in IEEE Transactions on Geoscience and Remote Sensing</title><link href="http://asvlab.com/2025/02/02/RoIDE-article.html" rel="alternate" type="text/html" title="RoIDE article is publised in IEEE Transactions on Geoscience and Remote Sensing" /><published>2025-02-02T00:00:00+00:00</published><updated>2026-06-19T03:20:29+00:00</updated><id>http://asvlab.com/2025/02/02/RoIDE-article</id><content type="html" xml:base="http://asvlab.com/2025/02/02/RoIDE-article.html"><![CDATA[<h1 id="-happy-lunar-new-year-to-my-dear-colleagues-">🎊 Happy Lunar New Year to My Dear Colleagues! 🎊</h1>
+期待您的加入與合作！</p>]]></content><author><name>AeroSat Vision Lab</name></author><category term="AI," /><category term="Space," /><category term="Research," /><category term="Hiring" /><summary type="html"><![CDATA[誠徵研究助理（碩博士班）]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://asvlab.com/images/blogs/now-hiring.jpg" /><media:content medium="image" url="http://asvlab.com/images/blogs/now-hiring.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">RoIDE article is publised in IEEE Transactions on Geoscience and Remote Sensing</title><link href="http://asvlab.com/2025/02/02/RoIDE-article.html" rel="alternate" type="text/html" title="RoIDE article is publised in IEEE Transactions on Geoscience and Remote Sensing" /><published>2025-02-02T00:00:00+00:00</published><updated>2026-06-19T03:42:11+00:00</updated><id>http://asvlab.com/2025/02/02/RoIDE-article</id><content type="html" xml:base="http://asvlab.com/2025/02/02/RoIDE-article.html"><![CDATA[<h1 id="-happy-lunar-new-year-to-my-dear-colleagues-">🎊 Happy Lunar New Year to My Dear Colleagues! 🎊</h1>
 <p>Wishing everyone happiness, prosperity, and success in the year ahead! 🏮🐉✨</p>
 
 <p>Excited to start this year with new publication and an open-source contribution! 💻</p>
