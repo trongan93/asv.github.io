@@ -19,7 +19,6 @@ nav:
 | 114 (In Processing)   | 資安科技研究                   | 低軌衛星通訊系統之安全防護與韌性強化：安全防禦架構、異常行為與假訊息偵測、隱私強化、備援技術(1/2) <br> Security Protection and Resilience Enhancement for LEO Satellite Communication Systems: Security Defense Architecture, Anomaly and Disinformation Detection, Privacy Enhancement, and Redundancy (1/2) | 共同主持人 <br> (Co-PI) | 13,600,000             |
 | 114 (In Processing)   | 地球科學應用                   | SAR衛星成像整合軟體應用加值資料應用關鍵技術研究--SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(1/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes (1/3) | 共同主持人 <br> (Co-PI) | 650,000                |
 | 113 (Closed), [Project Page](/projects/cansat-disaster-reconstruction/)   | 航太系統與應用                 | 基於罐頭衛星平台以邊緣運算的半監督學習模型為重建部分雲層遮蔽災害物件區域之開發 <br> Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform | 計畫主持人 <br> (PI) | 850,000                |
-| 108 (Closed)          | 圖形辨識                       | 2019年系統科學與工程國際會議（ICSSE） <br> 2019 International Conference on System Science and Engineering (ICSSE) | 計畫主持人 <br> (PI) | 25,000                 |
 
 {% include search-box.html %}
 
