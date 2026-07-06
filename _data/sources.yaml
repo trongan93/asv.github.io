@@ -1,2 +1,37 @@
+# Manual sources and per-paper overrides.
+# Each entry is merged (by matching "id") into the citations generated from
+# ORCID, so adding an "image" here attaches a thumbnail to that publication.
+# Images live in images/papers/.
+
+- id: doi:10.1109/icce-taiwan66881.2025.11207837
+  image: images/papers/icce-tw-2025-1.png
+
+- id: doi:10.1109/icce-taiwan66881.2025.11207770
+  image: images/papers/icce-tw-2025-2.png
+
+- id: doi:10.1109/ESTREAM61684.2024.10542578
+  image: images/papers/doi_10_1109_ESTREAM61684_2024_10542578.gif
+
+- id: doi:10.1109/JSTARS.2024.3357093
+  image: images/papers/doi_10.1109_JSTARS.2024.3357093.png
+
+- id: doi:10.1109/JSTARS.2023.3328118
+  image: images/papers/doi_10.1109_JSTARS.2023.3328118.png
+
+- id: doi:10.1109/ICSSE.2019.8823128
+  image: images/papers/doi_10.1109_ICSSE.2019.8823128.png
+
+- id: doi:10.1109/ICCE-TW46550.2019.8991751
+  image: images/papers/doi_10.1109_ICCE-TW46550.2019.8991751.png
+
+- id: "doi:10.6688/JISE.202011_36(6).0014"
+  image: "images/papers/doi_10.6688_JISE.202011_36(6).0014.png"
+
+- id: "doi:10.6688/JISE.201901_35(1).0002"
+  image: "images/papers/doi_10.6688_JISE.201901_35(1).0002.png"
+
 - id: doi:10.1109/ICSSE.2017.8030845
+  image: images/papers/doi_10.1109_ICSSE.2017.8030845.png
+
 - id: doi:10.1109/GCCE.2018.8574800
+  image: images/papers/doi_10.1109_GCCE.2018.8574800.png
