@@ -10,12 +10,16 @@ nav:
 ## 「國家科學及技術委員會全球資訊網」補助計畫一覽表  
 ### NSTC Subsidy Program List
 
-| Academic Year           | Discipline Expertise           | Plan Name                                                                                     | Title       | Applied Subsidy (NT$) |
+| Academic Year           | Discipline Expertise           | Plan Name                                                                                     | Title       | Approved Subsidy (NT$) |
 |-----------------------|--------------------------------|-----------------------------------------------------------------------------------------------|-------------|------------------------|
+| 115 (In Processing)   | 地球科學應用                   | SAR衛星成像整合軟體應用加值資料應用關鍵技術研究--SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(2/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes (2/3) | 共同主持人 <br> (Co-PI) | 830,000                |
+| 115 (In Processing)   | 立方衛星關鍵技術研發計畫       | 用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(2/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking (2/4)  | 共同主持人 <br> (Co-PI) | 5,500,000              |
 | 114 (In Processing)   | 航太系統與應用                 | Orbit-AI: 區域感知與情境自適應壓縮系統 <br> Orbit-AI: Region-Aware and Context-Adaptive Compression          | 計畫主持人 <br> (PI) | 2,159,000              |
-| 114 (In Processing)   | 立方衛星關鍵技術研發計畫       | 用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(1/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking  | 共同主持人 <br> (Co-PI) | 5,000,000              |
-| 114 (In Processing)   | 地球科學應用                   | SAR衛星成像整合軟體應用加值資料應用關鍵技術研究--SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(1/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes | 共同主持人 <br> (Co-PI) | 650,000                |
+| 114 (In Processing)   | 立方衛星關鍵技術研發計畫       | 用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(1/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking (1/4)  | 共同主持人 <br> (Co-PI) | 5,000,000              |
+| 114 (In Processing)   | 資安科技研究                   | 低軌衛星通訊系統之安全防護與韌性強化：安全防禦架構、異常行為與假訊息偵測、隱私強化、備援技術(1/2) <br> Security Protection and Resilience Enhancement for LEO Satellite Communication Systems: Security Defense Architecture, Anomaly and Disinformation Detection, Privacy Enhancement, and Redundancy (1/2) | 共同主持人 <br> (Co-PI) | 13,600,000             |
+| 114 (In Processing)   | 地球科學應用                   | SAR衛星成像整合軟體應用加值資料應用關鍵技術研究--SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(1/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes (1/3) | 共同主持人 <br> (Co-PI) | 650,000                |
 | 113 (Closed), [Project Page](/projects/cansat-disaster-reconstruction/)   | 航太系統與應用                 | 基於罐頭衛星平台以邊緣運算的半監督學習模型為重建部分雲層遮蔽災害物件區域之開發 <br> Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform | 計畫主持人 <br> (PI) | 850,000                |
+| 108 (Closed)          | 圖形辨識                       | 2019年系統科學與工程國際會議（ICSSE） <br> 2019 International Conference on System Science and Engineering (ICSSE) | 計畫主持人 <br> (PI) | 25,000                 |
 
 {% include search-box.html %}
 
