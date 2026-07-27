@@ -1,5 +1,6 @@
 ---
 title: Team
+robots: noindex
 nav:
   order: 3
 ---

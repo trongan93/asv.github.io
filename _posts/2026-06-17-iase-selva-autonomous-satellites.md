@@ -17,9 +17,11 @@ Director, Systems Engineering, Autonomy, and Knowledge representation（SEAK）L
 
 **日期 Date** 📅：2026 年 7 月 29 日（星期三｜Wednesday）  
 **時間 Time** 🕜：13:30–16:00  
-**地點 Venue** 📍：GIS TAIPEI TECH Convention Center 集思北科大會議中心  
-2F, Everlight Building, National Taipei University of Technology  
-106 台北市大安區忠孝東路三段 1 號 2F
+**地點 Venue** 📍：億光大樓 集思北科大會議中心 2F 西特廳(204會議室)  
+106 台北市大安區忠孝東路三段 1 號 2F  
+2F, Xite Hall (Room 204), GIS NTUT Convention Center  
+Everlight Building, National Taipei University of Technology  
+No. 1, Sec. 3, Zhongxiao E. Rd., Da’an Dist., Taipei City 106, Taiwan
 
 > **主辦單位｜Organizers**  
 > 國立臺北科技大學 太空系統工程研究所（Graduate Institute of Space Systems Engineering, National Taipei University of Technology）  
