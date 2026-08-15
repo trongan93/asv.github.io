@@ -2,42 +2,138 @@
 title: Projects
 nav:
   order: 2
-  tooltip: Software, datasets, and more
+  tooltip: Funded programs, software, and datasets
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %} Projects
+# {% include icon.html icon="fa-solid fa-satellite" %}Projects
 
-## 「國家科學及技術委員會全球資訊網」補助計畫一覽表  
-### NSTC Subsidy Program List
+本實驗室的研究計畫涵蓋衛星酬載的嵌入式人工智慧、SAR 與光學影像融合、低軌衛星通訊安全，以及災害遙測應用，並由國家科學及技術委員會等單位支持。
 
-| Academic Year           | Discipline Expertise           | Plan Name                                                                                     | Title       | Approved Subsidy (NT$) |
-|-----------------------|--------------------------------|-----------------------------------------------------------------------------------------------|-------------|------------------------|
-| 115 (In Processing)   | 地球科學應用                   | SAR衛星成像整合軟體應用加值資料應用關鍵技術研究--SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(2/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes (2/3) | 共同主持人 <br> (Co-PI) | 830,000                |
-| 115 (In Processing)   | 立方衛星關鍵技術研發計畫       | 用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(2/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking (2/4)  | 共同主持人 <br> (Co-PI) | 5,500,000              |
-| 114 (In Processing)   | 航太系統與應用                 | Orbit-AI: 區域感知與情境自適應壓縮系統 <br> Orbit-AI: Region-Aware and Context-Adaptive Compression          | 計畫主持人 <br> (PI) | 2,159,000              |
-| 114 (In Processing)   | 立方衛星關鍵技術研發計畫       | 用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(1/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking (1/4)  | 共同主持人 <br> (Co-PI) | 5,000,000              |
-| 114 (In Processing)   | 資安科技研究                   | 低軌衛星通訊系統之安全防護與韌性強化：安全防禦架構、異常行為與假訊息偵測、隱私強化、備援技術(1/2) <br> Security Protection and Resilience Enhancement for LEO Satellite Communication Systems: Security Defense Architecture, Anomaly and Disinformation Detection, Privacy Enhancement, and Redundancy (1/2) | 共同主持人 <br> (Co-PI) | 13,600,000             |
-| 114 (In Processing)   | 地球科學應用                   | SAR衛星成像整合軟體應用加值資料應用關鍵技術研究--SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(1/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes (1/3) | 共同主持人 <br> (Co-PI) | 650,000                |
-| 113 (Closed), [Project Page](/projects/cansat-disaster-reconstruction/)   | 航太系統與應用                 | 基於罐頭衛星平台以邊緣運算的半監督學習模型為重建部分雲層遮蔽災害物件區域之開發 <br> Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform | 計畫主持人 <br> (PI) | 850,000                |
+Our programs span embedded AI for satellite payloads, SAR and optical image fusion, security for LEO satellite communications, and remote sensing for disaster response — supported by the National Science and Technology Council and partner institutions.
+
+{% include section.html %}
+
+## 計畫概況 Funding at a Glance
+
+{% assign grants = site.data.grants %}
+{% assign total = grants | map: "amount" | sum %}
+{% assign active = grants | where: "status", "active" %}
+{% assign as_pi = grants | where: "role", "pi" %}
+{% assign disciplines = grants | map: "discipline-en" | uniq %}
+
+<div class="stat-grid">
+  <div class="stat">
+    <span class="stat-value">NT${{ total | divided_by: 1000000.0 | round: 1 }}M</span>
+    <span class="stat-label">Total awarded<br><span class="stat-sub">NT${% include number.html value=total %}</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">{{ grants.size }}</span>
+    <span class="stat-label">Funded programs<br><span class="stat-sub">{{ active.size }} currently active</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">{{ as_pi.size }}</span>
+    <span class="stat-label">Led as PI<br><span class="stat-sub">{{ grants.size | minus: as_pi.size }} as Co-PI</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">{{ disciplines.size }}</span>
+    <span class="stat-label">Disciplines<br><span class="stat-sub">aerospace to cybersecurity</span></span>
+  </div>
+</div>
+
+{% include section.html %}
+
+## 補助計畫 Funded Research Programs
+
+國科會補助計畫一覽，依研究主題分類。NSTC subsidy programs, grouped by research theme.
 
 {% include search-box.html %}
+
+{% include search-info.html %}
+
+{% assign kinds = site.data.project-kinds %}
+
+<nav class="kind-nav" aria-label="Jump to research theme">
+  {% for kind in kinds %}
+    {% assign in_kind = grants | where: "kind", kind.id %}
+    {% if in_kind.size > 0 %}
+      <a href="#kind-{{ kind.id }}">
+        {% include icon.html icon=kind.icon %}
+        {{ kind.label-en }}<span>{{ in_kind.size }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</nav>
+
+{% assign classified = "" | split: "," %}
+
+{% for kind in kinds %}
+  {% assign in_kind = grants | where: "kind", kind.id | sort: "year" | reverse %}
+  {% if in_kind.size > 0 %}
+    {% assign classified = classified | concat: in_kind %}
+    {% assign kind_total = in_kind | map: "amount" | sum %}
+
+    <h3 class="kind-heading" id="kind-{{ kind.id }}">
+      {% include icon.html icon=kind.icon %}
+      {{ kind.label }} · {{ kind.label-en }}
+      <span class="kind-count">
+        {{ in_kind.size }} program{% if in_kind.size != 1 %}s{% endif %}
+        · NT${% include number.html value=kind_total %}
+      </span>
+    </h3>
+
+    <div class="grant-list" data-search-group>
+      {% for grant in in_kind %}
+        {% include grant.html grant=grant %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% comment %}
+  anything whose kind is unset or points at a theme that no longer exists
+{% endcomment %}
+{% assign leftovers = grants | size | minus: classified.size %}
+{% if leftovers > 0 %}
+  <h3 class="kind-heading" id="kind-other">
+    {% include icon.html icon="fa-solid fa-folder-open" %}
+    其他 · Other
+    <span class="kind-count">{{ leftovers }} program{% if leftovers != 1 %}s{% endif %}</span>
+  </h3>
+  <div class="grant-list" data-search-group>
+    {% for grant in grants %}
+      {% assign known = kinds | where: "id", grant.kind %}
+      {% if known.size == 0 %}
+        {% include grant.html grant=grant %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% include section.html %}
+
+## 專案紀錄 Project Write-ups
+
+深入介紹本實驗室的重點研究計畫，包含方法與實驗結果。In-depth accounts of selected projects, covering methods, results, and hardware validation.
 
 {% for project in site.projects %}
   <div class="post-excerpt-container">
     <div class="post-excerpt">
-      {% assign url = project.url %}
-      {% assign title = project.title %}
-      {% assign image = project.image %}
-
-      {% if image %}
-        <a href="{{ url }}" class="post-excerpt-image">
-          <img src="{{ image | relative_url }}" alt="{{ title }}">
+      {% if project.image %}
+        <a href="{{ project.url | relative_url }}" class="post-excerpt-image">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" loading="lazy">
         </a>
       {% endif %}
 
       <div class="post-excerpt-text">
-        <a href="{{ url }}">{{ title }}</a>
-        <p>{{ project.description }}</p>
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        {% if project.subtitle %}
+          <p class="post-excerpt-subtitle">{{ project.subtitle }}</p>
+        {% endif %}
+        {% if project.tags %}
+          {% include tags.html tags=project.tags %}
+        {% endif %}
+        <p>{{ project.description | strip_html | truncatewords: 45 }}</p>
+        <a href="{{ project.url | relative_url }}" class="read-more">Read more...</a>
       </div>
     </div>
   </div>

@@ -1,0 +1,44 @@
+# Project taxonomy — the single place the research themes are defined.
+#
+# Both research/index.md (Research Areas) and projects/index.md (grouping of
+# funded programs) read from this file, so the two pages can never drift apart.
+# Order here is the order they appear on both pages.
+#
+# To add a theme: append an entry, then set `kind:` on the relevant projects
+# in _data/grants.yaml. Anything whose kind matches nothing lands in "Other".
+
+- id: onboard-ai
+  label: 星載人工智慧
+  label-en: Onboard & Embedded AI
+  icon: fa-solid fa-microchip
+  blurb: >
+    Real-time inference within the power, memory, and radiation budgets of a
+    satellite payload — quantised models deployed to FPGA, MCU, and DPU
+    targets. This is the core of the <strong>OrbitAI</strong> platform.
+
+- id: sar-fusion
+  label: SAR 與光學影像融合
+  label-en: SAR & Optical Fusion
+  icon: fa-solid fa-satellite-dish
+  blurb: >
+    Using all-weather synthetic aperture radar to restore optical imagery
+    obscured by cloud, with cross-modality co-registration and attention-guided
+    reconstruction — applied to disaster response and carbon stock verification.
+
+- id: detection-tracking
+  label: 目標偵測與追蹤
+  label-en: Detection & Tracking
+  icon: fa-solid fa-crosshairs
+  blurb: >
+    Maritime and ground target surveillance from orbit, including deep
+    reinforcement learning for UAV trajectory design across integrated
+    space–air–sea networks.
+
+- id: comms-security
+  label: 低軌通訊與資安
+  label-en: LEO Communications & Security
+  icon: fa-solid fa-shield-halved
+  blurb: >
+    Compression and downlink efficiency for constrained links, alongside
+    anomaly detection, disinformation detection, and resilience for
+    low-Earth-orbit satellite communication systems.

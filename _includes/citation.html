@@ -8,9 +8,50 @@
   {% assign citation = include %}
 {% endif %}
 
+{% comment %}
+  ORCID sometimes returns bare index records with no venue and no date. They
+  have nothing to show, so skip them rather than printing an empty card. The
+  upstream fix lives in _data/sources.yaml (remove: true); this is the guard
+  for anything new that slips through before citations are regenerated.
+{% endcomment %}
+{% assign is_stub = false %}
+{% if citation.publisher == blank and citation.date == blank %}
+  {% assign is_stub = true %}
+{% endif %}
+
+{% unless is_stub %}
+
+{% comment %}
+  infer the venue kind from the publisher string, so each entry can be told
+  apart at a glance. citations come from ORCID with no type field of their own.
+{% endcomment %}
+{% assign venue = citation.publisher | downcase %}
+{% assign kind = "" %}
+{% if venue contains "journal"
+  or venue contains "transactions"
+  or venue contains "ieee access"
+  or venue contains "letters"
+  or venue contains "sensors"
+%}
+  {% assign kind = "Journal" %}
+{% elsif venue contains "conference"
+  or venue contains "symposium"
+  or venue contains "workshop"
+  or venue contains "proceedings"
+  or venue contains "congress"
+%}
+  {% assign kind = "Conference" %}
+{% elsif venue contains "arxiv" or venue contains "preprint" %}
+  {% assign kind = "Preprint" %}
+{% endif %}
+
 <div class="citation-container">
   <div class="citation">
-    {% if include.style == "rich" %}
+    {% comment %}
+      only lay out a thumbnail column when there is a real thumbnail — most
+      entries have none, and the fallback placeholder added visual noise
+    {% endcomment %}
+    {% if include.style == "rich" and citation.image %}
       <a
         {% if citation.link %}
           href="{{ citation.link | relative_url }}"
@@ -60,17 +101,18 @@
       </div>
 
       <div class="citation-details">
+        {% if kind != "" %}
+          <span class="badge badge-{{ kind | downcase }}">{{ kind }}</span>
+        {% endif %}
         <span class="citation-publisher">
           {{- citation.publisher | default: "[no publisher info]" -}}
         </span>
-        &nbsp;·&nbsp;
-        <span class="citation-date">
-          {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
-        </span>
-        &nbsp;·&nbsp;
-        <span class="citation-id">
-          {{- citation.id | default: "[no id info]" -}}
-        </span>
+        {% if citation.date %}
+          &nbsp;·&nbsp;
+          <span class="citation-date">
+            {{- citation.date | date: "%b %Y" -}}
+          </span>
+        {% endif %}
       </div>
 
       {% if include.style == "rich" %}
@@ -85,20 +127,27 @@
           </div>
         {% endif %}
 
-        {% if citation.buttons.size > 0 %}
-          <div class="citation-buttons">
-            {% for button in citation.buttons %}
-              {%
-                include button.html
-                type=button.type
-                icon=button.icon
-                text=button.text
-                link=button.link
-                style="bare"
-              %}
-            {% endfor %}
-          </div>
-        {% endif %}
+        <div class="citation-buttons">
+          {% for button in citation.buttons %}
+            {%
+              include button.html
+              type=button.type
+              icon=button.icon
+              text=button.text
+              link=button.link
+              style="bare"
+            %}
+          {% endfor %}
+          {% if citation.link %}
+            {%
+              include button.html
+              icon="fa-solid fa-up-right-from-square"
+              text="View publication"
+              link=citation.link
+              style="bare"
+            %}
+          {% endif %}
+        </div>
 
         {% if citation.tags.size > 0 or citation.repo %}
           {% include tags.html tags=citation.tags repo=citation.repo %}
@@ -107,3 +156,5 @@
     </div>
   </div>
 </div>
+
+{% endunless %}

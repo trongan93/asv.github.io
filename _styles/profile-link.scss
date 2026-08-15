@@ -1,0 +1,57 @@
+---
+---
+
+.profile-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin: 24px 0 32px;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border: solid 1px var(--border);
+  border-radius: var(--rounded);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform var(--transition), border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.profile-link:hover {
+  transform: translateY(var(--lift));
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+
+.profile-link > .icon {
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+.profile-link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.profile-link-text strong {
+  font-family: var(--heading);
+  font-weight: var(--bold);
+}
+
+.profile-link-text > span {
+  color: var(--text-muted);
+  font-size: var(--small);
+  line-height: var(--compact);
+  overflow-wrap: anywhere;
+}

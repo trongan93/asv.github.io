@@ -1,0 +1,45 @@
+---
+---
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px 20px;
+  border: solid 1px var(--border);
+  border-radius: var(--rounded);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+}
+
+.stat-value {
+  font-family: var(--heading);
+  font-size: clamp(1.8rem, 1.4rem + 1.6vw, 2.4rem);
+  font-weight: var(--bold);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--primary);
+  // keeps the figures aligned when they sit side by side
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: var(--small);
+  font-weight: var(--semi-bold);
+  line-height: var(--compact);
+}
+
+.stat-sub {
+  display: inline-block;
+  margin-top: 2px;
+  font-weight: var(--regular);
+  color: var(--text-muted);
+}

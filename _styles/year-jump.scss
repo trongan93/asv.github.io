@@ -1,0 +1,64 @@
+---
+---
+
+// quick index across the publication years
+.year-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 8px;
+}
+
+.year-jump a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 6px 12px;
+  border: solid 1px var(--border);
+  border-radius: var(--round);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--heading);
+  font-size: var(--small);
+  font-weight: var(--semi-bold);
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition),
+    color var(--transition);
+}
+
+.year-jump a:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--background);
+}
+
+.year-jump a > span {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: var(--regular);
+}
+
+.year-jump a:hover > span {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.pub-year {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  margin: 2.2em 0 0.8em;
+  padding-bottom: 0.35em;
+  border-bottom: solid 1px var(--border);
+  font-size: var(--xl);
+  scroll-margin-top: 90px;
+}
+
+.pub-year-count {
+  font-family: var(--heading);
+  font-size: var(--small);
+  font-weight: var(--regular);
+  color: var(--text-muted);
+}

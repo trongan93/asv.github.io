@@ -1,0 +1,21 @@
+{%- comment -%}
+  Formats an integer with thousands separators, e.g. 13600000 -> 13,600,000.
+
+  Liquid has no such filter, and the alternative was storing every grant
+  amount twice (once summable, once pre-formatted), which drifts. Usage:
+
+    {% include number.html value=grant.amount %}
+{%- endcomment -%}
+{%- assign digits = include.value | round | append: "" -%}
+{%- assign len = digits.size -%}
+{%- assign head = len | modulo: 3 -%}
+{%- if head == 0 -%}{%- assign head = 3 -%}{%- endif -%}
+{%- assign out = digits | slice: 0, head -%}
+{%- assign groups = len | minus: head | divided_by: 3 -%}
+{%- for i in (1..groups) -%}
+  {%- if groups < 1 -%}{%- break -%}{%- endif -%}
+  {%- assign start = i | minus: 1 | times: 3 | plus: head -%}
+  {%- assign chunk = digits | slice: start, 3 -%}
+  {%- assign out = out | append: "," | append: chunk -%}
+{%- endfor -%}
+{{- out -}}

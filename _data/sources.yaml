@@ -35,3 +35,17 @@
 
 - id: doi:10.1109/GCCE.2018.8574800
   image: images/papers/doi_10.1109_GCCE.2018.8574800.png
+# ORCID exposes four bare Web-of-Science records that carry no title, venue or
+# date — they render as empty "Web of Science" entries on the research page.
+# "remove: true" drops them when citations are regenerated (see _cite/cite.py).
+- id: wosuid:WOS:000462912600143
+  remove: true
+
+- id: wosuid:WOS:000467091300008
+  remove: true
+
+- id: wosuid:WOS:000459859500009
+  remove: true
+
+- id: wosuid:WOS:000427048400021
+  remove: true

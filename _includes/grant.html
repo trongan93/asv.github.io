@@ -1,0 +1,58 @@
+{%- comment -%}
+  One funded research program. Usage:
+
+    {% include grant.html grant=grant %}
+
+  Expects an entry from _data/grants.yaml. See that file for the schema.
+{%- endcomment -%}
+{% assign grant = include.grant %}
+
+<article class="grant" data-status="{{ grant.status }}" data-kind="{{ grant.kind }}">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      {% if grant.role == "pi" %}
+        <span class="badge badge-pi">計畫主持人 · PI</span>
+      {% else %}
+        <span class="badge badge-copi">共同主持人 · Co-PI</span>
+      {% endif %}
+      {% if grant.status == "active" %}
+        <span class="badge badge-active">Active</span>
+      {% else %}
+        <span class="badge badge-done">Completed</span>
+      {% endif %}
+      <span class="badge badge-quiet">{{ grant.agency }}</span>
+      <span class="badge badge-quiet">民國 {{ grant.year }} · {{ grant.ad-year }}</span>
+    </div>
+
+    <h4 class="grant-title">
+      {% if grant.page %}
+        <a href="{{ grant.page | relative_url }}">{{ grant.title-en }}</a>
+      {% else %}
+        {{ grant.title-en }}
+      {% endif %}
+    </h4>
+    <p class="grant-title-zh">{{ grant.title }}</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        {% include icon.html icon="fa-solid fa-folder-open" %}
+        {{ grant.discipline }} · {{ grant.discipline-en }}
+      </span>
+      <span class="grant-amount">
+        NT${% include number.html value=grant.amount %}
+      </span>
+    </div>
+
+    {% if grant.page %}
+      {%
+        include button.html
+        link=grant.page
+        text="Read the project write-up"
+        icon="fa-solid fa-arrow-right"
+        flip=true
+        style="bare"
+      %}
+    {% endif %}
+  </div>
+</article>
