@@ -26,9 +26,13 @@ AeroSat Vision Lab advances neural networks, computer vision, and remote sensing
   Liquid 4.0 (pinned via jekyll 4.3) has no `sum` filter; that arrived in
   Liquid 5.4. An unknown filter passes its input through untouched, so
   `map: "amount" | sum` would hand the whole array to divided_by and render 0.
+
+  Research programs only — MOE teaching grants are not research subsidies and
+  carry no funding figures at all. See rule 3 in _data/grants.yaml.
 {% endcomment %}
+{% assign research_grants = site.data.grants | where_exp: "g", "g.category != 'teaching'" %}
 {% assign grant_total = 0 %}
-{% for g in site.data.grants %}{% assign grant_total = grant_total | plus: g.amount %}{% endfor %}
+{% for g in research_grants %}{% assign grant_total = grant_total | plus: g.amount %}{% endfor %}
 
 <div class="stat-grid">
 <div class="stat">
@@ -45,7 +49,7 @@ AeroSat Vision Lab advances neural networks, computer vision, and remote sensing
 </div>
 <div class="stat">
  <span class="stat-value">{{ grant_total | divided_by: 1000000.0 | round: 1 }}M</span>
- <span class="stat-label">NT$ in grants<br><span class="stat-sub"><a href="{{ "projects" | relative_url }}">see programs</a></span></span>
+ <span class="stat-label">NT$ research funding<br><span class="stat-sub">institution-level · <a href="{{ "projects" | relative_url }}">see programs</a></span></span>
 </div>
 </div>
 
@@ -87,7 +91,11 @@ AeroSat Vision Lab advances neural networks, computer vision, and remote sensing
 {% endcomment %}
 <div class="area-grid">
 {% for kind in site.data.project-kinds %}
-{% assign programs = site.data.grants | where: "kind", kind.id %}
+{% comment %}
+  count distinct `program` ids, not entries — a multi-year program holds one
+  entry per annual phase. See the rules at the top of _data/grants.yaml.
+{% endcomment %}
+{% assign programs = research_grants | where: "kind", kind.id | map: "program" | uniq %}
 <div class="area">
  {% include icon.html icon=kind.icon %}
  <h3>{{ kind.label-en }}<span class="area-zh">{{ kind.label }}</span></h3>

@@ -1,6 +1,6 @@
 ---
 title: Enhancing Real-Time Maritime Object Tracking with Satellite-Based Edge AI and Deep Reinforcement Learning
-subtitle: UAAT-TAMUS Collaborative Project (2024/12–2025/11)
+subtitle: UAAT–TAMUS Collaborative Project · Phase 1 (2024/12–2025/11)
 group: featured
 image: /images/projects/uaat-tamus.png
 link: https://iase.ntut.edu.tw/

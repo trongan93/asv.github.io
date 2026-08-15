@@ -21,8 +21,24 @@
       {% else %}
         <span class="badge badge-done">Completed</span>
       {% endif %}
-      <span class="badge badge-quiet">{{ grant.agency }}</span>
-      <span class="badge badge-quiet">民國 {{ grant.year }} · {{ grant.ad-year }}</span>
+      <span class="badge badge-quiet" {% if grant.agency-full %}title="{{ grant.agency-full }}"{% endif %}>{{ grant.agency }}</span>
+      {%- comment -%}
+        guarded so an entry whose fiscal year is not yet confirmed renders
+        without a badge rather than as a bare "民國 ·"
+      {%- endcomment -%}
+      {% if grant.year %}
+        {% if grant.period %}
+          <span class="badge badge-quiet">民國 {{ grant.year }} · {{ grant.period }}</span>
+        {% else %}
+          <span class="badge badge-quiet">民國 {{ grant.year }} · {{ grant.ad-year }}</span>
+        {% endif %}
+      {% endif %}
+      {% if grant.scheme %}
+        <span class="badge badge-quiet">{{ grant.scheme }} · {{ grant.scheme-en }}</span>
+      {% endif %}
+      {% if grant.grant-no %}
+        <span class="badge badge-quiet grant-no" title="計畫編號 · Project number">{{ grant.grant-no }}</span>
+      {% endif %}
     </div>
 
     <h4 class="grant-title">
@@ -34,15 +50,50 @@
     </h4>
     <p class="grant-title-zh">{{ grant.title }}</p>
 
-    <div class="grant-foot">
-      <span class="grant-discipline">
-        {% include icon.html icon="fa-solid fa-folder-open" %}
-        {{ grant.discipline }} · {{ grant.discipline-en }}
-      </span>
-      <span class="grant-amount">
-        NT${% include number.html value=grant.amount %}
-      </span>
-    </div>
+    {%- comment -%}
+      Every figure is labelled with the level it sits at, so a project-level
+      award can never read as the lab's own funding. Teaching entries carry no
+      discipline and no figures at all (rule 3 in _data/grants.yaml), so the
+      whole footer is skipped for them rather than leaving an empty ruled row.
+    {%- endcomment -%}
+    {% if grant.discipline or grant.amount or grant.allocated %}
+      <div class="grant-foot">
+        {% if grant.discipline %}
+          <span class="grant-discipline">
+            {% include icon.html icon="fa-solid fa-folder-open" %}
+            {{ grant.discipline }} · {{ grant.discipline-en }}
+          </span>
+        {% endif %}
+        {% if grant.amount %}
+          <span class="grant-amount">
+            NT${% include number.html value=grant.amount %}
+            <span class="grant-amount-level">
+              {% if grant.amount-level == "subproject" %}子計畫核定 · subproject{% else %}計畫核定 · project{% endif %}
+            </span>
+          </span>
+        {% elsif grant.allocated %}
+          <span class="grant-amount">
+            NT${% include number.html value=grant.allocated %}
+            <span class="grant-amount-level">本實驗室分配 · allocated</span>
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if grant.programme-amount or grant.note-en or grant.allocated and grant.amount %}
+      <p class="grant-note">
+        {% include icon.html icon="fa-solid fa-circle-info" %}
+        {% if grant.allocated and grant.amount %}
+          本實驗室分配額 NT${% include number.html value=grant.allocated %}。
+          NT${% include number.html value=grant.allocated %} allocated to this lab.
+        {% endif %}
+        {% if grant.note-en %}{{ grant.note }} {{ grant.note-en }}{% endif %}
+        {% if grant.programme-amount %}
+          整體計畫總額 NT${% include number.html value=grant.programme-amount %}。
+          Umbrella programme award NT${% include number.html value=grant.programme-amount %}.
+        {% endif %}
+      </p>
+    {% endif %}
 
     {% if grant.page %}
       {%

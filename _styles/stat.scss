@@ -43,3 +43,56 @@
   font-weight: var(--regular);
   color: var(--text-muted);
 }
+
+// the three funding sources are different kinds of award and are reported
+// apart rather than as one undifferentiated total — see projects/index.md
+.funder-split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+  margin: -16px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.funder-split li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 16px;
+  border-left: solid 3px var(--primary);
+  border-radius: var(--rounded);
+  background: var(--surface);
+  font-size: var(--small);
+  line-height: var(--compact);
+  text-align: left;
+  hyphens: none;
+}
+
+.funder-split li > span {
+  color: var(--text-muted);
+}
+
+.funder-split .funder-amount {
+  margin-top: 2px;
+  color: inherit;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  font-variant-numeric: tabular-nums;
+}
+
+// qualifies what the tiles above are counting — see projects/index.md
+.stat-note {
+  margin: -16px 0 32px;
+  color: var(--text-muted);
+  font-size: var(--small);
+  line-height: var(--compact);
+  text-align: left;
+  hyphens: none;
+}
+
+.stat-note .icon {
+  margin-right: 0.5em;
+  color: var(--primary);
+  opacity: 0.7;
+}
