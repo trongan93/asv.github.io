@@ -1,0 +1,49 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 3px 10px;
+  border: solid 1px transparent;
+  border-radius: var(--round);
+  font-family: var(--heading);
+  font-size: 0.75rem;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.badge-pi,
+.badge-conference {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.badge-journal {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.badge-active {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.badge-active::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: var(--round);
+  background: currentColor;
+}
+
+.badge-copi,
+.badge-done,
+.badge-preprint,
+.badge-quiet {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text-muted);
+}
+
+/*# sourceMappingURL=badge.css.map */

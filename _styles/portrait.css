@@ -5,44 +5,62 @@
 .portrait {
   position: relative;
   display: inline-flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  gap: 4px;
   margin: 20px;
-  width: 175px;
+  padding: 20px 12px 18px;
+  width: 215px;
   max-width: calc(100% - 20px - 20px);
+  border: solid 1px transparent;
+  border-radius: var(--rounded);
   text-decoration: none;
+  transition: transform var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.portrait[href]:hover {
+  transform: translateY(var(--lift));
+  background: var(--surface);
+  border-color: var(--border);
 }
 
 .portrait[data-style=small] {
-  width: 100px;
+  width: 120px;
+  padding: 12px 8px;
 }
 
 .portrait[data-style=tiny] {
   flex-direction: row;
   gap: 15px;
   width: unset;
+  padding: 4px;
   text-align: left;
 }
 
 .portrait .icon {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 8px;
+  top: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(20px + 10%);
+  width: 34px;
   aspect-ratio: 1/1;
-  border-radius: 999px;
-  background: var(--background);
-  box-shadow: var(--shadow);
+  border-radius: var(--round);
+  background: var(--surface);
+  border: solid 1px var(--border);
+  color: var(--primary);
+  font-size: 0.8rem;
+  box-shadow: var(--shadow-sm);
   transform: translate(14%, 14%);
 }
 
 .portrait[data-style=small] .icon {
   left: -2px;
   top: -2px;
+  width: 26px;
+  font-size: 0.7rem;
 }
 
 .portrait[data-style=tiny] .icon {
@@ -51,11 +69,17 @@
 
 .portrait-image {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   aspect-ratio: 1/1;
-  border-radius: 999px;
+  border-radius: var(--round);
   object-fit: cover;
-  box-shadow: var(--shadow);
+  background: var(--background-alt);
+  box-shadow: 0 0 0 3px var(--background), 0 0 0 4px var(--border), var(--shadow);
+  transition: box-shadow var(--transition);
+}
+
+.portrait[href]:hover .portrait-image {
+  box-shadow: 0 0 0 3px var(--background), 0 0 0 4px var(--primary), var(--shadow-lg);
 }
 
 .portrait[data-style=tiny] .portrait-image {
@@ -65,12 +89,55 @@
 
 .portrait-name {
   font-family: var(--heading);
+  font-size: var(--large);
+  font-weight: var(--bold);
+  line-height: var(--tight);
+  color: var(--text);
+  text-wrap: balance;
+}
+
+.portrait-description {
+  color: var(--primary);
+  font-size: var(--small);
   font-weight: var(--semi-bold);
+}
+
+.portrait-affiliation {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: var(--compact);
+  text-wrap: balance;
 }
 
 .portrait[data-style=tiny] .portrait-description,
 .portrait[data-style=tiny] .portrait-affiliation {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .portrait:not([data-style]) {
+    width: calc(50% - 24px);
+    margin: 12px;
+    padding: 14px 6px 12px;
+  }
+  .portrait:not([data-style]) .portrait-image {
+    margin-bottom: 12px;
+  }
+  .portrait:not([data-style]) .icon {
+    left: 0;
+    top: 4px;
+    width: 26px;
+    font-size: 0.7rem;
+  }
+  .portrait-name {
+    font-size: 1rem;
+  }
+  .portrait-description {
+    font-size: 0.75rem;
+  }
+  .portrait-affiliation {
+    font-size: 0.72rem;
+  }
 }
 
 /*# sourceMappingURL=portrait.css.map */

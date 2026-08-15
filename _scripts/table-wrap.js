@@ -9,7 +9,11 @@
     for (const table of tables) {
       // create wrapper with scroll
       const wrapper = document.createElement("div");
-      wrapper.style.overflowX = "auto";
+      wrapper.className = "table-scroll";
+      // let the wrapper scroll on its own, and announce it to screen readers
+      wrapper.setAttribute("tabindex", "0");
+      wrapper.setAttribute("role", "region");
+      wrapper.setAttribute("aria-label", "table, scrollable");
 
       // undo css force-text-wrap
       table.style.overflowWrap = "normal";

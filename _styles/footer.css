@@ -4,9 +4,8 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  padding: 40px;
+  padding: 56px var(--gutter);
   line-height: var(--spacing);
-  box-shadow: var(--shadow);
 }
 
 footer a {
@@ -19,6 +18,27 @@ footer a:hover {
 
 footer .icon {
   font-size: var(--xl);
+}
+
+footer > div:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+footer .button[data-style=bare] {
+  padding: 10px;
+  border-radius: var(--round);
+}
+
+footer .button[data-style=bare]:hover {
+  background: rgba(255, 255, 255, 0.1215686275);
+}
+
+.footer-copyright {
+  color: var(--text-muted);
+  font-size: var(--small);
 }
 
 /*# sourceMappingURL=footer.css.map */

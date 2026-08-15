@@ -1,15 +1,31 @@
 a {
   color: var(--primary);
-  transition: color var(--transition);
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color var(--transition), text-decoration-color var(--transition);
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--text);
+  color: var(--primary-strong);
+  text-decoration-color: currentColor;
 }
 
 a:not([href]) {
   color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: var(--rounded-sm);
+}
+
+.button:focus-visible,
+.tag:focus-visible {
+  outline-color: var(--text);
+  outline-offset: 2px;
 }
 
 /*# sourceMappingURL=link.css.map */

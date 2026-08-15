@@ -1,35 +1,31 @@
 .post-nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 48px 0 0;
+}
+
+.post-nav a {
+  display: flex;
+  align-items: center;
   gap: 10px;
-  color: var(--gray);
-}
-
-.post-nav > :first-child {
+  flex: 1 1 240px;
+  padding: 16px 20px;
+  border: solid 1px var(--border);
+  border-radius: var(--rounded);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
   text-align: left;
+  text-decoration: none;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
-.post-nav > :last-child {
-  text-align: right;
-}
-
-.post-nav > :first-child .icon {
-  margin-right: 0.5em;
-}
-
-.post-nav > :last-child .icon {
-  margin-left: 0.5em;
-}
-
-@media (max-width: 600px) {
-  .post-nav {
-    align-items: center;
-    flex-direction: column;
-  }
-  .post-nav > * {
-    text-align: center !important;
-  }
+.post-nav a:hover {
+  transform: translateY(var(--lift));
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+  box-shadow: var(--shadow);
 }
 
 /*# sourceMappingURL=post-nav.css.map */

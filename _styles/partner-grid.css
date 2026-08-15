@@ -1,7 +1,7 @@
 .partner-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
   align-items: stretch;
   margin: 40px 0;
 }
@@ -11,21 +11,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 22px;
   background: #ffffff;
+  border: solid 1px var(--border);
   border-radius: var(--rounded);
-  box-shadow: var(--shadow);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
 }
 
 .partner-grid > a:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover, 0 6px 16px rgba(0, 0, 0, 0.18));
+  transform: translateY(var(--lift));
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+  box-shadow: var(--shadow-lg);
 }
 
 .partner-grid img {
   max-width: 100%;
-  max-height: 70px;
+  max-height: 60px;
   width: auto;
   object-fit: contain;
 }

@@ -1,10 +1,10 @@
 section {
-  padding: 40px max(40px, (100% - 1000px) / 2);
+  padding: clamp(40px, 6vw, 72px) max(var(--gutter), (100% - var(--page-width)) / 2);
   transition: background var(--transition), color var(--transition);
 }
 
 section[data-size=wide] {
-  padding: 40px;
+  padding: clamp(40px, 6vw, 72px) var(--gutter);
 }
 
 section[data-size=full] {
@@ -30,6 +30,10 @@ main > section:nth-of-type(odd) {
 
 main > section:nth-of-type(even) {
   background: var(--background-alt);
+}
+
+main > section.background[style*="--image"] {
+  background: var(--background);
 }
 
 /*# sourceMappingURL=section.css.map */

@@ -37,11 +37,19 @@
 
 
 
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Projects | AeroSat Vision Lab</title>
 
 <link rel="icon" href="/images/icon-lab.png">
+<link rel="canonical" href="http://asvlab.com/projects/">
+
+<!-- tints browser chrome on mobile to match the site header -->
+<meta name="theme-color" content="#0b1220">
 
 <meta name="title" content="Projects">
 <meta name="description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
@@ -49,15 +57,15 @@
 <meta property="og:title" content="Projects">
 <meta property="og:site_title" content="AeroSat Vision Lab">
 <meta property="og:description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
-<meta property="og:url" content="http://asvlab.com">
-<meta property="og:image" content="/images/logo.png">
+<meta property="og:url" content="http://asvlab.com/projects/">
+<meta property="og:image" content="http://asvlab.com/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Projects">
 <meta property="twitter:description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
-<meta property="twitter:url" content="http://asvlab.com">
+<meta property="twitter:url" content="http://asvlab.com/projects/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/images/logo.png">
+<meta property="twitter:image" content="http://asvlab.com/images/share.jpg">
 
 
 <meta property="og:type" content="website">
@@ -76,16 +84,27 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon-lab.png" }
     },
-    "url": "http://asvlab.com"
+    "url": "http://asvlab.com/projects/"
   }
 </script>
 
 <link rel="alternate" type="application/rss+xml" href="http://asvlab.com/feed.xml">
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- latin fonts: url is generated automatically from the theme file -->
+
 <link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+
+<!--
+  CJK face for the site's Chinese copy. Linked by hand rather than via the
+  theme file, because the auto-generated url always asks for italics and
+  Noto Sans TC has no italic (which would 400 the whole request).
+  Google serves this split by unicode-range, so browsers only fetch the
+  subsets a page actually uses.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -118,7 +137,15 @@
   
 
   
+    <link href="/_styles/area.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/badge.css" rel="stylesheet">
   
 
   
@@ -182,6 +209,10 @@
   
 
   
+    <link href="/_styles/grant.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/grid.css" rel="stylesheet">
   
 
@@ -242,6 +273,10 @@
   
 
   
+    <link href="/_styles/profile-link.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/quote.css" rel="stylesheet">
   
 
@@ -262,11 +297,19 @@
   
 
   
+    <link href="/_styles/stat.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/table.css" rel="stylesheet">
   
 
   
     <link href="/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/team.css" rel="stylesheet">
   
 
   
@@ -279,6 +322,16 @@
 
   
     <link href="/_styles/util.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/year-jump.css" rel="stylesheet">
+  
+
+  
+
+  
+
   
 
   
@@ -376,10 +429,15 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     
+
+
+
 
 
 
@@ -410,40 +468,58 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav aria-label="Main">
     
     
       
-        <a href="/research/" data-tooltip="Published works">
+        
+        
+        
+        <a href="/research/" data-tooltip="Publications and research areas">
           Research
         </a>
       
     
       
-        <a href="/projects/" data-tooltip="Software, datasets, and more">
+        
+        
+        
+        <a href="/projects/" data-tooltip="Funded programs, software, and datasets" aria-current="page">
           Projects
         </a>
       
     
       
+        
+        
+        
         <a href="/team/" data-tooltip="">
           Team
         </a>
       
     
       
+        
+        
+        
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
       
     
       
+        
+        
+        
         <a href="/courses/" data-tooltip="Teaching and training">
           Courses
         </a>
       
     
       
+        
+        
+        
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
@@ -452,7 +528,7 @@
   </nav>
 </header>
 
-    <main>
+    <main id="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -470,75 +546,61 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="-projects">
-<i class="icon fa-solid fa-wrench"></i> Projects</h1>
+    <h1 id="projects">
+<i class="icon fa-solid fa-satellite"></i>Projects</h1>
 
-<h2 id="國家科學及技術委員會全球資訊網補助計畫一覽表">「國家科學及技術委員會全球資訊網」補助計畫一覽表</h2>
-<h3 id="nstc-subsidy-program-list">NSTC Subsidy Program List</h3>
+<p>本實驗室的研究計畫涵蓋衛星酬載的嵌入式人工智慧、SAR 與光學影像融合、低軌衛星通訊安全，以及災害遙測應用，並由國家科學及技術委員會等單位支持。</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Academic Year</th>
-      <th>Discipline Expertise</th>
-      <th>Plan Name</th>
-      <th>Title</th>
-      <th>Approved Subsidy (NT$)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>115 (In Processing)</td>
-      <td>地球科學應用</td>
-      <td>SAR衛星成像整合軟體應用加值資料應用關鍵技術研究–SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(2/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes (2/3)</td>
-      <td>共同主持人 <br> (Co-PI)</td>
-      <td>830,000</td>
-    </tr>
-    <tr>
-      <td>115 (In Processing)</td>
-      <td>立方衛星關鍵技術研發計畫</td>
-      <td>用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(2/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking (2/4)</td>
-      <td>共同主持人 <br> (Co-PI)</td>
-      <td>5,500,000</td>
-    </tr>
-    <tr>
-      <td>114 (In Processing)</td>
-      <td>航太系統與應用</td>
-      <td>Orbit-AI: 區域感知與情境自適應壓縮系統 <br> Orbit-AI: Region-Aware and Context-Adaptive Compression</td>
-      <td>計畫主持人 <br> (PI)</td>
-      <td>2,159,000</td>
-    </tr>
-    <tr>
-      <td>114 (In Processing)</td>
-      <td>立方衛星關鍵技術研發計畫</td>
-      <td>用於遠端目標監視與追蹤的人工智慧賦能通訊酬載(1/4) <br> AI Empowered Communication Payload for Remote Target Surveillance and Tracking (1/4)</td>
-      <td>共同主持人 <br> (Co-PI)</td>
-      <td>5,000,000</td>
-    </tr>
-    <tr>
-      <td>114 (In Processing)</td>
-      <td>資安科技研究</td>
-      <td>低軌衛星通訊系統之安全防護與韌性強化：安全防禦架構、異常行為與假訊息偵測、隱私強化、備援技術(1/2) <br> Security Protection and Resilience Enhancement for LEO Satellite Communication Systems: Security Defense Architecture, Anomaly and Disinformation Detection, Privacy Enhancement, and Redundancy (1/2)</td>
-      <td>共同主持人 <br> (Co-PI)</td>
-      <td>13,600,000</td>
-    </tr>
-    <tr>
-      <td>114 (In Processing)</td>
-      <td>地球科學應用</td>
-      <td>SAR衛星成像整合軟體應用加值資料應用關鍵技術研究–SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證(1/3) <br> SAR imaging and optical image heterogeneous fusion and its application in the verification of carbon stock changes (1/3)</td>
-      <td>共同主持人 <br> (Co-PI)</td>
-      <td>650,000</td>
-    </tr>
-    <tr>
-      <td>113 (Closed), <a href="/projects/cansat-disaster-reconstruction/">Project Page</a>
-</td>
-      <td>航太系統與應用</td>
-      <td>基於罐頭衛星平台以邊緣運算的半監督學習模型為重建部分雲層遮蔽災害物件區域之開發 <br> Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform</td>
-      <td>計畫主持人 <br> (PI)</td>
-      <td>850,000</td>
-    </tr>
-  </tbody>
-</table>
+<p>Our programs span embedded AI for satellite payloads, SAR and optical image fusion, security for LEO satellite communications, and remote sensing for disaster response — supported by the National Science and Technology Council and partner institutions.</p>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="計畫概況-funding-at-a-glance">計畫概況 Funding at a Glance</h2>
+
+<div class="stat-grid">
+  <div class="stat">
+    <span class="stat-value">NT$0.0M</span>
+    <span class="stat-label">Total awarded<br><span class="stat-sub">NT$0</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">7</span>
+    <span class="stat-label">Funded programs<br><span class="stat-sub">6 currently active</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">2</span>
+    <span class="stat-label">Led as PI<br><span class="stat-sub">5 as Co-PI</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">4</span>
+    <span class="stat-label">Disciplines<br><span class="stat-sub">aerospace to cybersecurity</span></span>
+  </div>
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="補助計畫-funded-research-programs">補助計畫 Funded Research Programs</h2>
+
+<p>國科會補助計畫一覽，依研究主題分類。NSTC subsidy programs, grouped by research theme.</p>
 
 <div class="search-box">
   <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
@@ -547,22 +609,425 @@
   </button>
 </div>
 
+<div class="search-info"></div>
+
+<nav class="kind-nav" aria-label="Jump to research theme">
+  
+    
+    
+      <a href="#kind-onboard-ai">
+        <i class="icon fa-solid fa-microchip"></i>
+        Onboard &amp; Embedded AI<span>2</span>
+      </a>
+    
+  
+    
+    
+      <a href="#kind-sar-fusion">
+        <i class="icon fa-solid fa-satellite-dish"></i>
+        SAR &amp; Optical Fusion<span>2</span>
+      </a>
+    
+  
+    
+    
+      <a href="#kind-detection-tracking">
+        <i class="icon fa-solid fa-crosshairs"></i>
+        Detection &amp; Tracking<span>2</span>
+      </a>
+    
+  
+    
+    
+      <a href="#kind-comms-security">
+        <i class="icon fa-solid fa-shield-halved"></i>
+        LEO Communications &amp; Security<span>1</span>
+      </a>
+    
+  
+</nav>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h3 class="kind-heading" id="kind-onboard-ai"&gt;
+  &lt;i class="icon fa-solid fa-microchip"&gt;&lt;/i&gt;
+  星載人工智慧 · Onboard &amp; Embedded AI
+  &lt;span class="kind-count"&gt;
+    2 programs
+    · NT$0
+  &lt;/span&gt;
+&lt;/h3&gt;
+
+&lt;div class="grant-list" data-search-group&gt;
+</code></pre></div></div>
+
+<article class="grant" data-status="active" data-kind="onboard-ai">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      
+        <span class="badge badge-pi">計畫主持人 · PI</span>
+      
+      
+        <span class="badge badge-active">Active</span>
+      
+      <span class="badge badge-quiet">NSTC</span>
+      <span class="badge badge-quiet">民國 114 · 2025</span>
+    </div>
+
+    <h4 class="grant-title">
+      
+        Orbit-AI: Region-Aware and Context-Adaptive Compression
+      
+    </h4>
+    <p class="grant-title-zh">Orbit-AI: 區域感知與情境自適應壓縮系統</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        <i class="icon fa-solid fa-folder-open"></i>
+        航太系統與應用 · Aerospace Systems and Applications
+      </span>
+      <span class="grant-amount">
+        NT$2,159,000
+      </span>
+    </div>
+
+    
+  </div>
+</article>
+
+<article class="grant" data-status="completed" data-kind="onboard-ai">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      
+        <span class="badge badge-pi">計畫主持人 · PI</span>
+      
+      
+        <span class="badge badge-done">Completed</span>
+      
+      <span class="badge badge-quiet">NSTC</span>
+      <span class="badge badge-quiet">民國 113 · 2024</span>
+    </div>
+
+    <h4 class="grant-title">
+      
+        <a href="/projects/cansat-disaster-reconstruction/">Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform</a>
+      
+    </h4>
+    <p class="grant-title-zh">基於罐頭衛星平台以邊緣運算的半監督學習模型為重建部分雲層遮蔽災害物件區域之開發</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        <i class="icon fa-solid fa-folder-open"></i>
+        航太系統與應用 · Aerospace Systems and Applications
+      </span>
+      <span class="grant-amount">
+        NT$850,000
+      </span>
+    </div>
+
+    
+      
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/projects/cansat-disaster-reconstruction/" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
+      <i class="icon fa-solid fa-arrow-right"></i>
+      
+        <span>Read the project write-up</span>
+      
+    </a>
+  </div>
+
+
+    
+  </div>
+</article>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+  
+
+  
+  
+
+
+
+&lt;h3 class="kind-heading" id="kind-sar-fusion"&gt;
+  &lt;i class="icon fa-solid fa-satellite-dish"&gt;&lt;/i&gt;
+  SAR 與光學影像融合 · SAR &amp; Optical Fusion
+  &lt;span class="kind-count"&gt;
+    2 programs
+    · NT$0
+  &lt;/span&gt;
+&lt;/h3&gt;
+
+&lt;div class="grant-list" data-search-group&gt;
+</code></pre></div></div>
+
+<article class="grant" data-status="active" data-kind="sar-fusion">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      
+        <span class="badge badge-copi">共同主持人 · Co-PI</span>
+      
+      
+        <span class="badge badge-active">Active</span>
+      
+      <span class="badge badge-quiet">NSTC</span>
+      <span class="badge badge-quiet">民國 115 · 2026</span>
+    </div>
+
+    <h4 class="grant-title">
+      
+        SAR imaging and optical image heterogeneous fusion, applied to the verification of carbon stock changes (2/3)
+      
+    </h4>
+    <p class="grant-title-zh">SAR衛星成像整合軟體應用加值資料應用關鍵技術研究——SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證 (2/3)</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        <i class="icon fa-solid fa-folder-open"></i>
+        地球科學應用 · Earth Science Applications
+      </span>
+      <span class="grant-amount">
+        NT$830,000
+      </span>
+    </div>
+
+    
+  </div>
+</article>
+
+<article class="grant" data-status="active" data-kind="sar-fusion">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      
+        <span class="badge badge-copi">共同主持人 · Co-PI</span>
+      
+      
+        <span class="badge badge-active">Active</span>
+      
+      <span class="badge badge-quiet">NSTC</span>
+      <span class="badge badge-quiet">民國 114 · 2025</span>
+    </div>
+
+    <h4 class="grant-title">
+      
+        SAR imaging and optical image heterogeneous fusion, applied to the verification of carbon stock changes (1/3)
+      
+    </h4>
+    <p class="grant-title-zh">SAR衛星成像整合軟體應用加值資料應用關鍵技術研究——SAR成像與光學影像異質融合技術及應用於碳儲量變化之驗證 (1/3)</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        <i class="icon fa-solid fa-folder-open"></i>
+        地球科學應用 · Earth Science Applications
+      </span>
+      <span class="grant-amount">
+        NT$650,000
+      </span>
+    </div>
+
+    
+  </div>
+</article>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+  
+
+  
+  
+
+
+
+&lt;h3 class="kind-heading" id="kind-detection-tracking"&gt;
+  &lt;i class="icon fa-solid fa-crosshairs"&gt;&lt;/i&gt;
+  目標偵測與追蹤 · Detection &amp; Tracking
+  &lt;span class="kind-count"&gt;
+    2 programs
+    · NT$0
+  &lt;/span&gt;
+&lt;/h3&gt;
+
+&lt;div class="grant-list" data-search-group&gt;
+</code></pre></div></div>
+
+<article class="grant" data-status="active" data-kind="detection-tracking">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      
+        <span class="badge badge-copi">共同主持人 · Co-PI</span>
+      
+      
+        <span class="badge badge-active">Active</span>
+      
+      <span class="badge badge-quiet">NSTC</span>
+      <span class="badge badge-quiet">民國 115 · 2026</span>
+    </div>
+
+    <h4 class="grant-title">
+      
+        AI Empowered Communication Payload for Remote Target Surveillance and Tracking (2/4)
+      
+    </h4>
+    <p class="grant-title-zh">用於遠端目標監視與追蹤的人工智慧賦能通訊酬載 (2/4)</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        <i class="icon fa-solid fa-folder-open"></i>
+        立方衛星關鍵技術研發計畫 · CubeSat Key Technology Development
+      </span>
+      <span class="grant-amount">
+        NT$5,500,000
+      </span>
+    </div>
+
+    
+  </div>
+</article>
+
+<article class="grant" data-status="active" data-kind="detection-tracking">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      
+        <span class="badge badge-copi">共同主持人 · Co-PI</span>
+      
+      
+        <span class="badge badge-active">Active</span>
+      
+      <span class="badge badge-quiet">NSTC</span>
+      <span class="badge badge-quiet">民國 114 · 2025</span>
+    </div>
+
+    <h4 class="grant-title">
+      
+        AI Empowered Communication Payload for Remote Target Surveillance and Tracking (1/4)
+      
+    </h4>
+    <p class="grant-title-zh">用於遠端目標監視與追蹤的人工智慧賦能通訊酬載 (1/4)</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        <i class="icon fa-solid fa-folder-open"></i>
+        立方衛星關鍵技術研發計畫 · CubeSat Key Technology Development
+      </span>
+      <span class="grant-amount">
+        NT$5,000,000
+      </span>
+    </div>
+
+    
+  </div>
+</article>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+  
+
+  
+  
+
+
+
+&lt;h3 class="kind-heading" id="kind-comms-security"&gt;
+  &lt;i class="icon fa-solid fa-shield-halved"&gt;&lt;/i&gt;
+  低軌通訊與資安 · LEO Communications &amp; Security
+  &lt;span class="kind-count"&gt;
+    1 program
+    · NT$0
+  &lt;/span&gt;
+&lt;/h3&gt;
+
+&lt;div class="grant-list" data-search-group&gt;
+</code></pre></div></div>
+
+<article class="grant" data-status="active" data-kind="comms-security">
+  <div class="grant-bar" aria-hidden="true"></div>
+  <div class="grant-body">
+    <div class="grant-tags">
+      
+        <span class="badge badge-copi">共同主持人 · Co-PI</span>
+      
+      
+        <span class="badge badge-active">Active</span>
+      
+      <span class="badge badge-quiet">NSTC</span>
+      <span class="badge badge-quiet">民國 114 · 2025</span>
+    </div>
+
+    <h4 class="grant-title">
+      
+        Security Protection and Resilience Enhancement for LEO Satellite Communication Systems: Security Defense Architecture, Anomaly and Disinformation Detection, Privacy Enhancement, and Redundancy (1/2)
+      
+    </h4>
+    <p class="grant-title-zh">低軌衛星通訊系統之安全防護與韌性強化：安全防禦架構、異常行為與假訊息偵測、隱私強化、備援技術 (1/2)</p>
+
+    <div class="grant-foot">
+      <span class="grant-discipline">
+        <i class="icon fa-solid fa-folder-open"></i>
+        資安科技研究 · Cybersecurity Technology Research
+      </span>
+      <span class="grant-amount">
+        NT$13,600,000
+      </span>
+    </div>
+
+    
+  </div>
+</article>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+</code></pre></div></div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="專案紀錄-project-write-ups">專案紀錄 Project Write-ups</h2>
+
+<p>深入介紹本實驗室的重點研究計畫，包含方法與實驗結果。In-depth accounts of selected projects, covering methods, results, and hardware validation.</p>
+
 <div class="post-excerpt-container">
     <div class="post-excerpt">
       
-      
-      
-
-      
         <a href="/projects/enhancing-maritime-tracking/" class="post-excerpt-image">
-          <img src="/images/projects/uaat-tamus.png" alt="Enhancing Real-Time Maritime Object Tracking with Satellite-Based Edge AI and Deep Reinforcement Learning">
+          <img src="/images/projects/uaat-tamus.png" alt="Enhancing Real-Time Maritime Object Tracking with Satellite-Based Edge AI and Deep Reinforcement Learning" loading="lazy">
         </a>
       
 
       <div class="post-excerpt-text">
         <a href="/projects/enhancing-maritime-tracking/">Enhancing Real-Time Maritime Object Tracking with Satellite-Based Edge AI and Deep Reinforcement Learning</a>
+        
+          <p class="post-excerpt-subtitle">UAAT-TAMUS Collaborative Project (2024/12–2025/11)</p>
+        
+        
+          
+
+
+  <div class="tags" data-link="http://asvlab.com/projects/">
+    
+      <a href="http://asvlab.com/projects/?search=%22tag:%20international-research%22" class="tag" data-tooltip='Show items with the tag "international-research"'>
+        international-research
+      </a>
+    
+  </div>
+
+
+        
         <p>1. Implement Edge AI on satellites to process remote sensing data, enabling real-time detection and tracking of maritime activities in the Taiwan Strait.   2. Create an integrated communication network using LEO satellites and UAVs/Ships to optimize data rates and ensure reliable data transmission.
 </p>
+        <a href="/projects/enhancing-maritime-tracking/" class="read-more">Read more...</a>
       </div>
     </div>
   </div>
@@ -570,19 +1035,36 @@
 <div class="post-excerpt-container">
     <div class="post-excerpt">
       
-      
-      
-
-      
         <a href="/projects/cansat-disaster-reconstruction/" class="post-excerpt-image">
-          <img src="/images/projects/Result-water.png" alt="Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform">
+          <img src="/images/projects/Result-water.png" alt="Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform" loading="lazy">
         </a>
       
 
       <div class="post-excerpt-text">
         <a href="/projects/cansat-disaster-reconstruction/">Development of a Semi-Supervised Learning Model for Disaster Object Reconstruction in Partially Cloud-Covered Areas Using Edge Computing on a CanSAT Platform</a>
-        <p>本計畫針對光學地球觀測影像易受雲層遮蔽影響、導致災害應變與 環境監測等任務缺乏即時可用資料之問題，提出以合成孔徑雷達（SAR）引導之光學影像雲去除與雲遮蔽區域重建流程。由於SAR具全天候成像能力，可在雲雨條件下提供穩定的結構與紋理線索，本研究以SAR結構資訊輔助光學多光譜影像之雲遮蔽修補，提升雲覆蓋情境下光學產品的可用性。<br>方法面包含三個關鍵模組：(1) 以SAR與光學影像之重疊區域為處理範圍，採分塊（tile-wise）流程以符合資源受限的執行需求；(2)以確定性粗到細跨模態配準建立像素級對應：先利用地理定位/軌道等後設資訊將SAR與光學表達於共同網格，再以邊緣特徵之相位相關估測殘差平移並以門檻機制篩選不可靠配對，以降低幾何誤差造成的重建偽影；(3) 以雙分支深度網路分別萃取SAR與光學特徵，透過注意力導向融合整合SAR結構與光學光譜資訊，並以多階段聚合與殘差學習輸出雲修補後之多光譜影像。<br> 訓練策略採雲感知（cloud-aware）更新：以改良之雲偵測（包含雪/冰抑制）於訓練階段產生雲區權重，對雲遮蔽像素進行損失加權以提升濃雲條件下的重建品質；推論階段不依賴雲遮罩以降低作業複雜度。實驗展示結果顯示，所提方法在中高雲量與近乎全雲覆蓋情境下仍可維持較佳的結構連續性，並支援下游應用（如水體輪廓擷取）。此外，本計畫完成邊緣運算驗證，將模型經量化與部署至FPGA平台，於維持重建品質下達成即時推論效能，顯示具備在邊緣/上板環境執行雲去除與快速產製可用光學產品之可行性。<br> Cloud contamination remains a major limitation of optical Earth observation (EO), particularly in tropical and monsoon regions where persistent cloud cover reduces the availability of timely imagery for disaster response and environmental monitoring. This project develops a SAR-guided optical restoration workflow to generate cloud-refined multispectral imagery from paired synthetic aperture radar (SAR) and cloud-contaminated optical observations. SAR is largely insensitive to illumination and weather, and therefore provides stable structural cues (geometry, edges, and texture) that can complement the spectral information of optical sensors when optical measurements are degraded. <br> The proposed workflow is designed with operational constraints in mind and consists of three key components. First, pre-processing is performed over the SAR–optical overlap region using a tile-wise strategy to keep memory usage bounded and to support resource-constrained execution. Second, a deterministic coarse-to-fine cross-modality co-registration module establishes pixel-level correspondence prior to fusion. Coarse alignment maps both modalities to a common projected grid using geolocation metadata and inverse geocoding/resampling. Residual within-tile misalignment is then approximated as an in-plane translation and refined using FFT-based phase correlation on modality-robust edge representations. A lightweight acceptance gate screens unreliable pairs (e.g., low-texture areas or insufficient optical structure under dense cloud) to reduce the risk of reconstruction artifacts caused by misregistration. Third, cloud restoration is performed by a two-stream neural network that extracts modality-specific features from SAR and optical inputs, integrates complementary cues through attention-guided fusion, and reconstructs a cloud-refined multispectral output via multi-stage feature aggregation and residual prediction. This design preserves radiometric consistency in clear-sky regions while focusing correction capacity on occluded areas. <br> To address the strong spatial imbalance introduced by clouds, a cloud-aware training strategy is applied during model optimization. A refined cloud mask is generated at training time using multispectral cues and snow/ice suppression, and is used to form a pixel-wise weight map for loss reweighting. This increases supervision emphasis on cloud-occluded pixels, improving reconstruction fidelity under heavy cloud coverage. Importantly, the cloud mask is not required at inference, which reduces operational dependency on mask generation and simplifies deployment. Project results, as summarized in the poster materials, indicate that the SAR-guided approach improves structural completeness under both moderate and extreme cloud coverage and supports downstream analytics such as water-body delineation from the reconstructed products. In addition, the project validates edge/onboard feasibility using an FPGA-based edge-computing prototype. The deployment pathway includes calibration-driven low-precision quantization, compilation to an accelerator-ready artifact, tile-wise inference execution, and quantitative verification. The experiment measurements demonstrate real-time inference latency while maintaining high reconstruction quality, supporting the practicality of executing cloud removal locally under constrained compute, memory, and power budgets.<br> Overall, this project provides an end-to-end, deployable pathway for cloud-resilient optical EO: deterministic SAR–optical co-registration to enable reliable pixel-level fusion, attention-guided SAR–optical restoration with cloud-aware training to improve performance under dense occlusion, and verified edge execution to reduce latency and downlink dependence for time-sensitive EO applications.
-</p>
+        
+          <p class="post-excerpt-subtitle">基於罐頭衛星 (CanSAT) 平台以邊緣運算的半監督學習模型</p>
+        
+        
+          
+
+
+  <div class="tags" data-link="http://asvlab.com/projects/">
+    
+      <a href="http://asvlab.com/projects/?search=%22tag:%20nstc%22" class="tag" data-tooltip='Show items with the tag "nstc"'>
+        nstc
+      </a>
+    
+      <a href="http://asvlab.com/projects/?search=%22tag:%20%E5%9C%8B%E7%A7%91%E6%9C%83%E8%A8%88%E5%8A%83%22" class="tag" data-tooltip='Show items with the tag "國科會計劃"'>
+        國科會計劃
+      </a>
+    
+  </div>
+
+
+        
+        <p>本計畫針對光學地球觀測影像易受雲層遮蔽影響、導致災害應變與 環境監測等任務缺乏即時可用資料之問題，提出以合成孔徑雷達（SAR）引導之光學影像雲去除與雲遮蔽區域重建流程。由於SAR具全天候成像能力，可在雲雨條件下提供穩定的結構與紋理線索，本研究以SAR結構資訊輔助光學多光譜影像之雲遮蔽修補，提升雲覆蓋情境下光學產品的可用性。方法面包含三個關鍵模組：(1) 以SAR與光學影像之重疊區域為處理範圍，採分塊（tile-wise）流程以符合資源受限的執行需求；(2)以確定性粗到細跨模態配準建立像素級對應：先利用地理定位/軌道等後設資訊將SAR與光學表達於共同網格，再以邊緣特徵之相位相關估測殘差平移並以門檻機制篩選不可靠配對，以降低幾何誤差造成的重建偽影；(3) 以雙分支深度網路分別萃取SAR與光學特徵，透過注意力導向融合整合SAR結構與光學光譜資訊，並以多階段聚合與殘差學習輸出雲修補後之多光譜影像。 訓練策略採雲感知（cloud-aware）更新：以改良之雲偵測（包含雪/冰抑制）於訓練階段產生雲區權重，對雲遮蔽像素進行損失加權以提升濃雲條件下的重建品質；推論階段不依賴雲遮罩以降低作業複雜度。實驗展示結果顯示，所提方法在中高雲量與近乎全雲覆蓋情境下仍可維持較佳的結構連續性，並支援下游應用（如水體輪廓擷取）。此外，本計畫完成邊緣運算驗證，將模型經量化與部署至FPGA平台，於維持重建品質下達成即時推論效能，顯示具備在邊緣/上板環境執行雲去除與快速產製可用光學產品之可行性。 Cloud contamination remains a major limitation of optical Earth observation (EO), particularly in tropical and monsoon regions where persistent cloud cover reduces the availability of timely imagery for disaster response and environmental monitoring. This project develops a SAR-guided optical restoration...</p>
+        <a href="/projects/cansat-disaster-reconstruction/" class="read-more">Read more...</a>
       </div>
     </div>
   </div>
@@ -679,7 +1161,7 @@
     
   </div>
 
-  <div>
+  <div class="footer-copyright">
     © 2026
     AeroSat Vision Lab
 <!--     &nbsp; | &nbsp; Built with

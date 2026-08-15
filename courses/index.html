@@ -37,11 +37,19 @@
 
 
 
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Courses | AeroSat Vision Lab</title>
 
 <link rel="icon" href="/images/icon-lab.png">
+<link rel="canonical" href="http://asvlab.com/courses/">
+
+<!-- tints browser chrome on mobile to match the site header -->
+<meta name="theme-color" content="#0b1220">
 
 <meta name="title" content="Courses">
 <meta name="description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
@@ -49,15 +57,15 @@
 <meta property="og:title" content="Courses">
 <meta property="og:site_title" content="AeroSat Vision Lab">
 <meta property="og:description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
-<meta property="og:url" content="http://asvlab.com">
-<meta property="og:image" content="/images/logo.png">
+<meta property="og:url" content="http://asvlab.com/courses/">
+<meta property="og:image" content="http://asvlab.com/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Courses">
 <meta property="twitter:description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
-<meta property="twitter:url" content="http://asvlab.com">
+<meta property="twitter:url" content="http://asvlab.com/courses/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/images/logo.png">
+<meta property="twitter:image" content="http://asvlab.com/images/share.jpg">
 
 
 <meta property="og:type" content="website">
@@ -76,16 +84,27 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon-lab.png" }
     },
-    "url": "http://asvlab.com"
+    "url": "http://asvlab.com/courses/"
   }
 </script>
 
 <link rel="alternate" type="application/rss+xml" href="http://asvlab.com/feed.xml">
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- latin fonts: url is generated automatically from the theme file -->
+
 <link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+
+<!--
+  CJK face for the site's Chinese copy. Linked by hand rather than via the
+  theme file, because the auto-generated url always asks for italics and
+  Noto Sans TC has no italic (which would 400 the whole request).
+  Google serves this split by unicode-range, so browsers only fetch the
+  subsets a page actually uses.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -118,7 +137,15 @@
   
 
   
+    <link href="/_styles/area.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/badge.css" rel="stylesheet">
   
 
   
@@ -182,6 +209,10 @@
   
 
   
+    <link href="/_styles/grant.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/grid.css" rel="stylesheet">
   
 
@@ -242,6 +273,10 @@
   
 
   
+    <link href="/_styles/profile-link.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/quote.css" rel="stylesheet">
   
 
@@ -262,11 +297,19 @@
   
 
   
+    <link href="/_styles/stat.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/table.css" rel="stylesheet">
   
 
   
     <link href="/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/team.css" rel="stylesheet">
   
 
   
@@ -279,6 +322,16 @@
 
   
     <link href="/_styles/util.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/year-jump.css" rel="stylesheet">
+  
+
+  
+
+  
+
   
 
   
@@ -379,7 +432,11 @@
 </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     
+
+
+
 
 
 
@@ -410,40 +467,58 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav aria-label="Main">
     
     
       
-        <a href="/research/" data-tooltip="Published works">
+        
+        
+        
+        <a href="/research/" data-tooltip="Publications and research areas">
           Research
         </a>
       
     
       
-        <a href="/projects/" data-tooltip="Software, datasets, and more">
+        
+        
+        
+        <a href="/projects/" data-tooltip="Funded programs, software, and datasets">
           Projects
         </a>
       
     
       
+        
+        
+        
         <a href="/team/" data-tooltip="">
           Team
         </a>
       
     
       
+        
+        
+        
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
       
     
       
-        <a href="/courses/" data-tooltip="Teaching and training">
+        
+        
+        
+        <a href="/courses/" data-tooltip="Teaching and training" aria-current="page">
           Courses
         </a>
       
     
       
+        
+        
+        
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
@@ -452,7 +527,7 @@
   </nav>
 </header>
 
-    <main>
+    <main id="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -669,7 +744,7 @@
     
   </div>
 
-  <div>
+  <div class="footer-copyright">
     © 2026
     AeroSat Vision Lab
 <!--     &nbsp; | &nbsp; Built with

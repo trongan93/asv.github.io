@@ -1,3 +1,9 @@
+html {
+  font-size: clamp(16px, 15.2px + 0.25vw, 18px);
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -9,6 +15,34 @@ body {
   font-family: var(--body);
   text-align: center;
   line-height: var(--compact);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--primary-soft);
+  color: var(--text);
+}
+
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 100;
+  padding: 12px 20px;
+  border-radius: 0 0 var(--rounded) var(--rounded);
+  background: var(--primary);
+  color: var(--background);
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  text-decoration: none;
+  transform: translate(-50%, -110%);
+  transition: transform var(--transition);
+}
+
+.skip-link:focus {
+  transform: translate(-50%, 0);
 }
 
 /*# sourceMappingURL=body.css.map */

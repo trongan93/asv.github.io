@@ -37,11 +37,19 @@
 
 
 
+
+
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Research | AeroSat Vision Lab</title>
 
 <link rel="icon" href="/images/icon-lab.png">
+<link rel="canonical" href="http://asvlab.com/research/">
+
+<!-- tints browser chrome on mobile to match the site header -->
+<meta name="theme-color" content="#0b1220">
 
 <meta name="title" content="Research">
 <meta name="description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
@@ -49,15 +57,15 @@
 <meta property="og:title" content="Research">
 <meta property="og:site_title" content="AeroSat Vision Lab">
 <meta property="og:description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
-<meta property="og:url" content="http://asvlab.com">
-<meta property="og:image" content="/images/logo.png">
+<meta property="og:url" content="http://asvlab.com/research/">
+<meta property="og:image" content="http://asvlab.com/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Research">
 <meta property="twitter:description" content="Pioneering AI and Satellite Innovation. AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.">
-<meta property="twitter:url" content="http://asvlab.com">
+<meta property="twitter:url" content="http://asvlab.com/research/">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/images/logo.png">
+<meta property="twitter:image" content="http://asvlab.com/images/share.jpg">
 
 
 <meta property="og:type" content="website">
@@ -76,16 +84,27 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon-lab.png" }
     },
-    "url": "http://asvlab.com"
+    "url": "http://asvlab.com/research/"
   }
 </script>
 
 <link rel="alternate" type="application/rss+xml" href="http://asvlab.com/feed.xml">
   <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- latin fonts: url is generated automatically from the theme file -->
+
 <link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+
+<!--
+  CJK face for the site's Chinese copy. Linked by hand rather than via the
+  theme file, because the auto-generated url always asks for italics and
+  Noto Sans TC has no italic (which would 400 the whole request).
+  Google serves this split by unicode-range, so browsers only fetch the
+  subsets a page actually uses.
+-->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -118,7 +137,15 @@
   
 
   
+    <link href="/_styles/area.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/badge.css" rel="stylesheet">
   
 
   
@@ -182,6 +209,10 @@
   
 
   
+    <link href="/_styles/grant.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/grid.css" rel="stylesheet">
   
 
@@ -242,6 +273,10 @@
   
 
   
+    <link href="/_styles/profile-link.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/quote.css" rel="stylesheet">
   
 
@@ -262,11 +297,19 @@
   
 
   
+    <link href="/_styles/stat.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/table.css" rel="stylesheet">
   
 
   
     <link href="/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/team.css" rel="stylesheet">
   
 
   
@@ -279,6 +322,16 @@
 
   
     <link href="/_styles/util.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/year-jump.css" rel="stylesheet">
+  
+
+  
+
+  
+
   
 
   
@@ -379,7 +432,11 @@
 </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     
+
+
+
 
 
 
@@ -410,40 +467,58 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav aria-label="Main">
     
     
       
-        <a href="/research/" data-tooltip="Published works">
+        
+        
+        
+        <a href="/research/" data-tooltip="Publications and research areas" aria-current="page">
           Research
         </a>
       
     
       
-        <a href="/projects/" data-tooltip="Software, datasets, and more">
+        
+        
+        
+        <a href="/projects/" data-tooltip="Funded programs, software, and datasets">
           Projects
         </a>
       
     
       
+        
+        
+        
         <a href="/team/" data-tooltip="">
           Team
         </a>
       
     
       
+        
+        
+        
         <a href="/blog/" data-tooltip="Musings and miscellany">
           Blog
         </a>
       
     
       
+        
+        
+        
         <a href="/courses/" data-tooltip="Teaching and training">
           Courses
         </a>
       
     
       
+        
+        
+        
         <a href="/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
@@ -452,7 +527,7 @@
   </nav>
 </header>
 
-    <main>
+    <main id="main">
       <!--
   modify main content of page:
   - add section breaks
@@ -473,63 +548,56 @@
     <h1 id="research">
 <i class="icon fa-solid fa-microscope"></i>Research</h1>
 
-<p>AeroSat Vision Lab 致力於神經網路、電腦視覺與遙測技術在航太與衛星應用領域的前瞻研究。我們專注於太空載具之人工智慧自主系統開發，特別是以 OrbitAI 為核心的嵌入式 AI 平台。透過深度學習、低功耗運算與感測器融合，我們正引領軌道上智慧系統的創新。</p>
+<p>AeroSat Vision Lab 致力於神經網路、電腦視覺與遙測技術在航太與衛星應用領域的前瞻研究。我們專注於太空載具之人工智慧自主系統開發，特別是以 OrbitAI 為核心的嵌入式 AI 平台。</p>
 
-<p>AeroSat Vision Lab is dedicated to advancing the frontiers of neural networks, computer vision, and remote sensing in aerospace and satellite domains. We focus on AI-driven autonomy for spacecraft systems, particularly through the development of onboard platforms like OrbitAI. By combining deep learning, embedded computing, and space-grade sensor integration, our research aims to redefine how intelligent systems operate in orbit.</p>
-  </section>
+<p>AeroSat Vision Lab advances neural networks, computer vision, and remote sensing for aerospace and satellite systems. Our work centres on AI-driven autonomy for spacecraft — combining deep learning, embedded computing, and space-grade sensor integration to change how intelligent systems operate in orbit.</p>
 
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
--->
-
-<h2 id="highlighted">Highlighted</h2>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhf" class="citation-image" aria-label="Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement">
-        <img src="/images/papers/doi_10.1109_JSTARS.2024.3357093.png" alt="Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhf" class="citation-title">
-        Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Trong-An Bui, Pei-Jun Lee, Chun-Sheng Liang, Pei-Hsiang Hsu, Shiuan-Hal Shiu, Chen-Kai Tsai
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
-         · 
-        <span class="citation-date">01 Jan 2024</span>
-         · 
-        <span class="citation-id">doi:10.1109/JSTARS.2024.3357093</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
+<div class="stat-grid">
+  <div class="stat">
+    <span class="stat-value">40</span>
+    <span class="stat-label">Publications<br><span class="stat-sub">since </span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">8</span>
+    <span class="stat-label">Journal articles<br><span class="stat-sub">32 conference papers</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">56</span>
+    <span class="stat-label">Co-authors<br><span class="stat-sub">unique collaborators</span></span>
+  </div>
+  <div class="stat">
+    <span class="stat-value">0.0M</span>
+    <span class="stat-label">NT$ in grants<br><span class="stat-sub"><a href="/projects">see programs</a></span></span>
   </div>
 </div>
+
+<h3 id="學術檔案-scholarly-profiles">學術檔案 Scholarly Profiles</h3>
+
+<p>完整且持續更新的出版紀錄，請參閱以下學術檔案。The records below are the authoritative, continuously updated source — this page is generated from ORCID.</p>
+
+<div class="profile-links">
+  <a class="profile-link" href="https://orcid.org/0000-0001-7660-4060" target="_blank" rel="noopener">
+    <i class="icon fa-brands fa-orcid"></i>
+    <span class="profile-link-text">
+      <strong>ORCID</strong>
+      <span>0000-0001-7660-4060</span>
+    </span>
+  </a>
+  <a class="profile-link" href="https://scholar.google.com/citations?user=eIJKsPYAAAAJ" target="_blank" rel="noopener">
+    <i class="icon fa-brands fa-google"></i>
+    <span class="profile-link-text">
+      <strong>Google Scholar</strong>
+      <span>Citations, h-index, and co-author graph</span>
+    </span>
+  </a>
+  <a class="profile-link" href="https://github.com/trongan93" target="_blank" rel="noopener">
+    <i class="icon fa-brands fa-github"></i>
+    <span class="profile-link-text">
+      <strong>GitHub</strong>
+      <span>Code and datasets released with our papers</span>
+    </span>
+  </a>
+</div>
   </section>
 
   
@@ -543,25 +611,89 @@
   size: ;
 -->
 
-<h2 id="all">All</h2>
+<h2 id="研究方向-research-areas">研究方向 Research Areas</h2>
 
-<div class="search-box">
-  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
-    <i class="icon fa-solid fa-magnifying-glass"></i>
-  </button>
+<div class="area-grid">
+  
+    
+    <div class="area">
+      <i class="icon fa-solid fa-microchip"></i>
+      <h3>Onboard &amp; Embedded AI<span class="area-zh">星載人工智慧</span>
+</h3>
+      <p>Real-time inference within the power, memory, and radiation budgets of a satellite payload — quantised models deployed to FPGA, MCU, and DPU targets. This is the core of the <strong>OrbitAI</strong> platform.
+</p>
+      
+        <a class="area-link" href="/projects#kind-onboard-ai">
+          2 funded programs
+          <i class="icon fa-solid fa-arrow-right"></i>
+        </a>
+      
+    </div>
+  
+    
+    <div class="area">
+      <i class="icon fa-solid fa-satellite-dish"></i>
+      <h3>SAR &amp; Optical Fusion<span class="area-zh">SAR 與光學影像融合</span>
+</h3>
+      <p>Using all-weather synthetic aperture radar to restore optical imagery obscured by cloud, with cross-modality co-registration and attention-guided reconstruction — applied to disaster response and carbon stock verification.
+</p>
+      
+        <a class="area-link" href="/projects#kind-sar-fusion">
+          2 funded programs
+          <i class="icon fa-solid fa-arrow-right"></i>
+        </a>
+      
+    </div>
+  
+    
+    <div class="area">
+      <i class="icon fa-solid fa-crosshairs"></i>
+      <h3>Detection &amp; Tracking<span class="area-zh">目標偵測與追蹤</span>
+</h3>
+      <p>Maritime and ground target surveillance from orbit, including deep reinforcement learning for UAV trajectory design across integrated space–air–sea networks.
+</p>
+      
+        <a class="area-link" href="/projects#kind-detection-tracking">
+          2 funded programs
+          <i class="icon fa-solid fa-arrow-right"></i>
+        </a>
+      
+    </div>
+  
+    
+    <div class="area">
+      <i class="icon fa-solid fa-shield-halved"></i>
+      <h3>LEO Communications &amp; Security<span class="area-zh">低軌通訊與資安</span>
+</h3>
+      <p>Compression and downlink efficiency for constrained links, alongside anomaly detection, disinformation detection, and resilience for low-Earth-orbit satellite communication systems.
+</p>
+      
+        <a class="area-link" href="/projects#kind-comms-security">
+          1 funded program
+          <i class="icon fa-solid fa-arrow-right"></i>
+        </a>
+      
+    </div>
+  
 </div>
+  </section>
 
-<div class="search-info"></div>
+  
+  
+  
 
-<h3 id="2025">2025</h3>
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="代表著作-selected-publications">代表著作 Selected Publications</h2>
 
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/hbcz5q" class="citation-image" aria-label="Cloud-Aware SAR Fusion for Enhanced Optical Sensing in Space Missions">
-        <img src="" alt="Cloud-Aware SAR Fusion for Enhanced Optical Sensing in Space Missions" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -578,17 +710,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2025 IEEE Radar Conference (RadarConf25)</span>
-         · 
-        <span class="citation-date">04 Oct 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/radarconf2559087.2025.11205145</span>
+        
+           · 
+          <span class="citation-date">Oct 2025</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/hbcz5q" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -599,567 +752,6 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/hbcz5s" class="citation-image" aria-label="UAV 3D Trajectory Design in Space-Air-Sea Integrated Networks for Marine IoT Systems Using Deep Reinforcement Learning">
-        <img src="" alt="UAV 3D Trajectory Design in Space-Air-Sea Integrated Networks for Marine IoT Systems Using Deep Reinforcement Learning" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/hbcz5s" class="citation-title">
-        UAV 3D Trajectory Design in Space-Air-Sea Integrated Networks for Marine IoT Systems Using Deep Reinforcement Learning
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Belyneh Abebe Tesfaw, Rong-Terng Juang, Hsin-Piao Lin, Getaneh Berie Tarekegn, Wendenda Nathanael Kabore, Shiann-Shiun Jeng, Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2025 IEEE VTS Asia Pacific Wireless Communications Symposium (APWCS)</span>
-         · 
-        <span class="citation-date">20 Aug 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/apwcs67981.2025.11151918</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/hbcz5r" class="citation-image" aria-label="Performance Analysis of Aerial Base Station Deployment in Satellite Wireless Communication">
-        <img src="" alt="Performance Analysis of Aerial Base Station Deployment in Satellite Wireless Communication" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/hbcz5r" class="citation-title">
-        Performance Analysis of Aerial Base Station Deployment in Satellite Wireless Communication
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Wendenda Nathanael Kabore, Rong-Terng Juang, Hsin-Piao Lin, Belayneh Abebe Tesfaw, Shiann-Shiun Jeng, Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2025 IEEE VTS Asia Pacific Wireless Communications Symposium (APWCS)</span>
-         · 
-        <span class="citation-date">20 Aug 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/apwcs67981.2025.11151952</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/hbcz5v" class="citation-image" aria-label="Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite Imagery">
-        <img src="/images/papers/icce-tw-2025-2.png" alt="Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite Imagery" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/hbcz5v" class="citation-title">
-        Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite Imagery
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Thanh-Thoai Le, Trong-An Bui, Hai Tran, Yang-Lang Chang, Pei-Jun Lee
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
-         · 
-        <span class="citation-date">16 Jul 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/icce-taiwan66881.2025.11207770</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/hbcz5t" class="citation-image" aria-label="Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking">
-        <img src="/images/papers/icce-tw-2025-1.png" alt="Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/hbcz5t" class="citation-title">
-        Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Tai Ho, Trong-An Bui, Pei-Jun Lee, Hsin-Piao Lin, Thanh-Thoai Le, Daniel Selva, Hai Tran
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
-         · 
-        <span class="citation-date">16 Jul 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/icce-taiwan66881.2025.11207837</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/g9rvmw" class="citation-image" aria-label="Lightweight Feature-Enhanced U-Net for Landslide Change Detection in Remote Sensing Imagery">
-        <img src="" alt="Lightweight Feature-Enhanced U-Net for Landslide Change Detection in Remote Sensing Imagery" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/g9rvmw" class="citation-title">
-        Lightweight Feature-Enhanced U-Net for Landslide Change Detection in Remote Sensing Imagery
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Ching-He Hsu, Pei-Jun Lee, Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2025 1st International Conference on Consumer Technology (ICCT-Pacific)</span>
-         · 
-        <span class="citation-date">29 Mar 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCT-Pacific63901.2025.11012856</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/g83v8p" class="citation-image" aria-label="Standard Dynamic Range (SDR) satellite images">
-        <img src="" alt="Standard Dynamic Range (SDR) satellite images" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/g83v8p" class="citation-title">
-        Standard Dynamic Range (SDR) satellite images
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Zenodo</span>
-         · 
-        <span class="citation-date">03 Feb 2025</span>
-         · 
-        <span class="citation-id">doi:10.5281/zenodo.14792939</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/g9kdrx" class="citation-image" aria-label="Low Parameters UNet for Energy-Efficient Cloud Detection">
-        <img src="" alt="Low Parameters UNet for Energy-Efficient Cloud Detection" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/g9kdrx" class="citation-title">
-        Low Parameters UNet for Energy-Efficient Cloud Detection
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Chun-Fu Chen, Pei-Jun Lee, Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2025 IEEE International Conference on Consumer Electronics (ICCE)</span>
-         · 
-        <span class="citation-date">11 Jan 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE63647.2025.10929940</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/g83v8q" class="citation-image" aria-label="Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images">
-        <img src="" alt="Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/g83v8q" class="citation-title">
-        Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Trong-An Bui, Pei-Jun Lee, John Liobe, Vaidotas Barzdenas, Dainius Udris
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">IEEE Transactions on Geoscience and Remote Sensing</span>
-         · 
-        <span class="citation-date">01 Jan 2025</span>
-         · 
-        <span class="citation-id">doi:10.1109/TGRS.2024.3525411</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<h3 id="2024">2024</h3>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/g9rvmx" class="citation-image" aria-label="Saturation-Enhanced Dynamic Range Network for HDR-like Image Enhancement">
-        <img src="" alt="Saturation-Enhanced Dynamic Range Network for HDR-like Image Enhancement" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/g9rvmx" class="citation-title">
-        Saturation-Enhanced Dynamic Range Network for HDR-like Image Enhancement
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Po-Sheng-Huang, Pei-Jun Lee, Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2024 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
-         · 
-        <span class="citation-date">09 Jul 2024</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE-TAIWAN62264.2024.10674224</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhr" class="citation-image" aria-label="Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object Detection in Satellite Imagery">
-        <img src="/images/papers/doi_10_1109_ESTREAM61684_2024_10542578.gif" alt="Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object Detection in Satellite Imagery" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhr" class="citation-title">
-        Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object Detection in Satellite Imagery
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Chieh Tsai, Pei Jun Lee, Trong An Bui, Tzu Yi Pang, John Liobe, Vaidotas Barzdėnas
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2024 IEEE Open Conference of Electrical, Electronic and Information Sciences (eStream)</span>
-         · 
-        <span class="citation-date">25 Apr 2024</span>
-         · 
-        <span class="citation-id">doi:10.1109/ESTREAM61684.2024.10542578</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhp" class="citation-image" aria-label="On-Board Image Enhancement on Remote Sensing Payload">
-        <img src="" alt="On-Board Image Enhancement on Remote Sensing Payload" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhp" class="citation-title">
-        On-Board Image Enhancement on Remote Sensing Payload
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Guo-Cheng Xu, Pei-Jun Lee, Trong-An Bui, Pei-Hsiang Hsu, Shiuan-Hal Shiu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Aerospace</span>
-         · 
-        <span class="citation-date">24 Apr 2024</span>
-         · 
-        <span class="citation-id">doi:10.3390/AEROSPACE11050336</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhs" class="citation-image" aria-label="YOLO-SPD: Tiny objects localization on remote sensing based on You Only Look Once and Space-to-Depth Convolution">
-        <img src="" alt="YOLO-SPD: Tiny objects localization on remote sensing based on You Only Look Once and Space-to-Depth Convolution" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhs" class="citation-title">
-        YOLO-SPD: Tiny objects localization on remote sensing based on You Only Look Once and Space-to-Depth Convolution
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Pei-Hsiang Hsu, Pei-Jun Lee, Trong-An Bui, Yi-Shau Chou
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2024 IEEE International Conference on Consumer Electronics (ICCE)</span>
-         · 
-        <span class="citation-date">06 Jan 2024</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE59016.2024.10444386</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhq" class="citation-image" aria-label="Enhanced Moving Object Detection and Tracking in Remote Sensing Videos">
-        <img src="" alt="Enhanced Moving Object Detection and Tracking in Remote Sensing Videos" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhq" class="citation-title">
-        Enhanced Moving Object Detection and Tracking in Remote Sensing Videos
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Yi-Shau Chou, Pei-Jun Lee, Trong-An Bui, Pei-Hsiang Hsu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2024 IEEE International Conference on Consumer Electronics (ICCE)</span>
-         · 
-        <span class="citation-date">06 Jan 2024</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE59016.2024.10444236</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/g7g4fr" class="citation-image" aria-label="Spatial Reduction Attention in Multiscale Vision Transform for Surface Water–Land Interface Zone Segmentation">
-        <img src="" alt="Spatial Reduction Attention in Multiscale Vision Transform for Surface Water–Land Interface Zone Segmentation" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/g7g4fr" class="citation-title">
-        Spatial Reduction Attention in Multiscale Vision Transform for Surface Water–Land Interface Zone Segmentation
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Yu-Hsuan Chen, Trong-An Bui, Pei-Jun Lee, Ching-Huo Hsu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
-         · 
-        <span class="citation-date">01 Jan 2024</span>
-         · 
-        <span class="citation-id">doi:10.1109/JSTARS.2024.3455891</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
     
       <a href="https://doi.org/gt5xhf" class="citation-image" aria-label="Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement">
         <img src="/images/papers/doi_10.1109_JSTARS.2024.3357093.png" alt="Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1180,59 +772,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
         <span class="citation-publisher">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
-         · 
-        <span class="citation-date">01 Jan 2024</span>
-         · 
-        <span class="citation-id">doi:10.1109/JSTARS.2024.3357093</span>
+        
+           · 
+          <span class="citation-date">Jan 2024</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
 
-        
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhf" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
       
-    </div>
+        <span>View publication</span>
+      
+    </a>
   </div>
-</div>
 
-<h3 id="2023">2023</h3>
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhw" class="citation-image" aria-label="Edge Computing Convolution Operator Hardware Design for Satellite Payload">
-        <img src="" alt="Edge Computing Convolution Operator Hardware Design for Satellite Payload" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhw" class="citation-title">
-        Edge Computing Convolution Operator Hardware Design for Satellite Payload
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Chun-Sheng Liang, Pei-Jun Lee, Trong-An Bui, Wei-Chen Hsu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2023 IEEE 12th Global Conference on Consumer Electronics (GCCE)</span>
-         · 
-        <span class="citation-date">10 Oct 2023</span>
-         · 
-        <span class="citation-id">doi:10.1109/GCCE59613.2023.10315430</span>
-      </div>
-
-      
-        
-
-        
+          
+        </div>
 
         
       
@@ -1243,165 +814,6 @@
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xhx" class="citation-image" aria-label="H-BNN: FPGA-based binarized convolutional neural network for cloud detection on satellite payload">
-        <img src="" alt="H-BNN: FPGA-based binarized convolutional neural network for cloud detection on satellite payload" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhx" class="citation-title">
-        H-BNN: FPGA-based binarized convolutional neural network for cloud detection on satellite payload
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Chang-Yuan Lo, Pei-Jun Lee, Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2023 International Conference on System Science and Engineering (ICSSE)</span>
-         · 
-        <span class="citation-date">27 Jul 2023</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICSSE58758.2023.10227207</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhz" class="citation-image" aria-label="Motion based DBSCAN for object tracking in satellite video">
-        <img src="" alt="Motion based DBSCAN for object tracking in satellite video" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhz" class="citation-title">
-        Motion based DBSCAN for object tracking in satellite video
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Guo-Cheng Xu, Pei-Jun Lee, Trong-An Bui
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2023 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
-         · 
-        <span class="citation-date">17 Jul 2023</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE-TAIWAN58799.2023.10226666</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xhv" class="citation-image" aria-label="Multi-scales feature extraction model for water segmentation in satellite image">
-        <img src="" alt="Multi-scales feature extraction model for water segmentation in satellite image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xhv" class="citation-title">
-        Multi-scales feature extraction model for water segmentation in satellite image
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Yu-Hsuan Chen, Pei-Jun Lee, Trong-An Buil
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2023 IEEE International Conference on Consumer Electronics (ICCE)</span>
-         · 
-        <span class="citation-date">06 Jan 2023</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE56470.2023.10043495</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/gt5xht" class="citation-image" aria-label="Moving Object Detection for Remote Sensing Video with Satellite Jitter">
-        <img src="" alt="Moving Object Detection for Remote Sensing Video with Satellite Jitter" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      
-
-      <a href="https://doi.org/gt5xht" class="citation-title">
-        Moving Object Detection for Remote Sensing Video with Satellite Jitter
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Chi-An Tsai, Pei-Jun Lee, Trong-An Bui, Guo-Cheng Xu, Meng-Lieh Sheu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">2023 IEEE International Conference on Consumer Electronics (ICCE)</span>
-         · 
-        <span class="citation-date">06 Jan 2023</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE56470.2023.10043483</span>
-      </div>
-
-      
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-<div class="citation-container">
-  <div class="citation">
     
       <a href="https://doi.org/gt5xhn" class="citation-image" aria-label="SWRNet: A Deep Learning Approach for Small Surface Water Area Recognition Onboard Satellite">
         <img src="/images/papers/doi_10.1109_JSTARS.2023.3328118.png" alt="SWRNet: A Deep Learning Approach for Small Surface Water Area Recognition Onboard Satellite" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1422,17 +834,166 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
         <span class="citation-publisher">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
-         · 
-        <span class="citation-date">01 Jan 2023</span>
-         · 
-        <span class="citation-id">doi:10.1109/JSTARS.2023.3328118</span>
+        
+           · 
+          <span class="citation-date">Jan 2023</span>
+        
       </div>
 
       
         
 
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhn" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
         
+      
+    </div>
+  </div>
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="全部著作-all-publications">全部著作 All Publications</h2>
+
+<p>依年份排列，共 40 篇。40 publications, newest first. Filter by title, author, or venue.</p>
+
+<div class="search-box">
+  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
+  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
+    <i class="icon fa-solid fa-magnifying-glass"></i>
+  </button>
+</div>
+
+<div class="search-info"></div>
+
+<nav class="year-jump" aria-label="Jump to publication year">
+  
+    <a href="#pub-2025">2025<span>9</span></a>
+  
+    <a href="#pub-2024">2024<span>7</span></a>
+  
+    <a href="#pub-2023">2023<span>6</span></a>
+  
+    <a href="#pub-2022">2022<span>2</span></a>
+  
+    <a href="#pub-2021">2021<span>4</span></a>
+  
+    <a href="#pub-2020">2020<span>3</span></a>
+  
+    <a href="#pub-2019">2019<span>3</span></a>
+  
+    <a href="#pub-2018">2018<span>1</span></a>
+  
+    <a href="#pub-2017">2017<span>1</span></a>
+  
+    <a href="#pub-"><span>4</span></a>
+  
+</nav>
+
+<h3 class="pub-year" id="pub-2025">
+    2025
+    <span class="pub-year-count">9 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hbcz5q" class="citation-title">
+        Cloud-Aware SAR Fusion for Enhanced Optical Sensing in Space Missions
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Trong-An Bui, Thanh-Thoai Le
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2025 IEEE Radar Conference (RadarConf25)</span>
+        
+           · 
+          <span class="citation-date">Oct 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/hbcz5q" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1440,14 +1001,1625 @@
   </div>
 </div>
 
-<h3 id="2022">2022</h3>
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xh3" class="citation-image" aria-label="Reduction deep learning model for floods recognition in satellite images">
-        <img src="" alt="Reduction deep learning model for floods recognition in satellite images" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hbcz5s" class="citation-title">
+        UAV 3D Trajectory Design in Space-Air-Sea Integrated Networks for Marine IoT Systems Using Deep Reinforcement Learning
       </a>
+
+      <div class="citation-authors" tabindex="0">
+        Belyneh Abebe Tesfaw, Rong-Terng Juang, Hsin-Piao Lin, Getaneh Berie Tarekegn, Wendenda Nathanael Kabore, Shiann-Shiun Jeng, Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2025 IEEE VTS Asia Pacific Wireless Communications Symposium (APWCS)</span>
+        
+           · 
+          <span class="citation-date">Aug 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/hbcz5s" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hbcz5r" class="citation-title">
+        Performance Analysis of Aerial Base Station Deployment in Satellite Wireless Communication
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Wendenda Nathanael Kabore, Rong-Terng Juang, Hsin-Piao Lin, Belayneh Abebe Tesfaw, Shiann-Shiun Jeng, Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2025 IEEE VTS Asia Pacific Wireless Communications Symposium (APWCS)</span>
+        
+           · 
+          <span class="citation-date">Aug 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/hbcz5r" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+      <a href="https://doi.org/hbcz5v" class="citation-image" aria-label="Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite Imagery">
+        <img src="/images/papers/icce-tw-2025-2.png" alt="Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite Imagery" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hbcz5v" class="citation-title">
+        Transformer-Based SAR-Optical Fusion Network for Cloud Removal in Satellite Imagery
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Thanh-Thoai Le, Trong-An Bui, Hai Tran, Yang-Lang Chang, Pei-Jun Lee
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
+        
+           · 
+          <span class="citation-date">Jul 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/hbcz5v" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+      <a href="https://doi.org/hbcz5t" class="citation-image" aria-label="Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking">
+        <img src="/images/papers/icce-tw-2025-1.png" alt="Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hbcz5t" class="citation-title">
+        Mitigating Occlusion and Re-Identification Challenges in UAV Object Tracking
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Tai Ho, Trong-An Bui, Pei-Jun Lee, Hsin-Piao Lin, Thanh-Thoai Le, Daniel Selva, Hai Tran
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2025 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
+        
+           · 
+          <span class="citation-date">Jul 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/hbcz5t" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/g9rvmw" class="citation-title">
+        Lightweight Feature-Enhanced U-Net for Landslide Change Detection in Remote Sensing Imagery
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Ching-He Hsu, Pei-Jun Lee, Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2025 1st International Conference on Consumer Technology (ICCT-Pacific)</span>
+        
+           · 
+          <span class="citation-date">Mar 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/g9rvmw" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/g83v8p" class="citation-title">
+        Standard Dynamic Range (SDR) satellite images
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+        <span class="citation-publisher">Zenodo</span>
+        
+           · 
+          <span class="citation-date">Feb 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/g83v8p" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/g9kdrx" class="citation-title">
+        Low Parameters UNet for Energy-Efficient Cloud Detection
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Chun-Fu Chen, Pei-Jun Lee, Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2025 IEEE International Conference on Consumer Electronics (ICCE)</span>
+        
+           · 
+          <span class="citation-date">Jan 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/g9kdrx" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/g83v8q" class="citation-title">
+        Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Trong-An Bui, Pei-Jun Lee, John Liobe, Vaidotas Barzdenas, Dainius Udris
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
+        <span class="citation-publisher">IEEE Transactions on Geoscience and Remote Sensing</span>
+        
+           · 
+          <span class="citation-date">Jan 2025</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/g83v8q" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2024">
+    2024
+    <span class="pub-year-count">7 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/g9rvmx" class="citation-title">
+        Saturation-Enhanced Dynamic Range Network for HDR-like Image Enhancement
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Po-Sheng-Huang, Pei-Jun Lee, Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2024 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
+        
+           · 
+          <span class="citation-date">Jul 2024</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/g9rvmx" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+      <a href="https://doi.org/gt5xhr" class="citation-image" aria-label="Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object Detection in Satellite Imagery">
+        <img src="/images/papers/doi_10_1109_ESTREAM61684_2024_10542578.gif" alt="Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object Detection in Satellite Imagery" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhr" class="citation-title">
+        Spatial and Wavelet Attention-Enhanced Super-Resolution for Small Object Detection in Satellite Imagery
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Chieh Tsai, Pei Jun Lee, Trong An Bui, Tzu Yi Pang, John Liobe, Vaidotas Barzdėnas
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2024 IEEE Open Conference of Electrical, Electronic and Information Sciences (eStream)</span>
+        
+           · 
+          <span class="citation-date">Apr 2024</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhr" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhp" class="citation-title">
+        On-Board Image Enhancement on Remote Sensing Payload
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Guo-Cheng Xu, Pei-Jun Lee, Trong-An Bui, Pei-Hsiang Hsu, Shiuan-Hal Shiu
+
+      </div>
+
+      <div class="citation-details">
+        
+        <span class="citation-publisher">Aerospace</span>
+        
+           · 
+          <span class="citation-date">Apr 2024</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhp" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhs" class="citation-title">
+        YOLO-SPD: Tiny objects localization on remote sensing based on You Only Look Once and Space-to-Depth Convolution
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Pei-Hsiang Hsu, Pei-Jun Lee, Trong-An Bui, Yi-Shau Chou
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2024 IEEE International Conference on Consumer Electronics (ICCE)</span>
+        
+           · 
+          <span class="citation-date">Jan 2024</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhs" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhq" class="citation-title">
+        Enhanced Moving Object Detection and Tracking in Remote Sensing Videos
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yi-Shau Chou, Pei-Jun Lee, Trong-An Bui, Pei-Hsiang Hsu
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2024 IEEE International Conference on Consumer Electronics (ICCE)</span>
+        
+           · 
+          <span class="citation-date">Jan 2024</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhq" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/g7g4fr" class="citation-title">
+        Spatial Reduction Attention in Multiscale Vision Transform for Surface Water–Land Interface Zone Segmentation
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yu-Hsuan Chen, Trong-An Bui, Pei-Jun Lee, Ching-Huo Hsu
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
+        <span class="citation-publisher">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
+        
+           · 
+          <span class="citation-date">Jan 2024</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/g7g4fr" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+      <a href="https://doi.org/gt5xhf" class="citation-image" aria-label="Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement">
+        <img src="/images/papers/doi_10.1109_JSTARS.2024.3357093.png" alt="Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhf" class="citation-title">
+        Edge-Computing-Enabled Deep Learning Approach for Low-Light Satellite Image Enhancement
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Trong-An Bui, Pei-Jun Lee, Chun-Sheng Liang, Pei-Hsiang Hsu, Shiuan-Hal Shiu, Chen-Kai Tsai
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
+        <span class="citation-publisher">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
+        
+           · 
+          <span class="citation-date">Jan 2024</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhf" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2023">
+    2023
+    <span class="pub-year-count">6 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhw" class="citation-title">
+        Edge Computing Convolution Operator Hardware Design for Satellite Payload
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Chun-Sheng Liang, Pei-Jun Lee, Trong-An Bui, Wei-Chen Hsu
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2023 IEEE 12th Global Conference on Consumer Electronics (GCCE)</span>
+        
+           · 
+          <span class="citation-date">Oct 2023</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhw" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhx" class="citation-title">
+        H-BNN: FPGA-based binarized convolutional neural network for cloud detection on satellite payload
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Chang-Yuan Lo, Pei-Jun Lee, Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2023 International Conference on System Science and Engineering (ICSSE)</span>
+        
+           · 
+          <span class="citation-date">Jul 2023</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhx" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhz" class="citation-title">
+        Motion based DBSCAN for object tracking in satellite video
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Guo-Cheng Xu, Pei-Jun Lee, Trong-An Bui
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2023 International Conference on Consumer Electronics - Taiwan (ICCE-Taiwan)</span>
+        
+           · 
+          <span class="citation-date">Jul 2023</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhz" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhv" class="citation-title">
+        Multi-scales feature extraction model for water segmentation in satellite image
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Yu-Hsuan Chen, Pei-Jun Lee, Trong-An Buil
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2023 IEEE International Conference on Consumer Electronics (ICCE)</span>
+        
+           · 
+          <span class="citation-date">Jan 2023</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhv" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xht" class="citation-title">
+        Moving Object Detection for Remote Sensing Video with Satellite Jitter
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Chi-An Tsai, Pei-Jun Lee, Trong-An Bui, Guo-Cheng Xu, Meng-Lieh Sheu
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
+        <span class="citation-publisher">2023 IEEE International Conference on Consumer Electronics (ICCE)</span>
+        
+           · 
+          <span class="citation-date">Jan 2023</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xht" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
+    
+      <a href="https://doi.org/gt5xhn" class="citation-image" aria-label="SWRNet: A Deep Learning Approach for Small Surface Water Area Recognition Onboard Satellite">
+        <img src="/images/papers/doi_10.1109_JSTARS.2023.3328118.png" alt="SWRNet: A Deep Learning Approach for Small Surface Water Area Recognition Onboard Satellite" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/gt5xhn" class="citation-title">
+        SWRNet: A Deep Learning Approach for Small Surface Water Area Recognition Onboard Satellite
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Trong-An Bui, Pei-Jun Lee
+
+      </div>
+
+      <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
+        <span class="citation-publisher">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
+        
+           · 
+          <span class="citation-date">Jan 2023</span>
+        
+      </div>
+
+      
+        
+
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xhn" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
+
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2022">
+    2022
+    <span class="pub-year-count">2 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation">
+    
     
 
     <div class="citation-text">
@@ -1464,17 +2636,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2022 IEEE International Conference on Consumer Electronics - Taiwan</span>
-         · 
-        <span class="citation-date">06 Jul 2022</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE-TAIWAN55306.2022.9869264</span>
+        
+           · 
+          <span class="citation-date">Jul 2022</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh3" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1482,12 +2675,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xh2" class="citation-image" aria-label="Edge Computing-Based SAT-Video Coding for Remote Sensing">
-        <img src="" alt="Edge Computing-Based SAT-Video Coding for Remote Sensing" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -1504,17 +2710,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
         <span class="citation-publisher">IEEE Access</span>
-         · 
-        <span class="citation-date">01 Jan 2022</span>
-         · 
-        <span class="citation-id">doi:10.1109/ACCESS.2022.3174553</span>
+        
+           · 
+          <span class="citation-date">Jan 2022</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh2" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1522,14 +2749,35 @@
   </div>
 </div>
 
-<h3 id="2021">2021</h3>
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2021">
+    2021
+    <span class="pub-year-count">4 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xh5" class="citation-image" aria-label="Edge Enhancement Loss Function for Target Object IR image Super Resolution">
-        <img src="" alt="Edge Enhancement Loss Function for Target Object IR image Super Resolution" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -1546,17 +2794,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2021 IEEE 10th Global Conference on Consumer Electronics (GCCE)</span>
-         · 
-        <span class="citation-date">12 Oct 2021</span>
-         · 
-        <span class="citation-id">doi:10.1109/GCCE53005.2021.9621868</span>
+        
+           · 
+          <span class="citation-date">Oct 2021</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh5" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1564,12 +2833,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xh7" class="citation-image" aria-label="Superpixel algorithm for objects tracking in satellite video">
-        <img src="" alt="Superpixel algorithm for objects tracking in satellite video" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -1586,17 +2868,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2021 IEEE International Conference on Consumer Electronics-Taiwan (ICCE-TW)</span>
-         · 
-        <span class="citation-date">15 Sep 2021</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE-TW52618.2021.9603119</span>
+        
+           · 
+          <span class="citation-date">Sep 2021</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh7" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1604,12 +2907,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xh6" class="citation-image" aria-label="Infrared imagery super-resolution by using a generative adversarial network">
-        <img src="" alt="Infrared imagery super-resolution by using a generative adversarial network" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -1626,17 +2942,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2021 IEEE International Conference on Consumer Electronics-Taiwan (ICCE-TW)</span>
-         · 
-        <span class="citation-date">15 Sep 2021</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE-TW52618.2021.9603172</span>
+        
+           · 
+          <span class="citation-date">Sep 2021</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh6" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1644,12 +2981,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xh4" class="citation-image" aria-label="Edge Detection Cascaded with Simplified WDSR of IR Super Resolution">
-        <img src="" alt="Edge Detection Cascaded with Simplified WDSR of IR Super Resolution" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -1666,17 +3016,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2021 International Conference on System Science and Engineering (ICSSE)</span>
-         · 
-        <span class="citation-date">26 Aug 2021</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICSSE52999.2021.9538439</span>
+        
+           · 
+          <span class="citation-date">Aug 2021</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh4" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1684,10 +3055,35 @@
   </div>
 </div>
 
-<h3 id="2020">2020</h3>
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2020">
+    2020
+    <span class="pub-year-count">3 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="citation-container">
   <div class="citation">
+    
     
       <a href="https://doi.org/gt5xh8" class="citation-image" aria-label="An Asymmetric Filter Based 3D Synthesis Algorithm with Depth Region Classification">
         <img src="/images/papers/doi_10.6688_JISE.202011_36(6).0014.png" alt="An Asymmetric Filter Based 3D Synthesis Algorithm with Depth Region Classification" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1708,17 +3104,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
         <span class="citation-publisher">Journal of Information Science and Engineering</span>
-         · 
-        <span class="citation-date">01 Nov 2020</span>
-         · 
-        <span class="citation-id">doi:10.6688/JISE.202011_36(6).0014</span>
+        
+           · 
+          <span class="citation-date">Nov 2020</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh8" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1726,12 +3143,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xjb" class="citation-image" aria-label="Hardware Implementation of DCT/IDCT sharing for HEVC/MPEG Video Coding">
-        <img src="" alt="Hardware Implementation of DCT/IDCT sharing for HEVC/MPEG Video Coding" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -1748,17 +3178,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2020 IEEE International Conference on Consumer Electronics (ICCE)</span>
-         · 
-        <span class="citation-date">01 Jan 2020</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE46568.2020.9043100</span>
+        
+           · 
+          <span class="citation-date">Jan 2020</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xjb" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1766,12 +3217,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://doi.org/gt5xh9" class="citation-image" aria-label="Deep Learning for Landslide Recognition in Satellite Architecture">
-        <img src="" alt="Deep Learning for Landslide Recognition in Satellite Architecture" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -1788,17 +3252,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
         <span class="citation-publisher">IEEE Access</span>
-         · 
-        <span class="citation-date">01 Jan 2020</span>
-         · 
-        <span class="citation-id">doi:10.1109/ACCESS.2020.3014305</span>
+        
+           · 
+          <span class="citation-date">Jan 2020</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xh9" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1806,10 +3291,35 @@
   </div>
 </div>
 
-<h3 id="2019">2019</h3>
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2019">
+    2019
+    <span class="pub-year-count">3 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="citation-container">
   <div class="citation">
+    
     
       <a href="https://doi.org/gt5xjf" class="citation-image" aria-label="Using BEMD in CNN to Identify Landslide in Satellite Image">
         <img src="/images/papers/doi_10.1109_ICSSE.2019.8823128.png" alt="Using BEMD in CNN to Identify Landslide in Satellite Image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1830,17 +3340,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2019 International Conference on System Science and Engineering (ICSSE)</span>
-         · 
-        <span class="citation-date">01 Jul 2019</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICSSE.2019.8823128</span>
+        
+           · 
+          <span class="citation-date">Jul 2019</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xjf" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1848,8 +3379,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
+    
     
       <a href="https://doi.org/gt5xjc" class="citation-image" aria-label="Adaptive Histogram Normalization based Loss Function in Deep Learning Algorithm for Face Recognition">
         <img src="/images/papers/doi_10.1109_ICCE-TW46550.2019.8991751.png" alt="Adaptive Histogram Normalization based Loss Function in Deep Learning Algorithm for Face Recognition" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1870,17 +3418,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2019 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-TW)</span>
-         · 
-        <span class="citation-date">01 May 2019</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICCE-TW46550.2019.8991751</span>
+        
+           · 
+          <span class="citation-date">May 2019</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xjc" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1888,8 +3457,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
+    
     
       <a href="https://doi.org/gt5xjd" class="citation-image" aria-label="Artifact Reduction based Multi-view Generation Algorithm for Sparse Camera Configuration">
         <img src="/images/papers/doi_10.6688_JISE.201901_35(1).0002.png" alt="Artifact Reduction based Multi-view Generation Algorithm for Sparse Camera Configuration" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1910,17 +3496,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-journal">Journal</span>
+        
         <span class="citation-publisher">Journal of Information Science and Engineering</span>
-         · 
-        <span class="citation-date">01 Jan 2019</span>
-         · 
-        <span class="citation-id">doi:10.6688/JISE.201901_35(1).0002</span>
+        
+           · 
+          <span class="citation-date">Jan 2019</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt5xjd" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1928,10 +3535,35 @@
   </div>
 </div>
 
-<h3 id="2018">2018</h3>
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2018">
+    2018
+    <span class="pub-year-count">1 publication</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="citation-container">
   <div class="citation">
+    
     
       <a href="https://doi.org/gt52df" class="citation-image" aria-label="Temperature Model and Human Detection in Thermal Image">
         <img src="/images/papers/doi_10.1109_GCCE.2018.8574800.png" alt="Temperature Model and Human Detection in Thermal Image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1952,17 +3584,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2018 IEEE 7th Global Conference on Consumer Electronics (GCCE)</span>
-         · 
-        <span class="citation-date">01 Oct 2018</span>
-         · 
-        <span class="citation-id">doi:10.1109/GCCE.2018.8574800</span>
+        
+           · 
+          <span class="citation-date">Oct 2018</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt52df" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -1970,10 +3623,35 @@
   </div>
 </div>
 
-<h3 id="2017">2017</h3>
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-2017">
+    2017
+    <span class="pub-year-count">1 publication</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="citation-container">
   <div class="citation">
+    
     
       <a href="https://doi.org/gt52dd" class="citation-image" aria-label="Multi-focus application in mobile phone">
         <img src="/images/papers/doi_10.1109_ICSSE.2017.8030845.png" alt="Multi-focus application in mobile phone" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1994,17 +3672,38 @@
       </div>
 
       <div class="citation-details">
+        
+          <span class="badge badge-conference">Conference</span>
+        
         <span class="citation-publisher">2017 International Conference on System Science and Engineering (ICSSE)</span>
-         · 
-        <span class="citation-date">01 Jul 2017</span>
-         · 
-        <span class="citation-id">doi:10.1109/ICSSE.2017.8030845</span>
+        
+           · 
+          <span class="citation-date">Jul 2017</span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://doi.org/gt52dd" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -2012,14 +3711,35 @@
   </div>
 </div>
 
-<h3></h3>
+
+
+    
+  </div>
+
+<h3 class="pub-year" id="pub-">
+    
+    <span class="pub-year-count">4 publications</span>
+  </h3>
+
+<div data-search-group="">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000427048400021" class="citation-image" aria-label="Web of Science">
-        <img src="" alt="Web of Science" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -2036,17 +3756,36 @@
       </div>
 
       <div class="citation-details">
+        
         <span class="citation-publisher">[no publisher info]</span>
-         · 
-        <span class="citation-date">[no date info]</span>
-         · 
-        <span class="citation-id">wosuid:WOS:000427048400021</span>
+        
+           · 
+          <span class="citation-date"></span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000427048400021" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -2054,12 +3793,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000459859500009" class="citation-image" aria-label="Web of Science">
-        <img src="" alt="Web of Science" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -2076,17 +3828,36 @@
       </div>
 
       <div class="citation-details">
+        
         <span class="citation-publisher">[no publisher info]</span>
-         · 
-        <span class="citation-date">[no date info]</span>
-         · 
-        <span class="citation-id">wosuid:WOS:000459859500009</span>
+        
+           · 
+          <span class="citation-date"></span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000459859500009" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -2094,12 +3865,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000467091300008" class="citation-image" aria-label="Web of Science">
-        <img src="" alt="Web of Science" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -2116,17 +3900,36 @@
       </div>
 
       <div class="citation-details">
+        
         <span class="citation-publisher">[no publisher info]</span>
-         · 
-        <span class="citation-date">[no date info]</span>
-         · 
-        <span class="citation-id">wosuid:WOS:000467091300008</span>
+        
+           · 
+          <span class="citation-date"></span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000467091300008" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
@@ -2134,12 +3937,25 @@
   </div>
 </div>
 
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="citation-container">
   <div class="citation">
     
-      <a href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000462912600143" class="citation-image" aria-label="Web of Science">
-        <img src="" alt="Web of Science" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
     
 
     <div class="citation-text">
@@ -2156,23 +3972,47 @@
       </div>
 
       <div class="citation-details">
+        
         <span class="citation-publisher">[no publisher info]</span>
-         · 
-        <span class="citation-date">[no date info]</span>
-         · 
-        <span class="citation-id">wosuid:WOS:000462912600143</span>
+        
+           · 
+          <span class="citation-date"></span>
+        
       </div>
 
       
         
 
-        
+        <div class="citation-buttons">
+          
+          
+            
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000462912600143" data-style="bare" aria-label="fa-solid fa-up-right-from-square">
+      <i class="icon fa-solid fa-up-right-from-square"></i>
+      
+        <span>View publication</span>
+      
+    </a>
+  </div>
+
+
+          
+        </div>
 
         
       
     </div>
   </div>
 </div>
+
+
+
+    
+  </div>
   </section>
 
 
@@ -2266,7 +4106,7 @@
     
   </div>
 
-  <div>
+  <div class="footer-copyright">
     © 2026
     AeroSat Vision Lab
 <!--     &nbsp; | &nbsp; Built with

@@ -1,0 +1,10 @@
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 24px 0;
+}
+
+/*# sourceMappingURL=team.css.map */

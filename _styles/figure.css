@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin: 40px 0;
 }
 
@@ -13,12 +13,15 @@
 
 .figure-image img {
   border-radius: var(--rounded);
+  border: solid 1px var(--border);
   overflow: hidden;
   box-shadow: var(--shadow);
 }
 
 .figure-caption {
-  font-style: italic;
+  color: var(--text-muted);
+  font-size: var(--small);
+  font-style: normal;
   text-align: center;
 }
 

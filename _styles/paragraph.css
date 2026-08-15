@@ -1,7 +1,29 @@
 p {
-  margin: 20px 0;
+  margin: 1.2em 0;
   text-align: justify;
+  hyphens: auto;
+  overflow-wrap: break-word;
   line-height: var(--spacing);
+}
+
+h1 + p,
+h1 + p + p {
+  max-width: 68ch;
+  margin-inline: auto;
+  color: var(--text-muted);
+  font-size: var(--large);
+  text-align: center;
+  hyphens: none;
+}
+
+h1 + p + p {
+  margin-top: 0.8em;
+}
+
+@media (max-width: 600px) {
+  p {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=paragraph.css.map */

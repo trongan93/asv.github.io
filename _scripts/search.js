@@ -5,7 +5,7 @@
 */
 {
   // elements to filter
-  const elementSelector = ".card, .citation, .post-excerpt";
+  const elementSelector = ".card, .citation, .post-excerpt, .grant";
   // search box element
   const searchBoxSelector = ".search-box";
   // results info box element
@@ -87,6 +87,20 @@
         element.style.display = "";
         x++;
       } else element.style.display = "none";
+    }
+
+    // collapse year groups (and their headings) that no longer hold a match,
+    // so a search doesn't leave a run of empty year labels behind
+    for (const group of document.querySelectorAll("[data-search-group]")) {
+      const visible = [...group.querySelectorAll(elementSelector)].some(
+        (el) => el.style.display !== "none"
+      );
+      group.style.display = visible ? "" : "none";
+
+      // the heading sits just before the group, as a sibling
+      const heading = group.previousElementSibling;
+      if (heading && /^H[1-6]$/.test(heading.tagName))
+        heading.style.display = visible ? "" : "none";
     }
 
     return [x, n, tags];

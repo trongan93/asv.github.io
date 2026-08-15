@@ -1,0 +1,76 @@
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px 22px;
+  border: solid 1px var(--border);
+  border-radius: var(--rounded);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.area:hover {
+  transform: translateY(var(--lift));
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+  box-shadow: var(--shadow);
+}
+
+.area > .icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.area h3 {
+  margin: 0;
+  font-size: var(--large);
+  font-weight: var(--bold);
+  line-height: var(--tight);
+}
+
+.area p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--small);
+  line-height: var(--compact);
+  text-align: left;
+  hyphens: none;
+}
+
+.area-zh {
+  display: block;
+  margin-top: 3px;
+  color: var(--text-muted);
+  font-size: var(--small);
+  font-weight: var(--regular);
+}
+
+.area-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+  font-family: var(--heading);
+  font-size: var(--small);
+  font-weight: var(--semi-bold);
+  text-decoration: none;
+}
+
+.area-link .icon {
+  transition: transform var(--transition);
+}
+
+.area-link:hover .icon {
+  transform: translateX(3px);
+}
+
+/*# sourceMappingURL=area.css.map */
