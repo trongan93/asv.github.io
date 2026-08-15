@@ -16,36 +16,76 @@ button {
   gap: 10px;
   max-width: calc(100% - 5px - 5px);
   margin: 5px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: var(--rounded);
+  padding: 11px 20px;
+  border: solid 1px transparent;
+  border-radius: var(--round);
   background: var(--primary);
   color: var(--background);
   text-align: center;
   font: inherit;
   font-family: var(--heading);
+  font-size: var(--small);
   font-weight: var(--semi-bold);
+  letter-spacing: 0.02em;
   text-decoration: none;
   vertical-align: middle;
   appearance: none;
-  transition: background var(--transition), color var(--transition);
+  box-shadow: var(--shadow-sm);
+  transition: background var(--transition), color var(--transition),
+    transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
 }
 
 .button:hover {
-  background: var(--text);
+  background: var(--primary-strong);
   color: var(--background);
+  transform: translateY(var(--lift));
+  box-shadow: var(--shadow);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+// secondary action: reads as a button but doesn't compete with the primary
+.button[data-style="outline"] {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--primary);
+  box-shadow: none;
+}
+
+.button[data-style="outline"]:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary-strong);
 }
 
 .button[data-style="bare"] {
-  padding: 5px;
+  padding: 6px 8px;
+  border-radius: var(--rounded-sm);
   background: none;
+  border-color: transparent;
   color: var(--primary);
+  box-shadow: none;
 
   &:hover {
-    color: var(--text);
+    background: color-mix(in srgb, var(--primary) 10%, transparent);
+    color: var(--primary-strong);
+    transform: none;
+    box-shadow: none;
   }
 }
 
 .button[data-flip] {
   flex-direction: row-reverse;
+}
+
+// nudge the arrow on "see our publications"-style links
+.button[data-style="bare"] .icon {
+  transition: transform var(--transition);
+}
+
+.button[data-style="bare"]:hover .icon {
+  transform: translateX(3px);
 }

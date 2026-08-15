@@ -1,6 +1,11 @@
 {% assign image = page.header | default: site.header | relative_url %}
 {% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
 
+{% comment %}
+  capture the current url before the loop below, which shadows `page`
+{% endcomment %}
+{% assign current_url = page.url %}
+
 {% assign svg = "images/logo.svg" | file_exists %}
 {% assign png = "images/logo.png" | file_exists %}
 {% assign jpg = "images/logo.jpg" | file_exists %}
@@ -40,18 +45,31 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
+  <nav aria-label="Main">
+    {% assign nav_pages = site.pages
+      | where_exp: "item", "item.nav"
       | sort: "nav.order"
     %}
-    {% for page in pages %}
-      {% if page.nav %}
+    {% for item in nav_pages %}
+      {% if item.nav %}
+        {% comment %}
+          mark the section the reader is currently in, including its
+          child pages (e.g. /projects/orbit-ai/ highlights "Projects")
+        {% endcomment %}
+        {% assign is_current = false %}
+        {% if item.dir and item.dir != "/" %}
+          {% if current_url == item.dir or current_url contains item.dir %}
+            {% assign is_current = true %}
+          {% endif %}
+        {% endif %}
         <a
-          href="{{ page.dir | relative_url }}"
-          data-tooltip="{{ page.nav.tooltip }}"
+          href="{{ item.dir | relative_url }}"
+          data-tooltip="{{ item.nav.tooltip }}"
+          {% if is_current %}
+            aria-current="page"
+          {% endif %}
         >
-          {{ page.title }}
+          {{ item.title }}
         </a>
       {% endif %}
     {% endfor %}

@@ -2,9 +2,11 @@
 ---
 
 blockquote {
-  margin: 20px 0;
-  padding: 10px 20px;
-  border-left: solid 4px var(--light-gray);
+  margin: 24px 0;
+  padding: 4px 24px;
+  border-left: solid 3px var(--primary);
+  color: var(--text-muted);
+  text-align: left;
 }
 
 blockquote > :first-child {

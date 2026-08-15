@@ -1,7 +1,7 @@
 ---
 ---
 
-$thumb-size: 200px;
+$thumb-size: 210px;
 $wrap: 800px;
 
 .post-excerpt-container {
@@ -10,18 +10,28 @@ $wrap: 800px;
 
 .post-excerpt {
   display: flex;
-  margin: 20px 0;
+  margin: 16px 0;
+  border: solid 1px var(--border);
   border-radius: var(--rounded);
-  background: var(--background);
+  background: var(--surface);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.post-excerpt:hover {
+  transform: translateY(var(--lift));
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+  box-shadow: var(--shadow-lg);
 }
 
 .post-excerpt-image {
   position: relative;
   width: $thumb-size;
   flex-shrink: 0;
-  // box-shadow: var(--shadow);
+  overflow: hidden;
+  background: var(--background-alt);
 }
 
 .post-excerpt-image img {
@@ -30,13 +40,19 @@ $wrap: 800px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.post-excerpt:hover .post-excerpt-image img {
+  transform: scale(1.05);
 }
 
 .post-excerpt-text {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px 30px;
+  align-content: flex-start;
+  gap: 12px;
+  padding: 22px 26px;
   text-align: left;
 }
 
@@ -46,7 +62,10 @@ $wrap: 800px;
 
 .post-excerpt-text > a:first-child {
   width: 100%;
-  font-weight: var(--semi-bold);
+  font-size: var(--large);
+  font-weight: var(--bold);
+  line-height: var(--tight);
+  text-decoration: none;
 }
 
 .post-excerpt-text > div {
@@ -55,6 +74,29 @@ $wrap: 800px;
 
 .post-excerpt-text > p {
   width: 100%;
+  color: var(--text-muted);
+  line-height: var(--compact);
+  text-align: left;
+  hyphens: none;
+}
+
+.post-excerpt-subtitle {
+  width: 100%;
+  margin: -4px 0 0 !important;
+  color: var(--text-muted);
+  font-size: var(--small);
+  line-height: var(--compact);
+  text-align: left;
+}
+
+.post-excerpt-text > .tags {
+  justify-content: flex-start;
+}
+
+.read-more {
+  font-size: var(--small);
+  font-weight: var(--semi-bold);
+  text-decoration: none;
 }
 
 @container (max-width: #{$wrap}) {

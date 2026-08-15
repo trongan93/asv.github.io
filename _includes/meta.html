@@ -24,15 +24,23 @@
 {{ site.subtitle }}. {{ description }}
 {%- endcapture %}
 {% endif %}
-{% capture url -%}
-{{ site.url }}{{ site.baseurl }}
-{%- endcapture %}
+{% comment %}
+  canonical url of this page, not just the site root
+{% endcomment %}
+{% assign url = page.url | absolute_url %}
 
-{% assign png = "images/icon-lab.png" | file_exists %}
-{% assign jpg = "images/icon-lab.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% assign icon_png = "images/icon-lab.png" | file_exists %}
+{% assign icon_jpg = "images/icon-lab.jpg" | file_exists %}
+{% assign icon = icon_png | default: icon_jpg | relative_url %}
+
+{% comment %}
+  social preview image. share.jpg is the wide 2:1 card made for this; the
+  logo is only a fallback. must be absolute — social platforms will not
+  resolve a root-relative path.
+{% endcomment %}
+{% assign share_jpg = "images/share.jpg" | file_exists %}
+{% assign share_png = "images/logo.png" | file_exists %}
+{% assign share = share_jpg | default: share_png | absolute_url %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
@@ -48,6 +56,10 @@
 <title>{{ fulltitle }}</title>
 
 <link rel="icon" href="{{ icon }}">
+<link rel="canonical" href="{{ url }}">
+
+<!-- tints browser chrome on mobile to match the site header -->
+<meta name="theme-color" content="#0b1220">
 
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">

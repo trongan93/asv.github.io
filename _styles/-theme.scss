@@ -1,41 +1,110 @@
 ---
 ---
 
-// colors
+// AeroSat Vision Lab — "Orbital" theme
+//
+// Palette is built around deep-space navy and orbital azure, with a signal
+// amber for highlights. Every text/background pair below is checked against
+// WCAG AA (4.5:1 for body copy, 7:1 for primary text).
+//
+// NOTE for the `google_fonts` filter (_plugins/misc.rb): it scans this file
+// for quoted family names that directly follow a custom-property colon, and
+// requests italics for every family it finds. So only families that ship
+// italics may be declared that way — CJK faces have no italic on Google
+// Fonts and are linked separately in _includes/fonts.html instead.
+// Avoid writing a quoted family right after a colon anywhere else, comments
+// included, or it gets picked up and the whole font request 400s.
+
 [data-dark="false"] {
-  --primary: #0795d9;
-  --secondary: #7dd3fc;
-  --text: #000000;
+  // brand
+  --primary: #0a5f9e;
+  --primary-strong: #084b7d;
+  --primary-soft: #d6ecfb;
+  --accent: #a1520a;
+  --accent-soft: #fdf0dc;
+  --success: #15803d;
+  --success-soft: #dcfce7;
+
+  // surfaces
   --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --background-alt: #f5f8fc;
+  --surface: #ffffff;
+  --border: #dde5f0;
+
+  // text
+  --text: #0f1b2d;
+  --text-muted: #586b82;
+
+  // legacy aliases (kept so existing components keep working)
+  --secondary: #d6ecfb;
+  --light-gray: #dde5f0;
+  --gray: #586b82;
+  --dark-gray: #3c4d63;
+  --white: #ffffff;
+  --black: #0f1b2d;
+  --overlay: #0f1b2d1f;
+
+  // elevation
+  --shadow-sm: 0 1px 2px #0f1b2d0f, 0 1px 3px #0f1b2d0a;
+  --shadow: 0 1px 2px #0f1b2d0d, 0 4px 12px #0f1b2d14;
+  --shadow-lg: 0 2px 4px #0f1b2d0d, 0 12px 28px #0f1b2d1f;
+  --scrim: linear-gradient(180deg, #041324e6 0%, #04132499 45%, #041324e6 100%);
 }
+
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  // brand
+  --primary: #56c2f2;
+  --primary-strong: #7ed2f7;
+  --primary-soft: #122f4a;
+  --accent: #f0b45c;
+  --accent-soft: #34240f;
+  --success: #4ade80;
+  --success-soft: #14331f;
+
+  // surfaces
+  --background: #0b1220;
+  --background-alt: #111c2f;
+  --surface: #131f34;
+  --border: #22314b;
+
+  // text
+  --text: #e5edf8;
+  --text-muted: #96a8c0;
+
+  // legacy aliases
+  --secondary: #1c3350;
+  --light-gray: #22314b;
+  --gray: #96a8c0;
+  --dark-gray: #b9c7db;
+  --white: #e5edf8;
+  --black: #04121f;
+  --overlay: #00000059;
+
+  // elevation
+  --shadow-sm: 0 1px 2px #0006;
+  --shadow: 0 1px 2px #00000059, 0 4px 14px #0000006b;
+  --shadow-lg: 0 2px 6px #0006, 0 16px 36px #00000080;
+  --scrim: linear-gradient(180deg, #030b16f2 0%, #030b16b3 45%, #030b16f2 100%);
 }
 
 :root {
   // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
-  --code: "Roboto Mono", monospace;
+  --font-latin: "Barlow";
+  --font-mono: "Roboto Mono";
 
-  // font sizes
-  --large: 1.2rem;
-  --xl: 1.4rem;
-  --xxl: 1.6rem;
+  // CJK faces are appended to every stack so mixed zh/en copy renders with
+  // matching metrics instead of falling back to an arbitrary system font.
+  --title: var(--font-latin), "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --heading: var(--title);
+  --body: var(--title);
+  --code: var(--font-mono), ui-monospace, monospace;
+
+  // font sizes — fluid, so long CJK lines stay comfortable on small screens
+  --small: 0.875rem;
+  --large: clamp(1.05rem, 0.99rem + 0.3vw, 1.2rem);
+  --xl: clamp(1.2rem, 1.08rem + 0.6vw, 1.45rem);
+  --xxl: clamp(1.45rem, 1.2rem + 1.2vw, 1.9rem);
+  --xxxl: clamp(1.9rem, 1.4rem + 2.5vw, 3.1rem);
 
   // font weights
   --thin: 200;
@@ -44,11 +113,38 @@
   --bold: 600;
 
   // text line spacing
-  --spacing: 2;
-  --compact: 1.5;
+  --spacing: 1.85;
+  --compact: 1.55;
+  --tight: 1.25;
 
-  // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
+  // shape
+  --rounded: 10px;
+  --rounded-sm: 6px;
+  --rounded-lg: 16px;
+  --round: 999px;
+
+  // motion
   --transition: 0.2s ease;
+  --lift: -2px;
+
+  // layout
+  --page-width: 1080px;
+  --gutter: clamp(20px, 5vw, 48px);
+}
+
+// respect users who ask for less animation
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition: 0s;
+    --lift: 0px;
+  }
+
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

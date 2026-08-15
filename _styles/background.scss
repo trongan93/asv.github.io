@@ -19,3 +19,17 @@
   opacity: 0.25;
   z-index: -1;
 }
+
+// sections that carry a background image need a scrim, otherwise the copy
+// sits directly on photo detail and contrast depends on the crop
+section.background[style*="--image"]:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--scrim);
+  z-index: -1;
+}
+
+section.background[style*="--image"]:before {
+  opacity: 0.45;
+}

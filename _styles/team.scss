@@ -1,0 +1,13 @@
+---
+---
+
+// wrapper used on the team page around member lists; it had no styles at all
+// before, so members fell back to inline-block flow
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 24px 0;
+}

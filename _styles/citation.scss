@@ -1,7 +1,7 @@
 ---
 ---
 
-$thumb-size: 180px;
+$thumb-size: 190px;
 $wrap: 800px;
 
 .citation-container {
@@ -10,10 +10,19 @@ $wrap: 800px;
 
 .citation {
   display: flex;
-  margin: 20px 0;
+  margin: 16px 0;
+  border: solid 1px var(--border);
   border-radius: var(--rounded);
-  background: var(--background);
+  background: var(--surface);
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
+}
+
+.citation:hover {
+  transform: translateY(var(--lift));
+  border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
   box-shadow: var(--shadow);
 }
 
@@ -21,7 +30,8 @@ $wrap: 800px;
   position: relative;
   width: $thumb-size;
   flex-shrink: 0;
-  // box-shadow: var(--shadow);
+  background: var(--background-alt);
+  border-right: solid 1px var(--border);
 }
 
 .citation-image img {
@@ -29,6 +39,7 @@ $wrap: 800px;
   inset: 0;
   width: 100%;
   height: 100%;
+  padding: 10px;
   object-fit: contain;
 }
 
@@ -39,8 +50,7 @@ $wrap: 800px;
   gap: 10px;
   max-width: 100%;
   height: min-content;
-  padding: 20px;
-  padding-left: 30px;
+  padding: 22px 24px;
   text-align: left;
   overflow-wrap: break-word;
   z-index: 0;
@@ -54,31 +64,54 @@ $wrap: 800px;
 }
 
 .citation-title {
-  font-weight: var(--semi-bold);
+  padding-right: 40px;
+  font-size: var(--large);
+  font-weight: var(--bold);
+  line-height: var(--tight);
+  text-decoration: none;
+}
+
+.citation-authors {
+  color: var(--text-muted);
+  line-height: var(--compact);
+}
+
+.citation-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: var(--small);
 }
 
 .citation-text > .icon {
   position: absolute;
   top: 20px;
   right: 20px;
-  color: var(--light-gray);
-  opacity: 0.5;
-  font-size: 30px;
+  color: var(--primary);
+  opacity: 0.28;
+  font-size: 28px;
   z-index: -1;
 }
 
 .citation-publisher {
   text-transform: capitalize;
+  font-weight: var(--semi-bold);
+  color: var(--text);
 }
 
 .citation-description {
-  color: var(--gray);
+  color: var(--text-muted);
+  line-height: var(--compact);
 }
 
 .citation-buttons {
+  // must claim the full row, or it shrinks to a flex item and wraps the labels
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
 }
 
 .citation-buttons .button {
@@ -99,5 +132,7 @@ $wrap: 800px;
   .citation-image {
     width: unset;
     height: $thumb-size;
+    border-right: none;
+    border-bottom: solid 1px var(--border);
   }
 }

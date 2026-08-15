@@ -7,44 +7,76 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 40px 0 20px 0;
+  margin: 2.2em 0 0.8em 0;
   font-family: var(--heading);
-  font-weight: var(--semi-bold);
+  font-weight: var(--bold);
+  line-height: var(--tight);
   text-align: left;
-  letter-spacing: 1px;
+  // CJK headings need to break mid-run; long English terms should not be cut
+  overflow-wrap: break-word;
+}
+
+// first heading in a section shouldn't push the section open
+section > :where(h1, h2, h3, h4, h5, h6):first-child {
+  margin-top: 0;
 }
 
 h1 {
-  font-size: 1.6rem;
-  font-weight: var(--regular);
-  text-transform: uppercase;
+  margin-bottom: 0.6em;
+  font-size: var(--xxxl);
+  font-weight: var(--semi-bold);
+  letter-spacing: -0.02em;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--regular);
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-size: var(--xxl);
+  letter-spacing: -0.01em;
+}
+
+// replaces the old full-width underline with a short brand rule that
+// extends to fill the row
+h2::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  min-width: 20px;
+  border-radius: var(--round);
+  background: linear-gradient(90deg, var(--primary), transparent);
+  opacity: 0.45;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: var(--xl);
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: var(--large);
 }
 
 h5 {
-  font-size: 1.15rem;
-}
-
-h6 {
   font-size: 1rem;
 }
 
+h6 {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 :where(h1, h2, h3, h4, h5, h6) > .icon {
-  margin-right: 1em;
-  color: var(--light-gray);
+  margin-right: 0.5em;
+  color: var(--primary);
+  opacity: 0.9;
+}
+
+// h2 is a flex row and already supplies its own gap, so the margin above
+// would double the space between icon and text
+h2 > .icon {
+  flex-shrink: 0;
+  margin-right: 0;
 }

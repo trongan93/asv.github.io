@@ -2,17 +2,57 @@
 ---
 
 table {
-  margin: 40px auto;
+  margin: 32px auto;
   border-collapse: collapse;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  font-size: var(--small);
+  text-align: left;
   overflow-wrap: anywhere;
+  box-shadow: var(--shadow-sm);
+}
+
+thead {
+  background: var(--background-alt);
 }
 
 th {
-  font-weight: var(--semi-bold);
+  font-weight: var(--bold);
+  white-space: nowrap;
 }
 
 th,
 td {
-  padding: 10px 15px;
-  border: solid 1px var(--light-gray);
+  padding: 12px 16px;
+  border: solid 1px var(--border);
+  vertical-align: top;
+  line-height: var(--compact);
+}
+
+// long bilingual tables (e.g. the grant list) are far easier to scan
+// with row banding
+tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--background-alt) 60%, transparent);
+}
+
+tbody tr:hover {
+  background: color-mix(in srgb, var(--primary) 7%, transparent);
+}
+
+// wrapper added by _scripts/table-wrap.js
+.table-scroll {
+  width: 100%;
+  margin: 32px 0;
+  overflow-x: auto;
+  border-radius: var(--rounded);
+  // hint that there is more table off-screen
+  background:
+    linear-gradient(90deg, var(--background) 30%, transparent) left / 40px 100%
+      no-repeat,
+    linear-gradient(270deg, var(--background) 30%, transparent) right / 40px
+      100% no-repeat;
+}
+
+.table-scroll > table {
+  margin: 0;
 }

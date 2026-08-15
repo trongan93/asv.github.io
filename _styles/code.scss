@@ -11,18 +11,26 @@ code * {
 // inline code
 code.highlighter-rouge {
   padding: 2px 6px;
-  background: var(--light-gray);
-  border-radius: var(--rounded);
+  background: var(--background-alt);
+  border: solid 1px var(--border);
+  border-radius: var(--rounded-sm);
+  font-size: 0.9em;
 }
 
 // code block
 div.highlighter-rouge {
   width: 100%;
-  margin: 40px 0;
+  margin: 32px 0;
   border-radius: var(--rounded);
+  border: solid 1px var(--border);
+  // the syntax colours come from a CDN stylesheet that paints the dark
+  // block. setting it here too means code stays readable even if that
+  // request fails, instead of light-on-white
+  background: #2d2d2d;
   overflow-x: auto;
   overflow-y: auto;
   text-align: left;
+  box-shadow: var(--shadow-sm);
 
   div.highlight {
     display: contents;
@@ -32,7 +40,10 @@ div.highlighter-rouge {
       min-width: 100%;
       margin: 0;
       padding: 20px;
-      color: var(--white);
+      // pairs with the dark block above, in both site themes. this used an
+      // undefined var before, which left it black-on-black in light mode
+      color: #f2f5f9;
+      line-height: var(--compact);
     }
   }
 }
