@@ -1,6 +1,6 @@
 ---
 title: "北科大 × 德州農工｜Seminar: Towards Autonomous Design and Operations of Satellites and Constellations"
-image: /images/blogs/2026-07-29-iase-selva-autonomous-satellites.jpg
+image: /images/blogs/2026-07-29-iase-selva-autonomous-satellites-2.jpg
 author: Graduate Institute of Space Systems Engineering, NTUT
 tags: [Earth Observation, Satellite, Constellation, AI, Autonomy, NTUT, Texas A&M, Space Systems]
 date: 2026-06-17
