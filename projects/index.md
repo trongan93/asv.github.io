@@ -87,9 +87,9 @@ Our programs span embedded AI for satellite payloads, SAR and optical image fusi
 
 <p class="stat-note">
 {% include icon.html icon="fa-solid fa-circle-info" %}
-上列金額為<strong>核定經費</strong>：國科會與國家太空中心為計畫核定額，UAAT–TAMUS 為本實驗室以共同主持人身分承接之本校子計畫分配額。各計畫如有正式經費文件佐證之個人分配額，另於該計畫卡片標示。多年期計畫依年度階段分列，故 {{ programs.size }} 項計畫共 {{ grants.size }} 筆補助紀錄。教育部教學計畫性質不同，另列於下方且不計入上列總額。
+上列金額為<strong>核定經費</strong>：國科會與國家太空中心為計畫核定額，UAAT–TAMUS 為本實驗室以共同主持人身分承接之本校子計畫分配額。各計畫如有正式經費文件佐證之個人分配額，另於該計畫卡片標示。多年期計畫依年度階段分列並各自結案，故同一計畫可能同時有已結案與執行中之階段；{{ programs.size }} 項計畫共 {{ grants.size }} 筆補助紀錄，各階段均標示國科會計畫編號以供查證。教育部教學計畫性質不同，另列於下方且不計入上列總額。
 <br>
-Figures are <strong>approved budgets</strong>: for the NSTC and TASA the project-level award, and for UAAT–TAMUS the allocation to NTUT's Subproject 3, which this lab holds as Co-PI. Where a formal budget document records a share within that award, it is shown on the program itself. Multi-year programs are listed once per annual phase, so {{ programs.size }} programs account for {{ grants.size }} funding records. MOE teaching grants are a different kind of work, listed separately below and excluded from this total. NSTC entries reconciled against the
+Figures are <strong>approved budgets</strong>: for the NSTC and TASA the project-level award, and for UAAT–TAMUS the allocation to NTUT's Subproject 3, which this lab holds as Co-PI. Where a formal budget document records a share within that award, it is shown on the program itself. Multi-year programs are funded one annual phase at a time and each phase closes on its own term, so a single program may show a completed phase alongside a running one — {{ programs.size }} programs account for {{ grants.size }} funding records, each carrying its NSTC project number for verification. MOE teaching grants are a different kind of work, listed separately below and excluded from this total. NSTC entries reconciled against the
 <a href="https://arspb.nstc.gov.tw/NSCWebFront/modules/talentSearch/talentSearch.do?action=initRsm17new&amp;rsNo=692e939b0e8044b8bf92c0b2f35b8756&amp;LANG=eng" target="_blank" rel="noopener">NSTC researcher profile</a>
 on 2026-08-15; MOE and TASA entries from the NTUT research export, the UAAT–TAMUS funding schedules, and the commission record.
 </p>

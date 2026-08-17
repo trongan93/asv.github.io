@@ -24,6 +24,17 @@
 #     "(2/4)", or one entry per academic year. Records are not programs. Never
 #     count records as programs; group by `program` first. Pages that show a
 #     count must say which of the two they are counting.
+#
+#     Each phase is funded separately and so CLOSES SEPARATELY: set a phase to
+#     `completed` once its own term ends, even while the program continues
+#     through a later phase. One program therefore shows completed and active
+#     phases side by side — e.g. the CubeSat payload (1/4) is completed while
+#     (2/4) runs, and the SAR fusion (1/3) is completed while (2/3) runs. Never
+#     hold an ended phase open because its successor is still running, and
+#     never close a program because one phase ended.
+#
+#     Every phase carries its own `grant-no`, which is what a reader uses to
+#     tell the phases apart and verify each against the funder.
 #  3. `category: teaching` entries are education grants, not research subsidies.
 #     Teaching is different work from a research program, so these record the
 #     ROLE ONLY — no `amount`, no `allocated`, no `kind`. They are listed in
@@ -110,6 +121,9 @@
 
 - year: 114
   ad-year: 2025
+  # 114–116 年度, a two-year MY2 award
+  period: 2025-08 – 2027-07
+  grant-no: 114-2221-E-027-030-MY2
   program: orbit-ai
   status: active
   role: pi
@@ -188,6 +202,8 @@
 
 - year: 113
   ad-year: 2024
+  period: 2024-12 – 2025-11
+  grant-no: 113-2222-E-027-011
   program: cansat-reconstruction
   status: completed
   role: pi
@@ -236,8 +252,9 @@
   note-en: >-
     Subproject 3 is led by Prof. Lin Hsin-Piao of NTUT, with this lab as Co-PI.
     The full subproject award is NT$1,200,000.
-  title: 新世代太空世代之跨領域人才培育與網絡建構：TAMUS–UAAT 太空科技（子計畫三：邊緣人工智慧空載系統於海域情監偵與跨國合作之精進）
-  title-en: "Multidisciplinary Capacity Building and Networking for a New Space Generation: TAMUS–UAAT Space Technology — Subproject 3, Advancing Edge-AI Enabled Airborne Systems for Maritime Intelligence and Cross-Border Collaboration"
+  title: UAAT-TAMUS 子計畫 3：強化海事智慧與跨國合作之邊緣 AI 空中系統研發
+  title-en: "UAAT–TAMUS Subproject 3: Advancing Edge-AI Enabled Airborne Systems for Maritime Intelligence and Cross-Border Collaboration"
+  title-full-en: "Multidisciplinary Capacity Building and Networking for a New Space Generation: TAMUS–UAAT Space Technology — Subproject 3"
   kind: detection-tracking
 
 - year: 113
@@ -255,8 +272,9 @@
   amount-level: subproject
   programme-amount: 12827500
   page: /projects/enhancing-maritime-tracking/
-  title: 新世代太空世代之跨領域人才培育與網絡建構：TAMUS–UAAT 太空科技（子計畫三）
-  title-en: "Multidisciplinary Capacity Building and Networking for a New Space Generation: TAMUS–UAAT Space Technology (Subproject 3)"
+  title: UAAT-TAMUS 子計畫 3：基於衛星的邊緣人工智慧與深度強化學習增強即時海上物體追蹤
+  title-en: "UAAT–TAMUS Subproject 3: Enhancing Real-Time Maritime Object Tracking with Satellite-Based Edge AI and Deep Reinforcement Learning"
+  title-full-en: "Multidisciplinary Capacity Building and Networking for a New Space Generation: TAMUS–UAAT Space Technology — Subproject 3"
   kind: detection-tracking
 
 
@@ -289,6 +307,7 @@
 - year: 114
   ad-year: 2025
   period: 2025-10-14 – 2026-10-13
+  grant-no: 214I44
   program: cubesat-payload-commission
   category: industry
   status: active
@@ -322,30 +341,8 @@
 
 - year: 114
   ad-year: 2025
-  program: emi-teaching
-  category: teaching
-  status: active
-  role: co-pi
-  scheme: 大專校院學生雙語化學習計畫
-  scheme-en: Bilingual Learning Promotion in Higher Education
-  agency: MOE
-  title: 全校型英語授課（EMI）教學精進計畫
-  title-en: EMI Teaching Advancement Project
-
-- year: 114
-  ad-year: 2025
-  program: teaching-mentorship
-  category: teaching
-  status: active
-  role: co-pi
-  scheme: 高等教育深耕計畫
-  scheme-en: Higher Education Sprout Project
-  agency: MOE
-  title: 教學導師
-  title-en: Teaching Mentorship
-
-- year: 113
-  ad-year: 2024
+  period: 2025-08 – 2026-01
+  grant-no: 7141108-1
   program: emi-teaching
   category: teaching
   status: completed
@@ -353,5 +350,33 @@
   scheme: 大專校院學生雙語化學習計畫
   scheme-en: Bilingual Learning Promotion in Higher Education
   agency: MOE
-  title: 全校型英語授課（EMI）教學精進計畫
-  title-en: University-level EMI Teaching Advancement Project
+  title: 114 年全英語授課教學共進計畫
+  title-en: EMI Teaching Advancement Project (FY114)
+
+- year: 114
+  ad-year: 2025
+  period: 2025-01 – 2026-07
+  grant-no: "7141101"
+  program: teaching-mentorship
+  category: teaching
+  status: completed
+  role: co-pi
+  scheme: 高等教育深耕計畫
+  scheme-en: Higher Education Sprout Project
+  agency: MOE
+  title: 114 年高等教育深耕計畫－教學薪傳
+  title-en: "Higher Education Sprout Project: Teaching Legacy Mentorship (FY114)"
+
+- year: 113
+  ad-year: 2024
+  period: 2024-02 – 2025-07
+  grant-no: 7131108-4
+  program: emi-teaching
+  category: teaching
+  status: completed
+  role: co-pi
+  scheme: 大專校院學生雙語化學習計畫
+  scheme-en: Bilingual Learning Promotion in Higher Education
+  agency: MOE
+  title: 113 年校級全英語授課教學共進計畫
+  title-en: University-wide EMI Teaching Advancement Project (FY113)

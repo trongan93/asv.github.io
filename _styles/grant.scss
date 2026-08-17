@@ -118,12 +118,21 @@
   letter-spacing: 0.02em;
 }
 
-// the funder's official project number — monospaced so the digit groups stay
-// legible and it reads as an identifier rather than prose
+// the funder's official project number — the key a reader uses to verify the
+// award, so the label stays in the body face and only the identifier is
+// monospaced, keeping the digit groups legible
 .badge.grant-no {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+.grant-no-value {
   font-family: var(--code);
   font-size: 0.75rem;
   letter-spacing: 0;
+  // long identifiers must not force the card wider than the grid column
+  overflow-wrap: anywhere;
 }
 
 // only appears where `allocated` is set, to keep a project-level figure from

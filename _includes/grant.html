@@ -36,8 +36,12 @@
       {% if grant.scheme %}
         <span class="badge badge-quiet">{{ grant.scheme }} · {{ grant.scheme-en }}</span>
       {% endif %}
+      {%- comment -%}
+        the funder's project number is the key a reader uses to look the award
+        up, so it carries a visible label rather than only a tooltip
+      {%- endcomment -%}
       {% if grant.grant-no %}
-        <span class="badge badge-quiet grant-no" title="計畫編號 · Project number">{{ grant.grant-no }}</span>
+        <span class="badge badge-quiet grant-no"><span class="grant-no-label">計畫編號 · No.</span><span class="grant-no-value">{{ grant.grant-no }}</span></span>
       {% endif %}
     </div>
 

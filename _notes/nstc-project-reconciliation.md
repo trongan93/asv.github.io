@@ -279,7 +279,59 @@ Only awarded work is listed; add it when approved.
 
 ---
 
-## 6. Published state as of 2026-08-16
+## 5c. CV cross-check — 2026-08-17
+
+Checked against `個人簡歷_裴重恩_2026` (Drive → `PlumCard2026/`, created 2026-08-16),
+which is more current than the evidence inventory and corrected several entries.
+Where the two disagree, the CV wins.
+
+**Corrected — UAAT–TAMUS titles.** Both phases were carrying the *umbrella
+programme* name. They are Subproject 3, and each year has its own subproject
+title:
+
+| Phase | Correct title |
+|---|---|
+| 113 (2024-12 → 2025-11) | 基於衛星的邊緣人工智慧與深度強化學習增強即時海上物體追蹤 <br> *Enhancing Real-Time Maritime Object Tracking with Satellite-Based Edge AI and Deep Reinforcement Learning* |
+| 114 (2025-12 → 2026-11) | 強化海事智慧與跨國合作之邊緣 AI 空中系統研發 <br> *Advancing Edge-AI Enabled Airborne Systems for Maritime Intelligence and Cross-Border Collaboration* |
+
+The 113 title is exactly the title of `_projects/enhancing-maritime-tracking.md`,
+which confirms that write-up belongs to phase 1. The programme name is retained
+as `title-full-en`.
+
+**Corrected — three teaching entries were wrong on name, number, period, and
+status.** All three had in fact already ended; two were published as `active`:
+
+| Was | Now |
+|---|---|
+| 全校型英語授課（EMI）教學精進計畫, FY114, active | 114 年全英語授課教學共進計畫, 7141108-1, 2025-08 → 2026-01, **completed** |
+| 教學導師, FY114, active | 114 年高等教育深耕計畫－教學薪傳, 7141101, 2025-01 → 2026-07, **completed** |
+| 全校型英語授課（EMI）教學精進計畫, FY113 | 113 年校級全英語授課教學共進計畫, 7131108-4, 2024-02 → 2025-07, completed |
+
+**Added — the two PI projects gained periods and project numbers**, closing the
+gap left open in section 5b:
+
+| Project | 計畫編號 | Period | Status |
+|---|---|---|---|
+| Orbit-AI (114–116 年度) | 114-2221-E-027-030-MY2 | 2025-08 → 2027-07 | active — an **MY2 two-year award**, not a single year |
+| CanSAT (113–114 年度) | 113-2222-E-027-011 | 2024-12 → 2025-11 | completed |
+
+The TASA commission's 計畫編號 214I44 is now recorded as `grant-no` too; the CV
+cites it as the project number, not merely an accounting code.
+
+Every NSTC and TASA entry now carries an official project number. The two UAAT
+phases have none — MOE subproject schedules do not issue one.
+
+**Not added: the 2026–27 UAAT–TAMUS phase.** Drive folder `UAAT-TMAUS-2026-1`
+holds a proposal for 12/01/2026 → 11/30/2027, *Edge Intelligence for Autonomous
+Earth-Observation Sensor Webs and Satellite Communications*, PI 林信標, this lab
+as Co-PI, with Daniel Selva (Texas A&M) as the TAMUS PI. The folder contains only
+RFP drafts (v1–v3, dated 2026-08-10 → 08-14), a dean's letter of commitment, and
+figures — **no award letter and no budget**. By the same rule as the NSTC 審查中
+application, it stays off the site until awarded.
+
+---
+
+## 6. Published state as of 2026-08-17
 
 What the Projects page now reports, after sections 3–5b were applied:
 
