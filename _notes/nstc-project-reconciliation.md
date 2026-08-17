@@ -141,19 +141,28 @@ identify NTUT as Subproject 3 and the applicant as Co-PI. For 114, Subproject 3
 is led by Prof. Lin Hsin-Piao (林信標) of NTUT, titled *Advancing Edge-AI Enabled
 Airborne Systems for Maritime Intelligence and Cross-Border Collaboration*.
 
-**Site decision (2026-08-15): the funded amount shown is NTUT's Subproject 3
-allocation** — NT$2,183,333 and NT$240,000 — attributed to this lab in the Co-PI
-role. `amount` holds that figure with `amount-level: subproject`, and every card
-prints the level beneath the number, so it reads as a subproject budget held as
-Co-PI rather than as personal funding. `programme-amount` holds the umbrella
-award (NT$12,827,500 / NT$8,200,000) as clearly labelled context and is never
-summed into any site total.
+**Site decision (2026-08-15, amended 2026-08-17): the funded amount shown is the
+Subproject 3 award** — NT$2,183,333 for 113 and **NT$1,200,000 for 114** —
+attributed to this lab in the Co-PI role. `amount` holds that figure with
+`amount-level: subproject`, and every card prints the level beneath the number,
+so it reads as a subproject budget held as Co-PI rather than as personal funding.
+`programme-amount` holds the umbrella award (NT$12,827,500 / NT$8,200,000) as
+context and is never summed into any site total.
 
-The personnel remuneration figures — NT$73,524 for 113 (a two-person Co-PI line
-of NT$147,048 ÷ 2) and NT$60,000 for 114 — are **not published**. They are
-recorded here because the application package needs them, and because the source
-is emphatic that NT$73,524 is a personnel line, not a share of the NT$2,183,333
-subproject budget.
+The 114 figure was first recorded as NT$240,000, which is NTUT's approved
+*personnel* budget inside the subproject, not the subproject award. Corrected on
+2026-08-17. Both years now sit at the same level: for 113, NTUT is Project 3 and
+its NT$2,183,333 allocation is the subproject total (personnel 440,076 +
+operating 1,211,528 + equipment 350,000 + admin 181,729); for 114 the subproject
+award is NT$1,200,000 (recurring 1,140,000 + capital 60,000). The two years are
+therefore comparable.
+
+Figures **not published**: NTUT's NT$240,000 personnel budget within the 114
+subproject, and the personnel remuneration — NT$73,524 for 113 (a two-person
+Co-PI line of NT$147,048 ÷ 2) and NT$60,000 for 114. They are recorded here
+because the application package needs them, and because the source is emphatic
+that NT$73,524 is a personnel line, not a share of the NT$2,183,333 subproject
+budget.
 
 The 113 phase links the existing write-up at
 `_projects/enhancing-maritime-tracking.md`, which was on the site but had no
@@ -337,11 +346,11 @@ What the Projects page now reports, after sections 3–5b were applied:
 
 | | |
 |---|---|
-| Approved research funding | **NT$43,136,033** (NT$43.1M) |
+| Approved research funding | **NT$44,096,033** (NT$44.1M) |
 | Programs / records | 7 programs · 10 annual funding records · 6 active |
 | Roles | 2 as PI · 5 as Co-PI |
 | Disciplines / agencies | 6 disciplines across 3 agencies |
-| Funder split | NSTC NT$28,589,000 · MOE NT$2,423,333 · TASA NT$12,123,700 |
+| Funder split | NSTC NT$28,589,000 · MOE NT$3,383,333 · TASA NT$12,123,700 |
 | Teaching | 2 programs · 3 records, role only, no figures, excluded from the total |
 | Status | 6 active records · 4 completed (per the 2026-08-16 portal check) |
 

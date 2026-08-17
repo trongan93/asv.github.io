@@ -1,7 +1,7 @@
 # Session log — rebuilding the Projects page from funding records
 
 **Date:** 2026-08-15 → 2026-08-17
-**Outcome:** shipped as `9b0b68c` + `9eff20a`, live at https://asvlab.com/projects/
+**Outcome:** shipped across `9b0b68c` … `aa30b77`, live at https://asvlab.com/projects/
 **Companion:** [nstc-project-reconciliation.md](nstc-project-reconciliation.md) — the *data* record (every figure and its source). This file is the *process* record: what was decided, why, and how to repeat it.
 
 Read this first when you next revise the Projects page. It exists so the next revision does not have to re-derive the reasoning.
@@ -24,7 +24,7 @@ Started as "export a Drive folder to Markdown". Became a rebuild of how the site
 | 8 | Fixed status on 5 records | Phases and teaching grants had ended but were published as active |
 | 9 | Fixed UAAT titles | Both carried the umbrella programme name, not the Subproject 3 titles |
 
-Funding total went NT$28.6M → **NT$43.1M**, entirely from adding real programs that were missing — no figure was revised upward.
+Funding total went NT$28.6M → **NT$44.1M**, almost entirely from adding real programs that were missing. One figure was later corrected upward: the UAAT 114 phase was first recorded at NT$240,000 (NTUT's personnel budget inside the subproject) and is the Subproject 3 award of NT$1,200,000.
 
 ---
 
@@ -33,7 +33,7 @@ Funding total went NT$28.6M → **NT$43.1M**, entirely from adding real programs
 These are written into the file's header. They are the whole point of the rebuild; do not quietly drop them.
 
 **Rule 1 — money is recorded at a stated level, and levels are never conflated.**
-- `amount` + `amount-level` — the budget at the level *this lab holds it*. `project` for NSTC and TASA; `subproject` for UAAT, where NTUT's Subproject 3 allocation is what the lab holds as Co-PI.
+- `amount` + `amount-level` — the budget at the level *this lab holds it*. `project` for NSTC and TASA; `subproject` for UAAT, where the Subproject 3 award is what the lab holds as Co-PI — NT$2,183,333 (113) and NT$1,200,000 (114). Do not substitute a personnel budget sitting inside the subproject; that mistake was made once and corrected.
 - `programme-amount` — the umbrella award. **Context only, never summed.** For UAAT the award letter is addressed to another institution entirely.
 - `allocated` — the lab's own documented share, only where a formal budget document exists.
 
@@ -106,7 +106,7 @@ curl -sSL https://asvlab.com/projects/ | grep -c 'article class="grant"'   # exp
 | `projects/index.md` | Stat tiles, funder split, theme grouping, teaching section |
 | `research/index.md` | Reads the same data — **update both when changing counting logic** |
 | `_includes/grant.html` | One grant card; handles missing amount / discipline / year / grant-no |
-| `_styles/grant.scss`, `_styles/stat.scss` | `.grant-note`, `.grant-amount-level`, `.grant-no`, `.funder-split`, `.stat-note` |
+| `_styles/grant.scss`, `_styles/stat.scss` | `.grant-amount-level`, `.grant-no`, `.funder-split`, `.stat-note` |
 | `_projects/enhancing-maritime-tracking.md` | UAAT phase 1 write-up; its title matches the phase-1 subproject title |
 
 Adding a program: append to `_data/grants.yaml` with `program`, `category`, `amount` + `amount-level`, `role`, `status`, `kind`, `agency`, and `grant-no` if one exists. Everything else follows automatically.

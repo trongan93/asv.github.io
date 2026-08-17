@@ -244,7 +244,10 @@
   scheme: 國家重點領域國際合作聯盟整合型計畫
   scheme-en: UAAT–TAMUS Integrated Program
   agency: MOE
-  amount: 240000
+  # Subproject 3 award: recurring 1,140,000 + capital 60,000. Within it, NTUT's
+  # approved personnel budget is NT$240,000 and this lab's Co-PI remuneration
+  # NT$60,000 — neither is published.
+  amount: 1200000
   amount-level: subproject
   programme-amount: 8200000
   title: UAAT-TAMUS 子計畫 3：強化海事智慧與跨國合作之邊緣 AI 空中系統研發
