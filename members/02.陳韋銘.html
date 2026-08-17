@@ -349,7 +349,13 @@
       processEscapes: true
     },
     options: {
-      skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+      skipHtmlTags: ['script','noscript','style','textarea','pre','code'],
+      // Currency is written as "NT$1,234", so two amounts in one block look
+      // exactly like $...$ inline math and MathJax eats the text between them.
+      // Elements carrying money opt out with class="tex2jax_ignore". Single-$
+      // delimiters stay enabled because project write-ups use real inline math.
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
     }
   };
 </script>

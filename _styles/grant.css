@@ -122,21 +122,6 @@
   overflow-wrap: anywhere;
 }
 
-.grant-note {
-  margin: 0;
-  color: var(--text-muted);
-  font-size: var(--small);
-  line-height: var(--compact);
-  text-align: left;
-  hyphens: none;
-}
-
-.grant-note .icon {
-  margin-right: 0.5em;
-  color: var(--primary);
-  opacity: 0.7;
-}
-
 .grant .button {
   align-self: flex-start;
   margin: 0;

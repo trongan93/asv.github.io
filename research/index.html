@@ -405,7 +405,13 @@
       processEscapes: true
     },
     options: {
-      skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+      skipHtmlTags: ['script','noscript','style','textarea','pre','code'],
+      // Currency is written as "NT$1,234", so two amounts in one block look
+      // exactly like $...$ inline math and MathJax eats the text between them.
+      // Elements carrying money opt out with class="tex2jax_ignore". Single-$
+      // delimiters stay enabled because project write-ups use real inline math.
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
     }
   };
 </script>
@@ -552,7 +558,7 @@
 
 <p>AeroSat Vision Lab advances neural networks, computer vision, and remote sensing for aerospace and satellite systems. Our work centres on AI-driven autonomy for spacecraft — combining deep learning, embedded computing, and space-grade sensor integration to change how intelligent systems operate in orbit.</p>
 
-<div class="stat-grid">
+<div class="stat-grid tex2jax_ignore">
 <div class="stat">
  <span class="stat-value">36</span>
  <span class="stat-label">Publications<br><span class="stat-sub">since 2017</span></span>
