@@ -70,17 +70,17 @@
 #            project-level figure; for UAAT-TAMUS the documented figure is
 #            NTUT's subproject allocation.
 # programme-amount
-#            optional; the umbrella programme award. Context only, never summed —
-#            for UAAT-TAMUS the award letter is addressed to another institution.
-# allocated  optional; the lab's own share, only with a budget document
+#            optional; the umbrella programme award. Recorded for provenance,
+#            NEVER summed and NOT rendered — for UAAT-TAMUS the award letter is
+#            addressed to another institution.
+# allocated  optional; the lab's own share, only with a budget document.
+#            Recorded for provenance; not rendered on the cards.
 # scheme     funding scheme / project category, as shown by the funder
 # kind       research theme id, see _data/project-kinds.yaml (research only)
 # title-full-en
 #            optional; the full official English title, kept for verification
 #            where `title-en` is shortened for display
 # page       optional path to a project page on this site
-# note / note-en
-#            optional; a qualification that must travel with the figures
 
 - year: 115
   ad-year: 2026
@@ -247,11 +247,6 @@
   amount: 240000
   amount-level: subproject
   programme-amount: 8200000
-  note: >-
-    子計畫三由本校林信標教授擔任主持人，本實驗室為共同主持人；子計畫三計畫總額為 NT$1,200,000。
-  note-en: >-
-    Subproject 3 is led by Prof. Lin Hsin-Piao of NTUT, with this lab as Co-PI.
-    The full subproject award is NT$1,200,000.
   title: UAAT-TAMUS 子計畫 3：強化海事智慧與跨國合作之邊緣 AI 空中系統研發
   title-en: "UAAT–TAMUS Subproject 3: Advancing Edge-AI Enabled Airborne Systems for Maritime Intelligence and Cross-Border Collaboration"
   title-full-en: "Multidisciplinary Capacity Building and Networking for a New Space Generation: TAMUS–UAAT Space Technology — Subproject 3"
@@ -321,10 +316,6 @@
   amount: 12123700
   amount-level: project
   allocated: 600000
-  note: >-
-    本委辦計畫由本校林信標教授擔任主持人，本實驗室為共同主持人。
-  note-en: >-
-    The commission is led by Prof. Lin Hsin-Piao of NTUT, with this lab as Co-PI.
   title: 立方衛星通訊酬載開發與驗測委辦
   title-en: Commissioned Project for CubeSat Communications-Payload Development and Verification
   kind: comms-security

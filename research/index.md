@@ -34,7 +34,7 @@ AeroSat Vision Lab advances neural networks, computer vision, and remote sensing
 {% assign grant_total = 0 %}
 {% for g in research_grants %}{% assign grant_total = grant_total | plus: g.amount %}{% endfor %}
 
-<div class="stat-grid">
+<div class="stat-grid tex2jax_ignore">
 <div class="stat">
  <span class="stat-value">{{ pubs.size }}</span>
  <span class="stat-label">Publications<br><span class="stat-sub">since {{ first_year }}</span></span>
