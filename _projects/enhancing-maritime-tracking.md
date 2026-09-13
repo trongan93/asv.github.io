@@ -60,15 +60,18 @@ The following diagram shows the integrated architecture for the UAV and ground s
 
 ### 5.1 UAV Platform Setup
 
-This image shows the hardware setup of the UAV, integrating the FPGA module, camera, and S-band communication payload:
+This image shows the current hardware setup of the UAV testbed, integrating the FPGA-based AI payload, camera, and L-band communication chain on the flight-ready airframe:
 
 ![UAV Hardware Platform Setup](/images/projects/uav-hardware-setup.png)
 
 **Key Components:**
 
-- **FPGA (Xilinx)** for onboard AI inference
-- **Air Unit Camera** for visual input
-- **S-band Payload** for real-time transmission
+- **Payload for AI based on FPGA** for onboard inference (ship detection and tracking)
+- **Camera** for visual input to the detection pipeline
+- **L-band Communication Payload** for transmitting detection results to the ground station
+- **Power Amplifier for Communication** to extend the effective downlink range
+- **L-band Antenna** mounted on the landing gear
+- **Flight Controller** and **RC Receiver** for flight management and manual override
 
 ### 5.2 Tracking Performance Comparison
 
