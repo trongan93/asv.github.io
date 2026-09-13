@@ -572,7 +572,7 @@
 
 <h3 id="51-uav-platform-setup">5.1 UAV Platform Setup</h3>
 
-<p>This image shows the hardware setup of the UAV, integrating the FPGA module, camera, and S-band communication payload:</p>
+<p>This image shows the current hardware setup of the UAV testbed, integrating the FPGA-based AI payload, camera, and L-band communication chain on the flight-ready airframe:</p>
 
 <p><img src="/images/projects/uav-hardware-setup.png" alt="UAV Hardware Platform Setup"></p>
 
@@ -580,11 +580,17 @@
 
 <ul>
   <li>
-<strong>FPGA (Xilinx)</strong> for onboard AI inference</li>
+<strong>Payload for AI based on FPGA</strong> for onboard inference (ship detection and tracking)</li>
   <li>
-<strong>Air Unit Camera</strong> for visual input</li>
+<strong>Camera</strong> for visual input to the detection pipeline</li>
   <li>
-<strong>S-band Payload</strong> for real-time transmission</li>
+<strong>L-band Communication Payload</strong> for transmitting detection results to the ground station</li>
+  <li>
+<strong>Power Amplifier for Communication</strong> to extend the effective downlink range</li>
+  <li>
+<strong>L-band Antenna</strong> mounted on the landing gear</li>
+  <li>
+<strong>Flight Controller</strong> and <strong>RC Receiver</strong> for flight management and manual override</li>
 </ul>
 
 <h3 id="52-tracking-performance-comparison">5.2 Tracking Performance Comparison</h3>
