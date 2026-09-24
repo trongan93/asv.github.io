@@ -23,6 +23,13 @@ At the AeroSat Vision Lab, our team is comprised of dedicated professionals and 
 
 {% include section.html %}
 
+## Graduated
+<div class="team-container">
+  {% include list.html data="members" component="portrait" filters="role: graduated" %}
+</div>
+
+{% include section.html %}
+
 ## Alumni
 <div class="team-container">
   {% include list.html data="members" component="portrait" filters="role: alumni" %}

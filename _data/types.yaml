@@ -22,6 +22,10 @@ master:
   icon: fa-solid fa-user-graduate
   description: Master Student 碩士生
 
+graduated:
+  icon: fa-solid fa-graduation-cap
+  description: Graduated 已畢業
+
 alumni:
   icon: fa-solid fa-graduation-cap
   description: Alumni 校友
