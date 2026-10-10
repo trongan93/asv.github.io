@@ -112,6 +112,17 @@
   orcid: 0000-0001-7660-4060
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.48550/arXiv.2506.17885
+  title: Cloud-Aware SAR Fusion for Enhanced Optical Sensing in Space Missions
+  authors:
+  - Trong-An Bui
+  - Thanh-Thoai Le
+  publisher: arXiv
+  date: '2025-01-01'
+  link: https://doi.org/hcm53x
+  orcid: 0000-0001-7660-4060
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/TGRS.2024.3525411
   title: Region of Interest-Focused Dynamic Enhancement (RoIDE) for Satellite Images
   authors:
