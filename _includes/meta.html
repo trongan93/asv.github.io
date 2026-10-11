@@ -29,9 +29,13 @@
 {% endcomment %}
 {% assign url = page.url | absolute_url %}
 
-{% assign icon_png = "images/icon-lab.png" | file_exists %}
-{% assign icon_jpg = "images/icon-lab.jpg" | file_exists %}
-{% assign icon = icon_png | default: icon_jpg | relative_url %}
+{% comment %}
+  site icon. icon-lab.png is the 256px master used for rel=icon and the
+  schema.org logo; /favicon.ico carries the 16/32/48 raster set that
+  crawlers and browsers request by default.
+{% endcomment %}
+{% assign icon = "images/icon-lab.png" | relative_url %}
+{% assign icon_abs = "images/icon-lab.png" | absolute_url %}
 
 {% comment %}
   social preview image. share.jpg is the wide 2:1 card made for this; the
@@ -55,7 +59,10 @@
 
 <title>{{ fulltitle }}</title>
 
-<link rel="icon" href="{{ icon }}">
+<link rel="icon" href="{{ "favicon.ico" | relative_url }}" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" href="{{ icon }}" sizes="256x256">
+<link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | relative_url }}" sizes="180x180">
+<link rel="manifest" href="{{ "site.webmanifest" | relative_url }}">
 <link rel="canonical" href="{{ url }}">
 
 <!-- tints browser chrome on mobile to match the site header -->
@@ -104,7 +111,7 @@
     "headline": "{{ title }}",
     "publisher": {
       "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
+      "logo": { "@type": "ImageObject", "url": "{{ icon_abs }}" }
     },
     "url": "{{ url }}"
   }

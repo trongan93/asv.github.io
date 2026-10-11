@@ -1,4 +1,10 @@
 # site properties and page defaults
+
+# canonical origin. must be set explicitly: without it github pages falls
+# back to http://, which puts http urls in the sitemap and og: tags and
+# splits the site across two protocols for crawlers.
+url: https://asvlab.com
+
 title: AeroSat Vision Lab
 subtitle: Pioneering AI and Satellite Innovation
 description: AeroSat Vision Lab at National Taipei University of Technology (Taipei Tech), led by Dr. Trong-An Bui, advances neural networks, computer vision, and remote sensing for smarter, more autonomous satellite systems.

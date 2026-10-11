@@ -42,7 +42,15 @@ jobs:
 
       - name: Set root url
         run: |
-          printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
+          # honour an explicit url: in _config.yaml. the origin reported by
+          # configure-pages is http:// for a custom domain, and appending it
+          # here overrides the config, putting http urls in the sitemap and
+          # og: tags. only fall back to it when the config sets nothing.
+          if grep -qE '^url:[[:space:]]*[^[:space:]]' _config.yaml; then
+            echo "using url from _config.yaml: $(grep -E '^url:' _config.yaml)"
+          else
+            printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
+          fi
 
       - name: Build live version of site
         run: |
