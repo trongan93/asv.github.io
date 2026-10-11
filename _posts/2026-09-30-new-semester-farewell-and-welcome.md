@@ -15,7 +15,7 @@ layout: post
 
 ### 感謝畢業的同學
 
-謝謝 **張銘介**、**陳韋銘**、**黃耘宣** 三位今年自北科大電子所畢業的同學，以及在越南胡志明師範大學（HCMUE）完成碩士學位的 **Thanh-Thoai Le** 與 **Tai Ho**。從影像壓縮、超解析到 UAV 目標追蹤與 SAR–光學雲層去除，你們在實驗室的每一段研究，都成為後續工作的基礎。感謝你們曾經是實驗室的一份子，祝福大家在下一個階段一切順利。
+謝謝 **張銘介**、**陳韋銘**、**黃耘宣** 三位今年自北科大電子所畢業的同學。從影像壓縮、超解析到 FPGA 上的模型實現，你們在實驗室的每一段研究，都成為後續工作的基礎。感謝你們曾經是實驗室的一份子，祝福大家在下一個階段一切順利。
 
 ### 歡迎新成員
 
@@ -33,7 +33,7 @@ The new semester is underway, and for the lab that means a handover: we say good
 
 ### Thank you to our graduates
 
-Our thanks to **Ming-Chieh Chang**, **Wei-Ming Chen** and **Yun-Hsuan Huang**, who completed their M.S. in Electronic Engineering at Taipei Tech this year, and to **Thanh-Thoai Le** and **Tai Ho**, who finished their master's degrees at Ho Chi Minh City University of Education. From image compression and super-resolution to UAV object tracking and SAR–optical cloud removal, the work you did here is what the next projects are built on. Thank you for being part of the lab, and all the best for what comes next.
+Our thanks to **Ming-Chieh Chang**, **Wei-Ming Chen** and **Yun-Hsuan Huang**, who completed their M.S. in Electronic Engineering at Taipei Tech this year. From image compression and super-resolution to deploying those models on FPGA, the work you did here is what the next projects are built on. Thank you for being part of the lab, and all the best for what comes next.
 
 ### Welcome to our new members
 
