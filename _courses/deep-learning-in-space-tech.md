@@ -3,6 +3,8 @@ title: 深度學習與太空科技應用 Deep Learning in Space Technology Appli
 image: /images/courses/deep-learning-in-space-tech.jpg
 description: 深度學習技術在太空資料分析與自主系統中的實際應用與實作。
 date: 2025-03-21
+playlist: PLf1Yqt-zimfg
+videos: 6
 layout: course
 ---
 ## 課程簡介（中文）
