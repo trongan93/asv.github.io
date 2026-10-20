@@ -10,3 +10,30 @@ layout: course
 
 ## Course Overview (English)
 This course provides a comprehensive understanding of deep learning techniques and their applications in space technology. It covers the fundamentals of neural networks, advanced deep learning architectures, and practical applications in space data analysis and autonomous systems. Students will gain hands-on experience with popular deep learning frameworks and real-world space technology datasets.
+## 課程錄影 Lecture Videos
+
+本課程的全系列錄影由 **國立臺北科技大學 NTUT ON AIR** 製作並公開於 YouTube，共 6 講。可直接在下方播放，或前往 [YouTube 播放清單](https://www.youtube.com/playlist?list=PLf1Yqt-zimfg) 觀看。
+
+The complete lecture series was produced and published by **NTUT ON AIR**, National Taipei University of Technology, on YouTube in six parts. Watch below, or open the [full playlist on YouTube](https://www.youtube.com/playlist?list=PLf1Yqt-zimfg).
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 1.5em 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/videoseries?list=PLf1Yqt-zimfg"
+    title="【NTUT ON AIR】Deep Learning in Space Technology Applications"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: var(--rounded, 8px);"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+</div>
+
+| 講次 Lecture | 長度 Length | 連結 Link |
+| --- | --- | --- |
+| Lecture 1 | 60 min | [Watch on YouTube](https://www.youtube.com/watch?v=z1bbM3vMTHM&list=PLf1Yqt-zimfg) |
+| Lecture 2 | 60 min | [Watch on YouTube](https://www.youtube.com/watch?v=vRsYICet3dI&list=PLf1Yqt-zimfg) |
+| Lecture 3 | 71 min | [Watch on YouTube](https://www.youtube.com/watch?v=n6J49j26i00&list=PLf1Yqt-zimfg) |
+| Lecture 4 | 49 min | [Watch on YouTube](https://www.youtube.com/watch?v=j7YUi9FjRqU&list=PLf1Yqt-zimfg) |
+| Lecture 5 | 61 min | [Watch on YouTube](https://www.youtube.com/watch?v=NmJz927nU9Q&list=PLf1Yqt-zimfg) |
+| Lecture 6 | 46 min | [Watch on YouTube](https://www.youtube.com/watch?v=3yLpNKS3yBc&list=PLf1Yqt-zimfg) |
+
+> 🎬 影片版權屬國立臺北科技大學 NTUT ON AIR 所有。Videos © NTUT ON AIR, National Taipei University of Technology.
