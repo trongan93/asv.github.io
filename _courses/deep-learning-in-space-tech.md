@@ -14,9 +14,9 @@ layout: course
 This course provides a comprehensive understanding of deep learning techniques and their applications in space technology. It covers the fundamentals of neural networks, advanced deep learning architectures, and practical applications in space data analysis and autonomous systems. Students will gain hands-on experience with popular deep learning frameworks and real-world space technology datasets.
 ## 課程錄影 Lecture Videos
 
-本課程的全系列錄影由 **國立臺北科技大學 NTUT ON AIR** 製作並公開於 YouTube，共 6 講。可直接在下方播放，或前往 [YouTube 播放清單](https://www.youtube.com/playlist?list=PLf1Yqt-zimfg) 觀看。
+本課程為北科大 **全英語授課（EMI）** 課程。全系列錄影由 **國立臺北科技大學 NTUT ON AIR** 製作並公開於 YouTube，共 6 講，為該頻道推廣與介紹本校 EMI 課程的節目之一。可直接在下方播放，或前往 [YouTube 播放清單](https://www.youtube.com/playlist?list=PLf1Yqt-zimfg) 觀看。
 
-The complete lecture series was produced and published by **NTUT ON AIR**, National Taipei University of Technology, on YouTube in six parts. Watch below, or open the [full playlist on YouTube](https://www.youtube.com/playlist?list=PLf1Yqt-zimfg).
+This is one of Taipei Tech's **EMI (English as a Medium of Instruction)** courses. The complete lecture series was produced and published by **NTUT ON AIR**, National Taipei University of Technology, on YouTube in six parts, as part of its programme showcasing the university's English-taught courses. Watch below, or open the [full playlist on YouTube](https://www.youtube.com/playlist?list=PLf1Yqt-zimfg).
 
 <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 1.5em 0;">
   <iframe
